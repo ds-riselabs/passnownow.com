@@ -78,10 +78,10 @@
         </section>
         <section class="container-fluid container__guide">
             <div class="row">
-                <div class="col-12 ">
-
+                <div class="col-12 col-md-2">
+                    <img src="{{ asset('assets/images/formular.png') }}" alt="" class="formular-image">
                 </div>
-                <div class="col-12 heading">
+                <div class="col-12 col-md-8 heading">
                     <h3>How Passnownow Works</h3>
                     <p>
                         Passnownow is Nigeria’s foremost online learning platform that provides students with access to
@@ -89,8 +89,8 @@
                         accessible.
                     </p>
                 </div>
-                <div class="col-12 ">
-                   
+                <div class="col-12 col-md-2">
+                    <img src="{{ asset('assets/images/trig.png') }}" alt="" class="formular-image">
                 </div>
             </div>
             <div class="row guides">

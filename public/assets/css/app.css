@@ -15,10 +15,8 @@
     --color-text-white: #ffffff;
     --color-ash: #AEBACA;
     --color-text-dark: #000000;
-
-    #AEBACA
-
-
+/* 
+    #AEBACA */
 
     --box-shadow: 0 2px 8px -4px #000000;
     --font-family-body: "Quicksand", sans-serif;
@@ -74,6 +72,10 @@ ul {
     padding: 1rem 1.125rem;
 }
 
+.navbar .navbar-nav .nav-item:hover {
+border-bottom: 2px solid var(--color-primary);
+}
+
 .navbar .navbar-brand img {
     width: 4rem;
 }
@@ -118,7 +120,7 @@ ul {
 }
 
 
-.container__hero {
+.container__hero .row{
     background-color: var(--color-secondary-accent);
     color: var(--color-text-white);
     padding: 1.125rem;
@@ -127,7 +129,7 @@ ul {
 
 .container__hero .hero__content {
     padding: 1rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2.2rem;
 }
 
 .container__hero .total-enrol {
@@ -150,10 +152,14 @@ ul {
     background-image: url('/assets/images/maths-pattern.svg');
     background-size: cover;
     overflow: hidden;
+    display: flex;
+    /* align-items: baseline; */
+
 }
 
 .container__hero .row .hero-image img {
     width: 100%;
+    /* align-self: baseline; */
 }
 
 
@@ -275,6 +281,10 @@ ul {
     color: var(--color-primary-blue);
 }
 
+
+.container__guide .formular-image {
+    display: none;
+}
 
 
 
@@ -431,7 +441,7 @@ ul {
         font-size: 0.8rem;
     }
 
-    .container__hero .row .hero-image {
+    /* .container__hero .row .hero-image {
         position: relative;
 
     }
@@ -440,12 +450,22 @@ ul {
         position: absolute;
         top: 3.75rem;
         width: 80%;
-    }
+    } */
 
 }
 
 
+
+
 @media (min-width: 768px) {
+
+    .container__hero {
+        padding: 1rem 2rem;
+    }
+
+    .container__hero .row{
+       border-radius: 1.5rem;
+    }
 
     .container__review .reviews {
         padding: 1rem 2rem;
@@ -492,6 +512,12 @@ ul {
       margin: 0.2rem;
       width: 32%;
     }
+
+    .container__guide .formular-image {
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
 }
 
 
@@ -523,11 +549,11 @@ ul {
         margin-bottom: 2rem;
     }
 
-    .container__hero .row .hero-image img {
+    /* .container__hero .row .hero-image img {
         top: 1rem;
-        width: 60%;
+        width: 80%;
         left: 5rem
-    }
+    } */
 
     .container__review .reviews .row {
         padding: 1rem;
@@ -595,9 +621,9 @@ ul {
         border: 2px solid var(--color-text-white);
     }
 
-    .container__hero .row .hero-image img {
+    /* .container__hero .row .hero-image img {
         top: 2.6rem;
         width: 70%;
-    }
+    } */
 
 }
