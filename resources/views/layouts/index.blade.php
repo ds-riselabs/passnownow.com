@@ -13,53 +13,40 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-   
+
     <!-- Fontawesome icons -->
-    <link rel="stylesheet" href="{{ asset('assets/fonts/css/fontawesome.css')}} ">
-    <link rel="stylesheet" href="{{ asset('assets/fonts/css/solid.css')}} ">
-    <link rel="stylesheet" href="{{ asset('assets/fonts/css/brands.css')}} ">
+    <link rel="stylesheet" href="{{ asset('assets/fonts/css/fontawesome.css') }} ">
+    <link rel="stylesheet" href="{{ asset('assets/fonts/css/solid.css') }} ">
+    <link rel="stylesheet" href="{{ asset('assets/fonts/css/brands.css') }} ">
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
+    {{-- SWIPER JS  --}}
+    <link rel="stylesheet" href="{{ 'assets/css/swiper-bundle.min.css' }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
 
 </head>
 
 <body class="">
     <div class="container-fluid wrapper">
-                <section class="container-fluid top__section">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>Rated 4.8/5 by parents & students</span>
-                </section>
-                <header class="container-fluid  container__header grid grid-cols-2 items-center  py-10">
-                    <nav class="container navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="#">
-                                <img src="{{ asset('assets/images/logo.png')}}" alt="">
-                            </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="{{url('/')}}">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{{url('subject')}}">Subject</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{{url('class')}}">Class</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{{url('edresources')}}">Educational Resources</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{{ url('about') }}">About us</a>
-                                    </li>
-                                    {{-- <li class="nav-item dropdown">
+        <section class="container-fluid top__section"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>Rated 4.8/5 by parents &
+                students</span></section>
+        <header class="container-fluid  container__header grid grid-cols-2 items-center  py-10">
+            <nav class="container navbar navbar-expand-lg"><a class="navbar-brand" href="#"><img
+                        src="{{ asset('assets/images/logo.png') }}" alt=""></a><button class="navbar-toggler"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                href="{{ url('/') }}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('about') }}">About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('subject') }}">Subject</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('class') }}">Class</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('edresources') }}">Educational
+                                Resources</a></li>
+                        {{-- <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
                                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Dropdown
@@ -73,75 +60,73 @@
                                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                                         </ul>
                                     </li> --}}
-                                </ul>
-                            <div class="nav-btn">
-                                <a href="#" class="btn btn-style btn-style-secondary" >Login</a>
-                                <a href="#" class="btn btn-outline-primary btn-style" >Register</a>
-                            </div>
-                            </div>
-                    </nav>
-                </header>
+                    </ul>
+                    <div class="nav-btn"><a href="#" class="btn btn-style btn-style-secondary">Login</a><a
+                            href="#" class="btn btn-outline-primary btn-style">Register</a></div>
+                </div>
+            </nav>
+        </header>@yield('content')
 
-                @yield('content')
-                
-
-
-
-               <!-- FOOTER SECTION -->
-	<div class="container-fluid container__footer">
-		<footer class="">
-		  <div class="container row mx-auto">
-			<div class="col-12 col-md-5 mb-3 address">
-                <h5>West Africa’s most trusted EdTech Platform for Secondary School Students & Teachers</h5> 
-				<p>Super simple self studying, peer to peer collaborative learning both for teachers and students</p>
-                <img src="{{asset('assets/images/NG.png')}}" alt="Nigeria-Icon" class="me-1">
-                <span>144A Gbagada Expressway, Anthony, Lagos</span>
-			</div> 
-          
-			<div class="col-12 col-md-3 mb-3 p-0">
-			  <h5 class="title">RELATED  LINKS</h5>
-			  <ul class="nav flex-column">
-				<li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
-				<li class="nav-item mb-2"><a href="#" class="nav-link p-0">For Parent</a></li>
-				<li class="nav-item mb-2"><a href="#" class="nav-link p-0">For Teachers</a></li>
-				<li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
-			  </ul>
-			</div>
-
-			<div class="col-12 col-md-2 mb-3 p-0">
-			  <h5 class="title">RESOURCE</h5>
-			  <ul class="nav flex-column">
-				<li class="nav-item mb-2"><a href="#" class="nav-link p-0">Class</a></li>
-				<li class="nav-item mb-2"><a href="#" class="nav-link p-0">Plans</a></li>
-				<li class="nav-item mb-2"><a href="#" class="nav-link p-0">Exam</a></li>
-				<li class="nav-item mb-2"><a href="#" class="nav-link p-0">Questions</a></li>
-			  </ul>
-			</div>
-	  
-			<div class="col-12 col-md-2  mb-3 p-0">
-			  <h5 class="title">CONTACT US</h5>
-			  <ul class="nav flex-column">
-				<li class="nav-item mb-2">Call Us:</li>
-				<li class="nav-item mb-2">07060545017, 07060545027</li>
-				<li class="nav-item mb-2">Email: </li>
-				<li class="nav-item mb-2">Passnownow@gmail.com</li>
-			  </ul>
-			</div>
-		  </div>
-	  
-		  <div class="d-flex flex-column flex-sm-row justify-content-between border-top copy__right">
-			<p> Copyright &copy; 2024 Passnownow </p>
-			<p><a href="#">Terms and Conditions </a> <a href="#">Privacy Policy</a></p>
-			<ul class="">
-			  <li class="ms-3"><a class="" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-			  <li class="ms-3"><a class="" href="#"><i class="fa-brands fa-facebook"></i></a></li>
-			  <li class="ms-3"><a class="" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-			  <li class="ms-3"><a class="" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-			  
-			</ul>
-		  </div>
-		</footer>
-	  </div>
+        {{-- FOOTER SECTION --}}
+        <div class="container-fluid container__footer">
+            <footer class="">
+                <div class="container row mx-auto">
+                    <div class="col-12 col-md-5 mb-3 address">
+                        <h5>West Africa’s most trusted EdTech Platform for Secondary School Students & Teachers</h5>
+                        <p>Super simple self studying,
+                            peer to peer collaborative learning both for teachers and students</p><img
+                            src="{{ asset('assets/images/NG.png') }}" alt="Nigeria-Icon" class="me-1"><span>144A
+                            Gbagada Expressway,
+                            Anthony,
+                            Lagos</span>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3 p-0">
+                        <h5 class="title">RELATED LINKS</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Our Blog</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">For Parent</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">For Teachers</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-2 mb-3 p-0">
+                        <h5 class="title">RESOURCE</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Class</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Plans</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Exam</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Questions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-2  mb-3 p-0">
+                        <h5 class="title">CONTACT US</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">Call Us:</li>
+                            <li class="nav-item mb-2">07060545017,
+                                07060545027</li>
+                            <li class="nav-item mb-2">Email: </li>
+                            <li class="nav-item mb-2">Passnownow@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between border-top copy__right">
+                    <p>Copyright &copy;
+                        2024 Passnownow </p>
+                    <p><a href="#">Terms and Conditions </a><a href="#">Privacy Policy</a></p>
+                    <ul class="">
+                        <li class="ms-3"><a class="" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li class="ms-3"><a class="" href="#"><i
+                                    class="fa-brands fa-facebook"></i></a></li>
+                        <li class="ms-3"><a class="" href="#"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li class="ms-3"><a class="" href="#"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
     </div>
 </body>
 

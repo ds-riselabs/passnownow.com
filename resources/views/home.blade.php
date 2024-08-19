@@ -97,7 +97,8 @@
                 <div class="col-12 col-md-4 guide">
                     <img src="{{ asset('assets/images/icon-user.png') }}" alt="Icon" class="mb-3" />
                     <h3>Create free account</h3>
-                    <p>The first step is to create a free account with Passnownow by completing the user registration form.</p>
+                    <p>The first step is to create a free account with Passnownow by completing the user registration form.
+                    </p>
                 </div>
                 <div class="col-12 col-md-4 guide">
                     <img src="{{ asset('assets/images/icon-card.png') }}" alt="Icon" class="mb-3" />
@@ -126,5 +127,493 @@
                 </div>
             </div>
         </section>
+        <Section class="container-fluid container__hero-down">
+            <div class="row">
+                <div class="col-12 col-md-6 hero-down__content">
+                    <p class="total-enrol">We do home tutoring the right way.</p>
+                    <h1>Passnownow: Your Partner In Lifelong Learning.</h1>
+                    <p class="hero-down__info">Make Passnownow your partner in lifelomg learning, providing you with the
+                        resources and support you need to succeed at every stage of your journey.</p>
+                    <div class="hero-btn">
+                        <a href="#" class="btn btn-outline-primary btn-style">Register &nbsp; <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6  hero-down-image">
+                    <img src="{{ asset('assets/images/hero_down.png') }}" alt="Hero Image">
+                </div>
+            </div>
+        </Section>
+
+        <section class="container-fluid container__std_review">
+            <div class="row">
+                <div class="col-12 col-md-2">
+                    <img src="{{ asset('assets/images/quote_down.png') }}" alt="" class="quote-down-image">
+                </div>
+                <div class="col-12 col-md-8 heading px-4">
+                    <h6>Rave Reviews from our amazing students! 😍</h6>
+                </div>
+                <div class="col-12 col-md-2">
+                </div>
+            </div>
+            <div class="row reviews mb-5">
+                <!-- Slider main container -->
+                <div class="swiper col-12">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide text-center review">
+                            <p>
+                                “I had a full-on practical experience during my training. I have learned priceless technical
+                                skills in robotics and Python programming. My love for STEM has grown seriously as a result
+                                of the engaging curriculum and supportive community. I strongly recommend this Program to
+                                teenagers out there who wish to have an exceptional learning experience.”
+                            </p>
+                            <div class="rating text-center pt-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h5 class="title">Yusuf Gambo</h5>
+                                <p>Cohorts 3</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide text-center review">
+                            <p>
+                                “I had a full-on practical experience during my training. I have learned priceless technical
+                                skills in robotics and Python programming. My love for STEM has grown seriously as a result
+                                of the engaging curriculum and supportive community. I strongly recommend this Program to
+                                teenagers out there who wish to have an exceptional learning experience.”
+                            </p>
+                            <div class="rating text-center pt-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h5 class="title">Mose John</h5>
+                                <p>Cohorts 3</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide text-center review">
+                            <p>
+                                “I had a full-on practical experience during my training. I have learned priceless technical
+                                skills in robotics and Python programming. My love for STEM has grown seriously as a result
+                                of the engaging curriculum and supportive community. I strongly recommend this Program to
+                                teenagers out there who wish to have an exceptional learning experience.”
+                            </p>
+                            <div class="rating text-center pt-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h5 class="title">Samuel Mary</h5>
+                                <p>Cohorts 5</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide text-center review">
+                            <p>
+                                “I had a full-on practical experience during my training. I have learned priceless technical
+                                skills in robotics and Python programming. My love for STEM has grown seriously as a result
+                                of the engaging curriculum and supportive community. I strongly recommend this Program to
+                                teenagers out there who wish to have an exceptional learning experience.”
+                            </p>
+                            <div class="rating text-center pt-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h5 class="title">David Adeshola</h5>
+                                <p>Cohorts 5</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="row frames">
+                <div class="col-12 col-md-4 my-3 frame">
+                    <img src="{{ asset('assets/images/users_1.png') }}" alt="">
+                </div>
+                <div class="col-12 col-md-4 my-3 frame mobile">
+                    <img src="{{ asset('assets/images/mobile-frame.png') }}" alt="">
+                </div>
+                <div class="col-12 col-md-4 my-3 frame">
+                    <img src="{{ asset('assets/images/users_2.png') }}" alt="">
+                </div>
+            </div>
+        </section>
+        <Section class="container-fluid container__performance">
+            <div class="bg-image">
+                <div class="row">
+                    <div class="col-12 col-md-6 performance__content">
+                        <p class="total-enrol">We deliver the best results, periods.</p>
+                        <h1>Passnownow students perform 3x better in class and school exams</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 barchart mt-4">
+                        <img src="{{ asset('assets/images/barchart.png') }}" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 performance__info">
+                        <div class="lists">
+                            <p class="list_sn">1</p>
+                            <p class="list">We work with you to ensure your kids excel at every stage of their learning
+                                journey</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-2">
+                        <img src="{{ asset('assets/images/quote_tr.png') }}" alt="" class="quote-down-image">
+                    </div>
+                    <div class="col-12 col-md-8 heading px-4">
+                        <h6>Rave Reviews from our amazing Tutors!! 😍</h6>
+                    </div>
+                    <div class="col-12 col-md-2">
+                    </div>
+                </div>
+                <div class="row reviews mb-5">
+                    <!-- Slider main container -->
+                    <div class="swiper col-12">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide text-center review">
+                                <p>
+                                    “I had a full-on practical experience during my training. I have learned priceless
+                                    technical
+                                    skills in robotics and Python programming. My love for STEM has grown seriously as a
+                                    result
+                                    of the engaging curriculum and supportive community. I strongly recommend this Program
+                                    to
+                                    teenagers out there who wish to have an exceptional learning experience.”
+                                </p>
+                                <div class="rating text-center pt-3">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <h5 class="title">Yusuf Gambo</h5>
+                                    <p>Cohorts 3</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide text-center review">
+                                <p>
+                                    “I had a full-on practical experience during my training. I have learned priceless
+                                    technical
+                                    skills in robotics and Python programming. My love for STEM has grown seriously as a
+                                    result
+                                    of the engaging curriculum and supportive community. I strongly recommend this Program
+                                    to
+                                    teenagers out there who wish to have an exceptional learning experience.”
+                                </p>
+                                <div class="rating text-center pt-3">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <h5 class="title">Mose John</h5>
+                                    <p>Cohorts 3</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide text-center review">
+                                <p>
+                                    “I had a full-on practical experience during my training. I have learned priceless
+                                    technical
+                                    skills in robotics and Python programming. My love for STEM has grown seriously as a
+                                    result
+                                    of the engaging curriculum and supportive community. I strongly recommend this Program
+                                    to
+                                    teenagers out there who wish to have an exceptional learning experience.”
+                                </p>
+                                <div class="rating text-center pt-3">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <h5 class="title">Samuel Mary</h5>
+                                    <p>Cohorts 5</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide text-center review">
+                                <p>
+                                    “I had a full-on practical experience during my training. I have learned priceless
+                                    technical
+                                    skills in robotics and Python programming. My love for STEM has grown seriously as a
+                                    result
+                                    of the engaging curriculum and supportive community. I strongly recommend this Program
+                                    to
+                                    teenagers out there who wish to have an exceptional learning experience.”
+                                </p>
+                                <div class="rating text-center pt-3">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <h5 class="title">David Adeshola</h5>
+                                    <p>Cohorts 5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </Section>
+        <section class="container-fluid container__notes">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h6>Class Notes</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="image-wrapper">
+                        <img src="{{ asset('assets/images/student-writing.png') }}" alt="">
+                    </div>
+                    <div class="note_info p-2">
+                        <h5>JSS 1 Class Notes</h5>
+                        <p>Start studying with our wide collection of all SSS 1 Class Notes all Terms on all Secondary
+                            School Subjects</p>
+                        <button class="note_btn">VIEW ALL SUBJECTS</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="image-wrapper">
+                        <img src="{{ asset('assets/images/student-writing.png') }}" alt="">
+                    </div>
+                    <div class="note_info p-2">
+                        <h5>JSS 2 Class Notes</h5>
+                        <p>Start studying with our wide collection of all SSS 1 Class Notes all Terms on all Secondary
+                            School Subjects</p>
+                        <button class="note_btn">VIEW ALL SUBJECTS</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="image-wrapper">
+                        <img src="{{ asset('assets/images/student-writing.png') }}" alt="">
+                    </div>
+                    <div class="note_info p-2">
+                        <h5>JSS 3 Class Notes</h5>
+                        <p>Start studying with our wide collection of all SSS 1 Class Notes all Terms on all Secondary
+                            School Subjects</p>
+                        <button class="note_btn">VIEW ALL SUBJECTS</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="image-wrapper">
+                        <img src="{{ asset('assets/images/student-writing.png') }}" alt="">
+                    </div>
+                    <div class="note_info p-2">
+                        <h5>SSS 1 Class Notes</h5>
+                        <p>Start studying with our wide collection of all SSS 1 Class Notes all Terms on all Secondary
+                            School Subjects</p>
+                        <button class="note_btn">VIEW ALL SUBJECTS</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="image-wrapper">
+                        <img src="{{ asset('assets/images/student-writing.png') }}" alt="">
+                    </div>
+                    <div class="note_info p-2">
+                        <h5>SSS 2 Class Notes</h5>
+                        <p>Start studying with our wide collection of all SSS 1 Class Notes all Terms on all Secondary
+                            School Subjects</p>
+                        <button class="note_btn">VIEW ALL SUBJECTS</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="image-wrapper">
+                        <img src="{{ asset('assets/images/student-writing.png') }}" alt="">
+                    </div>
+                    <div class="note_info p-2">
+                        <h5>SSS 3 Class Notes</h5>
+                        <p>Start studying with our wide collection of all SSS 1 Class Notes all Terms on all Secondary
+                            School Subjects</p>
+                        <button class="note_btn">VIEW ALL SUBJECTS</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row past__questions">
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="image-wrapper">
+                        <img src="{{ asset('assets/images/student-writing.png') }}" alt="">
+                    </div>
+                    <div class="note_info p-2">
+                        <h5>JSSCE Past Questions</h5>
+                        <p>Test yourself on any JSSCE Exam Past Questions</p>
+                        <button class="note_btn">VIEW ALL SUBJECTS</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="image-wrapper">
+                        <img src="{{ asset('assets/images/student-writing.png') }}" alt="">
+                    </div>
+                    <div class="note_info p-2">
+                        <h5>SSCE Past Questions</h5>
+                        <p>Test yourself on any JSSCE Exam Past Questions</p>
+                        <button class="note_btn">VIEW ALL SUBJECTS</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="image-wrapper">
+                        <img src="{{ asset('assets/images/student-writing.png') }}" alt="">
+                    </div>
+                    <div class="note_info p-2">
+                        <h5>UTME/JAMB Past Questions</h5>
+                        <p>Test yourself on any JSSCE Exam Past Questions</p>
+                        <button class="note_btn">VIEW ALL SUBJECTS</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid container__parent_review">
+            <div class="row">
+                <div class="col-12 col-md-2">
+                    <img src="{{ asset('assets/images/quote_down.png') }}" alt="" class="quote-down-image">
+                </div>
+                <div class="col-12 col-md-8 heading px-4">
+                    <h6>Rave Reviews from our amazing parents! 😍</h6>
+                </div>
+                <div class="col-12 col-md-2">
+                </div>
+            </div>
+            <div class="row reviews mb-5">
+                <!-- Slider main container -->
+                <div class="swiper col-12">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide text-center review">
+                            <p>
+                                “I had a full-on practical experience during my training. I have learned priceless technical
+                                skills in robotics and Python programming. My love for STEM has grown seriously as a result
+                                of the engaging curriculum and supportive community. I strongly recommend this Program to
+                                teenagers out there who wish to have an exceptional learning experience.”
+                            </p>
+                            <div class="rating text-center pt-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h5 class="title">Yusuf Gambo</h5>
+                                <p>Cohorts 3</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide text-center review">
+                            <p>
+                                “I had a full-on practical experience during my training. I have learned priceless technical
+                                skills in robotics and Python programming. My love for STEM has grown seriously as a result
+                                of the engaging curriculum and supportive community. I strongly recommend this Program to
+                                teenagers out there who wish to have an exceptional learning experience.”
+                            </p>
+                            <div class="rating text-center pt-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h5 class="title">Mose John</h5>
+                                <p>Cohorts 3</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide text-center review">
+                            <p>
+                                “I had a full-on practical experience during my training. I have learned priceless technical
+                                skills in robotics and Python programming. My love for STEM has grown seriously as a result
+                                of the engaging curriculum and supportive community. I strongly recommend this Program to
+                                teenagers out there who wish to have an exceptional learning experience.”
+                            </p>
+                            <div class="rating text-center pt-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h5 class="title">Samuel Mary</h5>
+                                <p>Cohorts 5</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide text-center review">
+                            <p>
+                                “I had a full-on practical experience during my training. I have learned priceless technical
+                                skills in robotics and Python programming. My love for STEM has grown seriously as a result
+                                of the engaging curriculum and supportive community. I strongly recommend this Program to
+                                teenagers out there who wish to have an exceptional learning experience.”
+                            </p>
+                            <div class="rating text-center pt-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h5 class="title">David Adeshola</h5>
+                                <p>Cohorts 5</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="row form">
+                <div class="col-12">
+                    <form action="">
+                        <div class="sub-form">
+                            <input type="text" name="" id="" placeholder="Enter your email">
+                            <input type="button" class="btn-submit" value="Subcribe now">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+
+
+
+
+
+
+
+
+
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper", {
+            // Optional parameters
+            direction: "horizontal",
+            // effect: "fade",
+            loop: true,
+            autoplay: {
+                dely: '2000'
+            },
+
+            // If we need pagination
+            pagination: {
+                el: ".swiper-pagination",
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                size: '1rem'
+            },
+
+        });
+    </script>
 @endsection

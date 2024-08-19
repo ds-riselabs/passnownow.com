@@ -11,11 +11,13 @@
     --color-secondary-dark: #071830;
     --color-secondary-light: #35527A;
     --color-accent: #FFD700;
+    --color-primary-accent: #5800E5;
     --color-secondary-accent: #0D5F55;
+    --color-tertiary-accent: #5F0D2F;
     --color-text-white: #ffffff;
     --color-ash: #AEBACA;
     --color-text-dark: #000000;
-/* 
+    /* 
     #AEBACA */
 
     --box-shadow: 0 2px 8px -4px #000000;
@@ -73,7 +75,7 @@ ul {
 }
 
 .navbar .navbar-nav .nav-item:hover {
-border-bottom: 2px solid var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
 }
 
 .navbar .navbar-brand img {
@@ -120,11 +122,13 @@ border-bottom: 2px solid var(--color-primary);
 }
 
 
-.container__hero .row{
+
+.container__hero .row {
     background-color: var(--color-secondary-accent);
     color: var(--color-text-white);
-    padding: 1.125rem;
-    padding-bottom: 0;
+    /* padding: 1.125rem; */
+    /* padding-bottom: 0; */
+    margin: 0;
 }
 
 .container__hero .hero__content {
@@ -248,34 +252,37 @@ border-bottom: 2px solid var(--color-primary);
 .container__guide .row .heading {
     text-align: center;
 }
-.container__guide .row .heading h3{
+
+.container__guide .row .heading h3 {
     color: var(--color-primary);
     font-weight: 700;
 
 }
-.container__guide .row .heading p{
+
+.container__guide .row .heading p {
     color: var(--color-primary-blue);
     font-family: var(--font-family-body);
     font-weight: 500;
-    
+
 }
 
 
 .container__guide .guides {
-    /* padding: 0.5rem; */
+    padding: 0.5rem;
 }
 
 .container__guide .guides .guide {
     border: 1px solid var(--color-ash);
     margin-bottom: 1rem;
     border-radius: 4px;
-    padding: 0.4rem;
+    padding: 0.8rem;
     line-height: 1.5rem;
 }
 
 .container__guide .guides .guide h3 {
     font-weight: 700;
 }
+
 .container__guide .guides .guide p {
     font-size: 1rem;
     color: var(--color-primary-blue);
@@ -285,6 +292,455 @@ border-bottom: 2px solid var(--color-primary);
 .container__guide .formular-image {
     display: none;
 }
+
+
+/* HERO DOWN CSS  */
+
+.container__hero-down .row {
+    background-color: var(--color-primary-accent);
+    color: var(--color-text-white);
+    /* padding: 1.125rem; */
+    /* padding-bottom: 0; */
+    margin: 0;
+}
+
+.container__hero-down .hero-down__content {
+    padding: 1rem;
+    padding-bottom: 2.2rem;
+}
+
+.container__hero-down .total-enrol {
+    color: var(--color-accent);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container__hero-down .hero-down__content h1 {
+    font-family: var(--font-family-heading);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.container__hero-down .hero-down__info {
+    font-size: 1.125rem;
+}
+
+.container__hero-down .row .hero-down-image {
+    background-image: url('/assets/images/maths-pattern.svg');
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    /* align-items: baseline; */
+
+}
+
+.container__hero-down .row .hero-down-image img {
+    width: 100%;
+    /* align-self: baseline; */
+}
+
+
+
+/* STUDENT (STD) REVIEW CSS  */
+
+.container__std_review {
+    padding: 1rem;
+}
+
+
+.container__std_review .quote-down-image {
+    width: 1.2rem;
+}
+
+.container__std_review .heading h6 {
+    font-family: var(--font-family-heading);
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+
+}
+
+
+
+.container__std_review .swiper {}
+
+.container__std_review .swiper .review {
+    padding: 2rem 3rem;
+}
+
+.container__std_review .swiper .review p {
+    color: var(--color-primary);
+}
+
+.container__std_review .reviews .swiper .swiper-button-prev,
+.container__std_review .reviews .swiper .swiper-button-next {
+    background-color: #000000bd;
+    color: var(--color-text-white);
+    border-radius: 50%;
+    padding: 0rem 1.2rem;
+}
+
+.container__std_review .reviews .swiper .swiper-button-prev:after,
+.container__std_review .reviews .swiper .swiper-button-next:after {
+    font-size: 0.8rem;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--color-text-dark);
+}
+
+
+.container__std_review .reviews .rating p {
+    color: var(--color-primary);
+}
+
+.container__std_review .reviews .title {
+    font-family: var(--font-family-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.65rem;
+    color: var(--color-primary);
+}
+
+.container__std_review .reviews .fa-star {
+    color: var(--color-accent);
+    font-size: 1.25rem;
+}
+
+.container__std_review .frames img {
+    width: 60%;
+}
+
+.container__std_review .frames {
+    text-align: center;
+    /* padding: 3rem; */
+}
+
+.container__std_review .mobile {
+    padding: 1rem;
+}
+
+.container__std_review .mobile img {
+    width: 100%;
+}
+
+
+
+
+
+
+/* PERFORMANCE CSS  */
+.container__performance {
+    background-color: var(--color-secondary-accent);
+    background-size: cover;
+}
+
+.container__performance .bg-image {
+    background-image: url('/assets/images/maths-pattern.svg');
+    color: var(--color-text-white);
+    margin: 0;
+    width: inherit;
+    padding: 1rem;
+}
+
+.container__performance .performance__content {
+    padding: 1rem;
+    padding-bottom: 2.2rem;
+}
+
+.container__performance .total-enrol {
+    color: var(--color-accent);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.container__performance .performance__content h1 {
+    font-family: var(--font-family-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.container__performance .barchart {
+    text-align: center;
+}
+
+
+.container__performance .performance__info {
+    /* font-size: 1.125rem; */
+}
+
+.container__performance .performance__info .lists {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* .container__performance .performance__info .lists .list_sn {
+    background-color: var(--color-text-white);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    color: var(--color-text-dark);
+    width: 2rem;
+    height: 2rem;
+} */
+
+
+
+
+
+.container__performance .quote-down-image {
+    width: 1.2rem;
+}
+
+.container__performance .heading h6 {
+    font-family: var(--font-family-heading);
+    color: var(--color-text-white);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+
+}
+
+
+
+.container__performance .swiper {}
+
+.container__performance .swiper .review {
+    padding: 2rem 3rem;
+}
+
+.container__performance .swiper .review p {
+    color: var(--color-text-white);
+}
+
+.container__performance .reviews .swiper .swiper-button-prev,
+.container__performance .reviews .swiper .swiper-button-next {
+    background-color: #ffffff;
+    color: var(--color-text-white);
+    border-radius: 50%;
+    padding: 0rem 1.2rem;
+}
+
+.container__performance .reviews .swiper .swiper-button-prev:after,
+.container__performance .reviews .swiper .swiper-button-next:after {
+    font-size: 0.8rem;
+    color: var(--color-primary-dark);
+    font-weight: 700;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--color-text-white);
+}
+
+
+.container__performance .reviews .rating p {
+    color: var(--color-text-white);
+}
+
+.container__performance .reviews .title {
+    font-family: var(--font-family-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.65rem;
+    color: var(--color-text-white);
+}
+
+.container__performance .reviews .fa-star {
+    color: var(--color-accent);
+    font-size: 1.25rem;
+}
+
+
+
+
+/* CLASS NOTES  */
+
+.container__notes {
+    padding: 1rem;
+    background-color: var(--color-tertiary-accent);
+    color: var(--color-text-white);
+}
+
+
+.container__notes h6 {
+    font-family: var(--font-family-heading);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.168rem;
+    text-align: center;
+    margin: 2rem 0;
+    /* margin-bottom: 2rem; */
+}
+
+.container__notes .image-wrapper {
+    border-radius: 1rem;
+    background-color: var(--color-text-white);
+    overflow: hidden;
+}
+
+.container__notes .note_info h5 {
+    font-family: var(--font-family-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+ 
+}
+
+.container__notes .note_info p {
+    font-family: var(--font-family-body);
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 30px;
+
+}
+
+.note_btn {
+    padding: 1rem 1.25rem;
+    background: transparent;
+    border: 2px solid var(--color-text-white);
+    border-radius: 0.25rem;
+    color: var(--color-text-white);
+}
+
+.container__notes .past__questions {
+    border-top: 1px solid var(--color-text-white);
+    padding-top: 2rem;
+}
+
+
+
+
+/* PARENT (PARENT) REVIEW CSS  */
+
+.container__parent_review {
+    padding: 1rem;
+}
+
+
+.container__parent_review .quote-down-image {
+    width: 1.2rem;
+}
+
+.container__parent_review .heading h6 {
+    font-family: var(--font-family-heading);
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+}
+
+.container__parent_review .swiper {}
+
+.container__parent_review .swiper .review {
+    padding: 2rem 3rem;
+}
+
+.container__parent_review .swiper .review p {
+    color: var(--color-primary);
+}
+
+.container__parent_review .reviews .swiper .swiper-button-prev,
+.container__parent_review .reviews .swiper .swiper-button-next {
+    background-color: #000000bd;
+    color: var(--color-text-white);
+    border-radius: 50%;
+    padding: 0rem 1.2rem;
+}
+
+.container__parent_review .reviews .swiper .swiper-button-prev:after,
+.container__parent_review .reviews .swiper .swiper-button-next:after {
+    font-size: 0.8rem;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--color-text-dark);
+}
+
+.container__parent_review .reviews .rating p {
+    color: var(--color-primary);
+}
+
+.container__parent_review .reviews .title {
+    font-family: var(--font-family-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.65rem;
+    color: var(--color-primary);
+}
+
+.container__parent_review .reviews .fa-star {
+    color: var(--color-accent);
+    font-size: 1.25rem;
+}
+
+.container__parent_review form {
+    background-color: var(--color-primary-accent);
+    padding: 1rem;
+}
+
+.sub-form {
+    display: flex;
+    /* width: 80%; */
+    border: 1px solid var(--color-text-dark);
+    padding: 0rem 1rem;
+    border-radius: 0.25rem;
+    
+}
+.sub-form input{
+    outline: none;
+}
+.sub-form input:focus{
+    outline: none;
+}
+
+.btn-submit{
+    padding: 0.8rem 0.4rem;
+    background-color: var(--color-primary);
+    border-radius: 0.25rem;
+    color: var(--color-text-white);
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -365,7 +821,7 @@ border-bottom: 2px solid var(--color-primary);
 .container__footer .copy__right {
     text-align: center;
     color: var(--color-text-white);
-    padding: 0 4rem;
+    /* padding: 0 4rem; */
     padding-top: 1rem;
 }
 
@@ -463,8 +919,8 @@ border-bottom: 2px solid var(--color-primary);
         padding: 1rem 2rem;
     }
 
-    .container__hero .row{
-       border-radius: 1.5rem;
+    .container__hero .row {
+        border-radius: 1.5rem;
     }
 
     .container__review .reviews {
@@ -474,6 +930,7 @@ border-bottom: 2px solid var(--color-primary);
     .container__review .reviews .row {
         padding: 3rem 5rem;
     }
+
     .container__review .reviews .review {
         width: 50%;
     }
@@ -508,9 +965,10 @@ border-bottom: 2px solid var(--color-primary);
     .container__guide .guides {
         /* margin: 0 auto; */
     }
+
     .container__guide .guides .guide {
-      margin: 0.2rem;
-      width: 32%;
+        margin: 0.2rem;
+        width: 32%;
     }
 
     .container__guide .formular-image {
@@ -561,7 +1019,7 @@ border-bottom: 2px solid var(--color-primary);
 
     }
 
-    
+
     .container__review .reviews .review {
         gap: 0.8rem;
         width: 25%;
@@ -572,7 +1030,7 @@ border-bottom: 2px solid var(--color-primary);
     .container__review .reviews .review h3 {
         font-size: 2rem;
     }
-    
+
     .container__review .reviews .review p {
         font-size: 1rem;
         line-height: 1.5rem;
