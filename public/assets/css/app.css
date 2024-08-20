@@ -74,6 +74,7 @@ ul {
     padding: 1rem 1.125rem;
 }
 
+
 .navbar .navbar-nav .nav-item:hover {
     border-bottom: 2px solid var(--color-primary);
 }
@@ -91,6 +92,10 @@ ul {
 .navbar .navbar-toggler .navbar-toggler-icon {
     color: var(--color-text-dark) !important;
     font-size: 1.5rem;
+}
+
+.navbar .active {
+    font-weight: 700;
 }
 
 .nav-btn {
@@ -157,7 +162,7 @@ ul {
     background-size: cover;
     overflow: hidden;
     display: flex;
-    /* align-items: baseline; */
+    
 
 }
 
@@ -184,6 +189,17 @@ ul {
     background-color: transparent;
     color: var(--color-text-white);
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -295,7 +311,6 @@ ul {
 
 
 /* HERO DOWN CSS  */
-
 .container__hero-down .row {
     background-color: var(--color-primary-accent);
     color: var(--color-text-white);
@@ -342,11 +357,9 @@ ul {
 
 
 /* STUDENT (STD) REVIEW CSS  */
-
 .container__std_review {
     padding: 1rem;
 }
-
 
 .container__std_review .quote-down-image {
     width: 1.2rem;
@@ -359,7 +372,6 @@ ul {
     font-weight: 600;
     line-height: 22px;
     text-align: center;
-
 }
 
 
@@ -428,9 +440,6 @@ ul {
 
 
 
-
-
-
 /* PERFORMANCE CSS  */
 .container__performance {
     background-color: var(--color-secondary-accent);
@@ -479,15 +488,6 @@ ul {
     align-items: center;
 }
 
-/* .container__performance .performance__info .lists .list_sn {
-    background-color: var(--color-text-white);
-    text-align: center;
-    padding: 1rem;
-    border-radius: 0.2rem;
-    color: var(--color-text-dark);
-    width: 2rem;
-    height: 2rem;
-} */
 
 
 
@@ -534,6 +534,8 @@ ul {
     font-weight: 700;
 }
 
+
+.container__performance
 .swiper-pagination-bullet-active {
     background-color: var(--color-text-white);
 }
@@ -589,7 +591,7 @@ ul {
     font-size: 1.5rem;
     font-weight: 700;
     margin: 1rem 0;
- 
+
 }
 
 .container__notes .note_info p {
@@ -681,101 +683,51 @@ ul {
 }
 
 .container__parent_review form {
-    background-color: var(--color-primary-accent);
-    padding: 1rem;
+    /* background-color: var(--color-primary-accent); */
+    background-image: url('/assets/images/bg-tetiary_accent.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 1.5rem;
+    color: var(--color-text-white);
+    border-radius: 1.875rem;
 }
 
-.sub-form {
+.form form p {
+    font-family: var(--font-family-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: center;
+
+}
+
+.form form .sub-form {
     display: flex;
-    /* width: 80%; */
+    width: 100%;
     border: 1px solid var(--color-text-dark);
-    padding: 0rem 1rem;
     border-radius: 0.25rem;
-    
 }
-.sub-form input{
+
+.sub-form input {
     outline: none;
+    width: 95%;
+    border-radius: 0.25rem 0 0 0.25rem;
+    padding-left: 0.5rem;
 }
-.sub-form input:focus{
+
+.sub-form input:focus {
     outline: none;
 }
 
-.btn-submit{
+.btn-submit {
     padding: 0.8rem 0.4rem;
     background-color: var(--color-primary);
     border-radius: 0.25rem;
     color: var(--color-text-white);
     font-size: 0.8rem;
+    /* width: 20%; */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* FOOTER CSS  */
 
@@ -876,7 +828,15 @@ ul {
     }
 }
 
+
+
+
+
+
+
 @media (min-width: 425px) {
+
+
     .container__review .reviews .review {
         width: 70%;
     }
@@ -897,21 +857,10 @@ ul {
         font-size: 0.8rem;
     }
 
-    /* .container__hero .row .hero-image {
-        position: relative;
-
-    }
-
-    .container__hero .row .hero-image img {
-        position: absolute;
-        top: 3.75rem;
-        width: 80%;
-    } */
-
 }
 
 
-
+/* TABLET SIZE  */
 
 @media (min-width: 768px) {
 
@@ -921,6 +870,10 @@ ul {
 
     .container__hero .row {
         border-radius: 1.5rem;
+    }
+
+    .container__review .heading {
+        margin: auto;
     }
 
     .container__review .reviews {
@@ -962,12 +915,16 @@ ul {
         font-size: 0.8rem;
     }
 
+
+    .container__guide {}
+
     .container__guide .guides {
-        /* margin: 0 auto; */
+        margin: 0 auto;
+        padding: 0;
     }
 
     .container__guide .guides .guide {
-        margin: 0.2rem;
+        margin: 0.3rem auto;
         width: 32%;
     }
 
@@ -976,8 +933,106 @@ ul {
         width: 80%;
         margin: auto;
     }
+
+    .container__hero-down .hero-down-image,
+    .container__hero-down .hero-down__content {
+        padding: 2rem;
+    }
+
+
+    /* STUDENT (STD) REVIEW CSS  */
+
+    .container__std_review .quote-down-image {
+        width: 2.2rem;
+    }
+
+    .container__std_review .heading h6 {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        font-weight: 700;
+    }
+
+    .swiper-slide p{
+        padding: 0.5rem 3rem;
+    }
+
+    .container__review .reviews .row {
+        padding: 1rem;
+        padding-top: 1.5rem;
+
+    }
+
+    .container__review .reviews .review {
+        gap: 0.8rem;
+        width: 25%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .container__review .reviews .review h3 {
+        font-size: 2rem;
+    }
+
+    .container__review .reviews .review p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .container__std_review .frame.mobile {
+        padding: 0;
+    }
+
+
+    /* PERFORMANCE CSS  */
+
+.container__performance .barchart img {
+    width: 70%;
 }
 
+.container__performance .quote-down-image {
+    width: 2.2rem;
+}
+
+.container__performance .heading h6 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+}
+
+.container__notes h6 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.container__notes .image-wrapper img {
+    width: 99%;
+}
+
+.container__notes .note_info h5 {
+    font-size: 1.4rem;
+  
+}
+
+.container__notes .note_info p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+}
+    
+
+.container__parent_review 
+ .quote-down-image {
+    width: 2.2rem;
+}
+
+.container__parent_review .heading h6 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+}
+
+
+}
 
 
 
@@ -986,6 +1041,23 @@ ul {
         width: 8.313rem;
         padding: 0.75rem 1.5rem;
     }
+
+    .top__section .fa-star {
+        font-size: 1rem;
+    }
+    
+    .top__section span {
+        font-size: 1rem;
+    }
+
+    .navbar .navbar-nav .nav-item {
+        margin: 0 0.5rem;
+     }
+
+    .container__hero {
+        padding: 1rem 4rem;
+    }
+
 
     .container__hero .total-enrol {
         font-size: 1.5rem;
@@ -1007,33 +1079,53 @@ ul {
         margin-bottom: 2rem;
     }
 
-    /* .container__hero .row .hero-image img {
-        top: 1rem;
-        width: 80%;
-        left: 5rem
-    } */
+    .hero-btn {
+        gap: 2rem;
+    }
 
-    .container__review .reviews .row {
+    .hero-btn .btn-style {
+        font-size: 1.4rem;
+        width: 14rem;
         padding: 1rem;
-        padding-top: 1.5rem;
-
+        border-radius: 0.6rem;
     }
 
+    .hero-btn .btn-style-secondary {
+        border: 2px solid var(--color-text-white);
+    }
 
-    .container__review .reviews .review {
-        gap: 0.8rem;
-        width: 25%;
+    .container__hero .row .hero-image {
         justify-content: center;
-        margin: 0;
     }
 
-    .container__review .reviews .review h3 {
+    .container__hero .row .hero-image img{
+        width: 90%;
+    }
+
+    .container__review .heading h3 {
         font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+    
     }
 
-    .container__review .reviews .review p {
-        font-size: 1rem;
-        line-height: 1.5rem;
+    
+    /* CONTAINER GUIDE  */
+    .container__guide {
+        padding: 2rem 6rem;
+    }
+
+    .container__guide .guides {
+        margin-top: 2rem;
+    }
+
+    .container__guide .row:first-child {
+        width: 90%;
+        margin: auto;
+    }
+
+    .container__guide .formular-image {
+        width: 70%;
     }
 
 
@@ -1064,20 +1156,7 @@ ul {
         line-height: 2.5rem;
     }
 
-    .hero-btn {
-        gap: 2rem;
-    }
-
-    .hero-btn .btn-style {
-        font-size: 1.4rem;
-        width: 16rem;
-        padding: 1.6rem;
-        border-radius: 0.6rem;
-    }
-
-    .hero-btn .btn-style-secondary {
-        border: 2px solid var(--color-text-white);
-    }
+    
 
     /* .container__hero .row .hero-image img {
         top: 2.6rem;

@@ -28,9 +28,11 @@
 
 <body class="">
     <div class="container-fluid wrapper">
-        <section class="container-fluid top__section"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>Rated 4.8/5 by parents &
-                students</span></section>
+        <section class="container-fluid top__section">
+            <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> 
+            <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+            &nbsp; <span>Rated 4.8/5 by parents & students</span>
+        </section>
         <header class="container-fluid  container__header grid grid-cols-2 items-center  py-10">
             <nav class="container navbar navbar-expand-lg"><a class="navbar-brand" href="#"><img
                         src="{{ asset('assets/images/logo.png') }}" alt=""></a><button class="navbar-toggler"
@@ -44,8 +46,8 @@
                         <li class="nav-item"><a class="nav-link" href="{{ url('about') }}">About us</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url('subject') }}">Subject</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url('class') }}">Class</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url('edresources') }}">Educational
-                                Resources</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('edresources') }}">Educational Resources</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('paymentplan') }}">Pricing plan</a></li>
                         {{-- <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
                                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -110,7 +112,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="d-flex flex-column flex-sm-row justify-content-between border-top copy__right">
+                <div class="container d-flex flex-column flex-sm-row justify-content-between border-top copy__right">
                     <p>Copyright &copy;
                         2024 Passnownow </p>
                     <p><a href="#">Terms and Conditions </a><a href="#">Privacy Policy</a></p>

@@ -2,7 +2,7 @@
 
 @section('content')
     <main class="container-fluid">
-        <section class="container-fluid container__top">
+        <section class="container-fluid container__top pt-3">
             <div class="row">
                 <div class="col-3 col-md-2">
                     <img src="{{ asset('assets/images/Chemistry.png') }}" alt="Chemistry">
@@ -50,10 +50,10 @@
         </Section>
         <section class="container-fluid container__review">
             <div class="row">
-                <div class="col-12 heading">
+                <div class="col-12 col-md-8 col-lg-6 heading">
                     <h3>Learn from the largest education resources for students in Nigeria</h3>
                 </div>
-                <div class="col-12 reviews">
+                <div class="col-12 col-md-9 px-lg-4  mx-auto reviews">
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-3 review">
                             <h3>5M+</h3>
@@ -74,60 +74,57 @@
                     </div>
                 </div>
             </div>
-
         </section>
         <section class="container-fluid container__guide">
-            <div class="row">
-                <div class="col-12 col-md-2">
+            <div class="row ">
+                <div class="col-12 col-md-3 text-center">
                     <img src="{{ asset('assets/images/formular.png') }}" alt="" class="formular-image">
                 </div>
-                <div class="col-12 col-md-8 heading">
+                <div class="col-12 col-md-6 heading">
                     <h3>How Passnownow Works</h3>
                     <p>
-                        Passnownow is Nigeria’s foremost online learning platform that provides students with access to
-                        high-quality educational materials tailored to their specific needs which are affordable and easily
-                        accessible.
+                        Passnownow is Nigeria’s foremost online learning platform that provides students with access to high-quality educational materials tailored to their specific needs which are affordable and easily accessible.
                     </p>
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-12 col-md-3 text-center">
                     <img src="{{ asset('assets/images/trig.png') }}" alt="" class="formular-image">
                 </div>
             </div>
             <div class="row guides">
-                <div class="col-12 col-md-4 guide">
+                <div class="col-12 col-md-4 mb-lg-3 guide">
                     <img src="{{ asset('assets/images/icon-user.png') }}" alt="Icon" class="mb-3" />
                     <h3>Create free account</h3>
                     <p>The first step is to create a free account with Passnownow by completing the user registration form.
                     </p>
                 </div>
-                <div class="col-12 col-md-4 guide">
+                <div class="col-12 col-md-4 mb-lg-3 guide">
                     <img src="{{ asset('assets/images/icon-card.png') }}" alt="Icon" class="mb-3" />
                     <h3>Subscribe to a plan</h3>
                     <p>Choose from any of our packages to gain access to unlimited Class Notes and Exam Past Questions.</p>
                 </div>
-                <div class="col-12 col-md-4 guide">
+                <div class="col-12 col-md-4 mb-lg-3 guide">
                     <img src="{{ asset('assets/images/icon-book.png') }}" alt="Icon" class="mb-3" />
                     <h3>Access all subjects</h3>
                     <p>That’s it, you now have access to unlimited Class Notes and Exam Past Questions.</p>
                 </div>
-                <div class="col-12 col-md-4 guide">
+                <div class="col-12 col-md-4 mb-lg-3 guide">
                     <img src="{{ asset('assets/images/icon-message.png') }}" alt="Icon" class="mb-3" />
                     <h3>Seek career advice</h3>
                     <p>Seek advice on your career path from our experienced career counselor</p>
                 </div>
-                <div class="col-12 col-md-4 guide">
+                <div class="col-12 col-md-4 mb-lg-3 guide">
                     <img src="{{ asset('assets/images/icon-shield.png') }}" alt="Icon" class="mb-3" />
                     <h3>Access to past questions</h3>
                     <p>Passnownow gives you access to Thousands of exam past questions from JSCE, JSSCE TO JAMB</p>
                 </div>
-                <div class="col-12 col-md-4 guide">
+                <div class="col-12 col-md-4 mb-lg-3 guide">
                     <img src="{{ asset('assets/images/icon-medal.png') }}" alt="Icon" class="mb-3" />
                     <h3>Improve academic performance</h3>
                     <p>Learn with Passnownow to improve academic performance</p>
                 </div>
             </div>
         </section>
-        <Section class="container-fluid container__hero-down">
+        <Section class="container-fluid container__hero-down mb-3">
             <div class="row">
                 <div class="col-12 col-md-6 hero-down__content">
                     <p class="total-enrol">We do home tutoring the right way.</p>
@@ -147,10 +144,10 @@
 
         <section class="container-fluid container__std_review">
             <div class="row">
-                <div class="col-12 col-md-2">
+                <div class="col-12 col-md-2 text-end">
                     <img src="{{ asset('assets/images/quote_down.png') }}" alt="" class="quote-down-image">
                 </div>
-                <div class="col-12 col-md-8 heading px-4">
+                <div class="col-12 col-md-8 heading px-4 px-md-2">
                     <h6>Rave Reviews from our amazing students! 😍</h6>
                 </div>
                 <div class="col-12 col-md-2">
@@ -251,10 +248,12 @@
         <Section class="container-fluid container__performance">
             <div class="bg-image">
                 <div class="row">
-                    <div class="col-12 col-md-6 performance__content">
+                    <div class="col-12 col-md-2"></div>
+                    <div class="col-12 col-md-8 performance__content">
                         <p class="total-enrol">We deliver the best results, periods.</p>
                         <h1>Passnownow students perform 3x better in class and school exams</h1>
                     </div>
+                    <div class="col-12 col-md-2"></div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-6 barchart mt-4">
@@ -266,13 +265,25 @@
                             <p class="list">We work with you to ensure your kids excel at every stage of their learning
                                 journey</p>
                         </div>
+                        <div class="lists">
+                            <p class="list_sn">2</p>
+                            <p class="list">Whether it's building early foundations, helping with homework, getting better grades, mastering their subjects or passing pivotal exams.</p>
+                        </div>
+                        <div class="lists">
+                            <p class="list_sn">3</p>
+                            <p class="list">Whether it's building early foundations, helping with homework, getting better grades, mastering their subjects or passing pivotal exams.</p>
+                        </div>
+                        <div class="lists">
+                            <p class="list_sn">4</p>
+                            <p class="list">Whether it's building early foundations, helping with homework, getting better grades, mastering their subjects or passing pivotal exams.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-md-2">
+                <div class="row mt-5">
+                    <div class="col-12 col-md-2 text-end">
                         <img src="{{ asset('assets/images/quote_tr.png') }}" alt="" class="quote-down-image">
                     </div>
-                    <div class="col-12 col-md-8 heading px-4">
+                    <div class="col-12 col-md-8 heading px-4 px-md-2">
                         <h6>Rave Reviews from our amazing Tutors!! 😍</h6>
                     </div>
                     <div class="col-12 col-md-2">
@@ -479,11 +490,11 @@
             </div>
         </section>
         <section class="container-fluid container__parent_review">
-            <div class="row">
-                <div class="col-12 col-md-2">
+            <div class="row my-4">
+                <div class="col-12 col-md-2 text-end">
                     <img src="{{ asset('assets/images/quote_down.png') }}" alt="" class="quote-down-image">
                 </div>
-                <div class="col-12 col-md-8 heading px-4">
+                <div class="col-12 col-md-8 heading px-4 px-md-2">
                     <h6>Rave Reviews from our amazing parents! 😍</h6>
                 </div>
                 <div class="col-12 col-md-2">
@@ -570,14 +581,20 @@
                 </div>
             </div>
             <div class="row form">
-                <div class="col-12">
+                <div class="col-12 col-md-2"></div>
+                <div class="col-12 col-md-8">
                     <form action="">
+                        <p>
+                            Sign up for our Newsletter to join our STEMGEES Club, enter into competitions and access opportunities.
+                        </p>
                         <div class="sub-form">
                             <input type="text" name="" id="" placeholder="Enter your email">
                             <input type="button" class="btn-submit" value="Subcribe now">
                         </div>
                     </form>
                 </div>
+                <div class="col-12 col-md-2"></div>
+
             </div>
         </section>
     </main>
