@@ -827,6 +827,11 @@ ul {
     display: none;
 }
 
+.container_search .search_col {
+   width: 70%;
+   background-color: #0D2F5F;
+}
+
 
 
 

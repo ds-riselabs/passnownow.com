@@ -9,13 +9,15 @@
         </div>
     </Section>
     <section class="container-fluid container_search">
-        <form action="">
-            <div class="form-control">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" value="" placeholder="Search">
-                <input type="button" value="Search">
+        <div class="row">
+            <div class="col-12 search_col">
+                <form action="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" value="" placeholder="Search">
+                        <input type="button" value="Search">
+                </form>
             </div>
-        </form>
+        </div>
     </section>
 
 
