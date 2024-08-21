@@ -6,6 +6,7 @@
     --color-primary: #0D2F5F;
     --color-primary-dark: #071830;
     --color-primary-light: #35527A;
+    
     --color-primary-blue: #1A69AF;
     --color-secondary: #0D2F5F;
     --color-secondary-dark: #071830;
@@ -15,6 +16,7 @@
     --color-secondary-accent: #0D5F55;
     --color-tertiary-accent: #5F0D2F;
     --color-text-white: #ffffff;
+    --color-bg-ash: #5E7494;
     --color-ash: #AEBACA;
     --color-text-dark: #000000;
     /* 
@@ -106,7 +108,7 @@ ul {
 
 .btn-style {
     width: 8rem;
-    padding: 0.6rem 1.5rem;
+    padding: 0.3rem 1.2rem;
     border-radius: 4px;
     border: 1px solid var(--color-primary);
 }
@@ -131,8 +133,6 @@ ul {
 .container__hero .row {
     background-color: var(--color-secondary-accent);
     color: var(--color-text-white);
-    /* padding: 1.125rem; */
-    /* padding-bottom: 0; */
     margin: 0;
 }
 
@@ -162,13 +162,10 @@ ul {
     background-size: cover;
     overflow: hidden;
     display: flex;
-    
-
 }
 
 .container__hero .row .hero-image img {
     width: 100%;
-    /* align-self: baseline; */
 }
 
 
@@ -176,7 +173,6 @@ ul {
     display: flex;
     gap: 1rem;
 }
-
 
 .hero-btn .btn-style {
     background-color: var(--color-text-white);
@@ -219,7 +215,6 @@ ul {
     font-weight: 600;
     line-height: 22px;
     text-align: center;
-
 }
 
 .container__review .reviews {
@@ -233,7 +228,6 @@ ul {
     background-size: cover;
     border-radius: 0.5rem;
     padding: 2rem 1rem;
-
 }
 
 .container__review .reviews .review {
@@ -314,8 +308,6 @@ ul {
 .container__hero-down .row {
     background-color: var(--color-primary-accent);
     color: var(--color-text-white);
-    /* padding: 1.125rem; */
-    /* padding-bottom: 0; */
     margin: 0;
 }
 
@@ -375,8 +367,6 @@ ul {
 }
 
 
-
-.container__std_review .swiper {}
 
 .container__std_review .swiper .review {
     padding: 2rem 3rem;
@@ -535,8 +525,7 @@ ul {
 }
 
 
-.container__performance
-.swiper-pagination-bullet-active {
+.container__performance .swiper-pagination-bullet-active {
     background-color: var(--color-text-white);
 }
 
@@ -619,7 +608,6 @@ ul {
 
 
 /* PARENT (PARENT) REVIEW CSS  */
-
 .container__parent_review {
     padding: 1rem;
 }
@@ -682,8 +670,14 @@ ul {
     font-size: 1.25rem;
 }
 
-.container__parent_review form {
-    /* background-color: var(--color-primary-accent); */
+
+
+/* FORM SECTION CSS */
+.container__subscribe-form {
+    padding: 1rem;
+}
+
+.container__subscribe-form form {
     background-image: url('/assets/images/bg-tetiary_accent.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -693,34 +687,33 @@ ul {
     border-radius: 1.875rem;
 }
 
-.form form p {
+.container__subscribe-form .form form p {
     font-family: var(--font-family-heading);
     font-size: 1rem;
     font-weight: 600;
     line-height: 1.5rem;
     text-align: center;
-
 }
 
-.form form .sub-form {
+.container__subscribe-form .form form .sub-form {
     display: flex;
     width: 100%;
     border: 1px solid var(--color-text-dark);
     border-radius: 0.25rem;
 }
 
-.sub-form input {
+.container__subscribe-form form .sub-form input {
     outline: none;
     width: 95%;
     border-radius: 0.25rem 0 0 0.25rem;
     padding-left: 0.5rem;
 }
 
-.sub-form input:focus {
+.container__subscribe-form .sub-form input:focus {
     outline: none;
 }
 
-.btn-submit {
+.container__subscribe-form .btn-submit {
     padding: 0.8rem 0.4rem;
     background-color: var(--color-primary);
     border-radius: 0.25rem;
@@ -729,8 +722,13 @@ ul {
     /* width: 20%; */
 }
 
-/* FOOTER CSS  */
+.container__subscribe-form .btn-submit:hover {
+    background-color: var(--color-primary-accent);
+}
 
+
+
+/* FOOTER CSS  */
 .container__footer {
     background-color: var(--color-primary);
     color: var(--color-text-white);
@@ -801,366 +799,41 @@ ul {
 
 
 
+/* SUBJECT PAGE CSS  */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* RESPONSIVENESS  */
-
-@media (min-width: 375px) {
-    .container__review .reviews .review {
-        width: 80%;
-    }
+.container__banner .row {
+    background-color: var(--color-bg-ash);
+    color: var(--color-text-white);
+    margin: 0;
 }
 
 
-
-
-
-
-
-@media (min-width: 425px) {
-
-
-    .container__review .reviews .review {
-        width: 70%;
-    }
-
-    .navbar .navbar-brand img {
-        width: 6rem;
-    }
-
-
-    .container__footer .title {
-        font-size: 0.8rem;
-        margin-top: 0rem;
-        font-weight: 700;
-    }
-
-    .container__footer ul li,
-    .container__footer ul li a {
-        font-size: 0.8rem;
-    }
-
-}
-
-
-/* TABLET SIZE  */
-
-@media (min-width: 768px) {
-
-    .container__hero {
-        padding: 1rem 2rem;
-    }
-
-    .container__hero .row {
-        border-radius: 1.5rem;
-    }
-
-    .container__review .heading {
-        margin: auto;
-    }
-
-    .container__review .reviews {
-        padding: 1rem 2rem;
-    }
-
-    .container__review .reviews .row {
-        padding: 3rem 5rem;
-    }
-
-    .container__review .reviews .review {
-        width: 50%;
-    }
-
-    .container__top {
-        display: block;
-    }
-
-    .container__top .row {
-        display: flex;
-        padding-top: 1rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        justify-content: center;
-        margin: 0;
-    }
-
-
-    .container__top .row .col-md-2 {
-        text-align: center;
-    }
-
-
-    .container__top img {
-        width: 3rem;
-    }
-
-    .container__top p {
-        font-size: 0.8rem;
-    }
-
-
-    .container__guide {}
-
-    .container__guide .guides {
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    .container__guide .guides .guide {
-        margin: 0.3rem auto;
-        width: 32%;
-    }
-
-    .container__guide .formular-image {
-        display: block;
-        width: 80%;
-        margin: auto;
-    }
-
-    .container__hero-down .hero-down-image,
-    .container__hero-down .hero-down__content {
-        padding: 2rem;
-    }
-
-
-    /* STUDENT (STD) REVIEW CSS  */
-
-    .container__std_review .quote-down-image {
-        width: 2.2rem;
-    }
-
-    .container__std_review .heading h6 {
-        font-size: 1.6rem;
-        line-height: 1.8rem;
-        font-weight: 700;
-    }
-
-    .swiper-slide p{
-        padding: 0.5rem 3rem;
-    }
-
-    .container__review .reviews .row {
-        padding: 1rem;
-        padding-top: 1.5rem;
-
-    }
-
-    .container__review .reviews .review {
-        gap: 0.8rem;
-        width: 25%;
-        justify-content: center;
-        margin: 0;
-    }
-
-    .container__review .reviews .review h3 {
-        font-size: 2rem;
-    }
-
-    .container__review .reviews .review p {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-
-    .container__std_review .frame.mobile {
-        padding: 0;
-    }
-
-
-    /* PERFORMANCE CSS  */
-
-.container__performance .barchart img {
-    width: 70%;
-}
-
-.container__performance .quote-down-image {
-    width: 2.2rem;
-}
-
-.container__performance .heading h6 {
+.container__banner h1 {
+    font-family: var(--font-family-heading);
     font-size: 1.6rem;
-    line-height: 1.8rem;
     font-weight: 700;
+    text-align: center;
 }
 
-.container__notes h6 {
-    font-size: 1.5rem;
-    font-weight: 700;
+.container_search .form-control {
+    background-color: var(--color-ash);
 }
 
-.container__notes .image-wrapper img {
-    width: 99%;
+.container_search .form-control input[type ='text']{
+    background-color: var(--color-ash);
 }
 
-.container__notes .note_info h5 {
-    font-size: 1.4rem;
-  
-}
-
-.container__notes .note_info p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-
-}
-    
-
-.container__parent_review 
- .quote-down-image {
-    width: 2.2rem;
-}
-
-.container__parent_review .heading h6 {
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-    font-weight: 700;
-}
-
-
-}
-
-
-
-@media (min-width: 1024px) {
-    .btn-style {
-        width: 8.313rem;
-        padding: 0.75rem 1.5rem;
-    }
-
-    .top__section .fa-star {
-        font-size: 1rem;
-    }
-    
-    .top__section span {
-        font-size: 1rem;
-    }
-
-    .navbar .navbar-nav .nav-item {
-        margin: 0 0.5rem;
-     }
-
-    .container__hero {
-        padding: 1rem 4rem;
-    }
-
-
-    .container__hero .total-enrol {
-        font-size: 1.5rem;
-    }
-
-    .container__hero .hero__content {
-        line-height: 3rem;
-        padding-left: 2rem;
-    }
-
-    .container__hero .hero__content h1 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    .container__hero .hero__info {
-        font-size: 1.3rem;
-        line-height: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .hero-btn {
-        gap: 2rem;
-    }
-
-    .hero-btn .btn-style {
-        font-size: 1.4rem;
-        width: 14rem;
-        padding: 1rem;
-        border-radius: 0.6rem;
-    }
-
-    .hero-btn .btn-style-secondary {
-        border: 2px solid var(--color-text-white);
-    }
-
-    .container__hero .row .hero-image {
-        justify-content: center;
-    }
-
-    .container__hero .row .hero-image img{
-        width: 90%;
-    }
-
-    .container__review .heading h3 {
-        font-size: 2rem;
-        font-weight: 700;
-        line-height: 2.5rem;
-    
-    }
-
-    
-    /* CONTAINER GUIDE  */
-    .container__guide {
-        padding: 2rem 6rem;
-    }
-
-    .container__guide .guides {
-        margin-top: 2rem;
-    }
-
-    .container__guide .row:first-child {
-        width: 90%;
-        margin: auto;
-    }
-
-    .container__guide .formular-image {
-        width: 70%;
-    }
-
-
+.container_search .form-control input[type ='button'] {
+    display: none;
 }
 
 
 
 
 
-@media (min-width: 1440px) {
 
-    .container__hero .total-enrol {
-        font-size: 2.5rem;
-    }
 
-    .container__hero .hero__content {
-        line-height: 6rem;
-        padding: 2rem;
-    }
 
-    .container__hero .hero__content h1 {
-        font-size: 3rem;
-        margin-bottom: 1.5rem;
-    }
 
-    .container__hero .hero__info {
-        font-size: 1.6rem;
-        line-height: 2.5rem;
-    }
 
-    
 
-    /* .container__hero .row .hero-image img {
-        top: 2.6rem;
-        width: 70%;
-    } */
-
-}

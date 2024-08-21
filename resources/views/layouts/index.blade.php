@@ -23,13 +23,14 @@
     {{-- SWIPER JS  --}}
     <link rel="stylesheet" href="{{ 'assets/css/swiper-bundle.min.css' }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/responsiveness.css') }}">
 
 </head>
 
 <body class="">
     <div class="container-fluid wrapper">
         <section class="container-fluid top__section">
-            <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> 
+            <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
             &nbsp; <span>Rated 4.8/5 by parents & students</span>
         </section>
@@ -46,7 +47,8 @@
                         <li class="nav-item"><a class="nav-link" href="{{ url('about') }}">About us</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url('subject') }}">Subject</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url('class') }}">Class</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url('edresources') }}">Educational Resources</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('edresources') }}">Educational
+                                Resources</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url('paymentplan') }}">Pricing plan</a></li>
                         {{-- <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
@@ -67,13 +69,36 @@
                             href="#" class="btn btn-outline-primary btn-style">Register</a></div>
                 </div>
             </nav>
-        </header>@yield('content')
+        </header>
+        <main class="container-fluid">
+
+            @yield('content')
+
+            <section class="container-fluid container__subscribe-form">
+                <div class="row form">
+                    <div class="col-12 col-md-2"></div>
+                    <div class="col-12 col-md-8">
+                        <form action="">
+                            <p>
+                                Sign up for our Newsletter to join our STEMGEES Club, enter into competitions and access
+                                opportunities.
+                            </p>
+                            <div class="sub-form">
+                                <input type="text" name="" id="" placeholder="Enter your email">
+                                <input type="button" class="btn-submit" value="Subcribe now">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-2"></div>
+                </div>
+            </section>
+        </main>
 
         {{-- FOOTER SECTION --}}
         <div class="container-fluid container__footer">
             <footer class="">
                 <div class="container row mx-auto">
-                    <div class="col-12 col-md-5 mb-3 address">
+                    <div class="col-12 col-md-5 col-lg-5 p-4 mb-3 address">
                         <h5>West Africa’s most trusted EdTech Platform for Secondary School Students & Teachers</h5>
                         <p>Super simple self studying,
                             peer to peer collaborative learning both for teachers and students</p><img
@@ -82,7 +107,7 @@
                             Anthony,
                             Lagos</span>
                     </div>
-                    <div class="col-12 col-md-3 mb-3 p-0">
+                    <div class="col-12 col-md-3 col-lg-2 mb-3 p-0">
                         <h5 class="title">RELATED LINKS</h5>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
@@ -92,7 +117,7 @@
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-2 mb-3 p-0">
+                    <div class="col-12 col-md-2 col-lg-2 mb-3 p-0">
                         <h5 class="title">RESOURCE</h5>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Class</a></li>
@@ -101,7 +126,7 @@
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Questions</a></li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-2  mb-3 p-0">
+                    <div class="col-12 col-md-2  col-lg-2 mb-3 p-0">
                         <h5 class="title">CONTACT US</h5>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">Call Us:</li>

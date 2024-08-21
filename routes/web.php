@@ -8,8 +8,8 @@ Route::get('/', function () {
 });
 
 // Access a page 
-// Route::get('/home', function () {
-//     return view('home');
+// Route::get('/subject', function () {
+//     return view('subject');
 // });
 
 // Access a page with uri parameter 
@@ -24,7 +24,7 @@ Route::get('/about', function(){
 });
 
 Route::get('/subject', function(){
-    return view('about');
+    return view('subject');
 });
 
 Route::get('/class', function(){

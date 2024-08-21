@@ -53,21 +53,23 @@
                 <div class="col-12 col-md-8 col-lg-6 heading">
                     <h3>Learn from the largest education resources for students in Nigeria</h3>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-12 col-md-9 px-lg-4  mx-auto reviews">
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-3 review">
+                        <div class="col-12 col-md-6 review">
                             <h3>5M+</h3>
                             <p>Lifetime <br /> Learners</p>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 review">
+                        <div class="col-12 col-md-6 review">
                             <h3>1M+</h3>
                             <p>Career <br /> Advices</p>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 review">
+                        <div class="col-12 col-md-6 review">
                             <h3>70%</h3>
                             <p>High Academic <br /> Performance</p>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 review">
+                        <div class="col-12 col-md-6 review">
                             <h3>5M+</h3>
                             <p>Daily <br /> Messages</p>
                         </div>
@@ -145,7 +147,7 @@
         <section class="container-fluid container__std_review">
             <div class="row">
                 <div class="col-12 col-md-2 text-end">
-                    <img src="{{ asset('assets/images/quote_down.png') }}" alt="" class="quote-down-image">
+                    <img src="{{ asset('assets/images/quote_trans.png') }}" alt="" class="quote-down-image">
                 </div>
                 <div class="col-12 col-md-8 heading px-4 px-md-2">
                     <h6>Rave Reviews from our amazing students! 😍</h6>
@@ -171,7 +173,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <h5 class="title">Yusuf Gambo</h5>
+                                <h5 class="title mt-2">Yusuf Gambo</h5>
                                 <p>Cohorts 3</p>
                             </div>
                         </div>
@@ -187,7 +189,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <h5 class="title">Mose John</h5>
+                                <h5 class="title pt-2">Mose John</h5>
                                 <p>Cohorts 3</p>
                             </div>
                         </div>
@@ -203,7 +205,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <h5 class="title">Samuel Mary</h5>
+                                <h5 class="title pt-2">Samuel Mary</h5>
                                 <p>Cohorts 5</p>
                             </div>
                         </div>
@@ -219,7 +221,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <h5 class="title">David Adeshola</h5>
+                                <h5 class="title pt-2">David Adeshola</h5>
                                 <p>Cohorts 5</p>
                             </div>
                         </div>
@@ -248,12 +250,12 @@
         <Section class="container-fluid container__performance">
             <div class="bg-image">
                 <div class="row">
-                    <div class="col-12 col-md-2"></div>
-                    <div class="col-12 col-md-8 performance__content">
+                    <div class="col-12 col-md-2 col-lg-3"></div>
+                    <div class="col-12 col-md-8 col-lg-6 performance__content">
                         <p class="total-enrol">We deliver the best results, periods.</p>
                         <h1>Passnownow students perform 3x better in class and school exams</h1>
                     </div>
-                    <div class="col-12 col-md-2"></div>
+                    <div class="col-12 col-md-2 col-lg-3"></div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-6 barchart mt-4">
@@ -310,7 +312,7 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
-                                    <h5 class="title">Yusuf Gambo</h5>
+                                    <h5 class="title pt-2">Yusuf Gambo</h5>
                                     <p>Cohorts 3</p>
                                 </div>
                             </div>
@@ -329,7 +331,7 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
-                                    <h5 class="title">Mose John</h5>
+                                    <h5 class="title pt-2">Mose John</h5>
                                     <p>Cohorts 3</p>
                                 </div>
                             </div>
@@ -348,7 +350,7 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
-                                    <h5 class="title">Samuel Mary</h5>
+                                    <h5 class="title pt-2">Samuel Mary</h5>
                                     <p>Cohorts 5</p>
                                 </div>
                             </div>
@@ -367,7 +369,7 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
-                                    <h5 class="title">David Adeshola</h5>
+                                    <h5 class="title pt-2">David Adeshola</h5>
                                     <p>Cohorts 5</p>
                                 </div>
                             </div>
@@ -384,7 +386,7 @@
         </Section>
         <section class="container-fluid container__notes">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center mb-5">
                     <h6>Class Notes</h6>
                 </div>
             </div>
@@ -492,7 +494,7 @@
         <section class="container-fluid container__parent_review">
             <div class="row my-4">
                 <div class="col-12 col-md-2 text-end">
-                    <img src="{{ asset('assets/images/quote_down.png') }}" alt="" class="quote-down-image">
+                    <img src="{{ asset('assets/images/quote_trans.png') }}" alt="" class="quote-down-image">
                 </div>
                 <div class="col-12 col-md-8 heading px-4 px-md-2">
                     <h6>Rave Reviews from our amazing parents! 😍</h6>
@@ -570,31 +572,13 @@
                                 <p>Cohorts 5</p>
                             </div>
                         </div>
-
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
-
                     <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
-            </div>
-            <div class="row form">
-                <div class="col-12 col-md-2"></div>
-                <div class="col-12 col-md-8">
-                    <form action="">
-                        <p>
-                            Sign up for our Newsletter to join our STEMGEES Club, enter into competitions and access opportunities.
-                        </p>
-                        <div class="sub-form">
-                            <input type="text" name="" id="" placeholder="Enter your email">
-                            <input type="button" class="btn-submit" value="Subcribe now">
-                        </div>
-                    </form>
-                </div>
-                <div class="col-12 col-md-2"></div>
-
             </div>
         </section>
     </main>
