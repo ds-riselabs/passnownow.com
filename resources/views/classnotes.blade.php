@@ -4,11 +4,11 @@
     <Section class="container-fluid container__banner">
         <div class="row">
             <div class="col-12 banner">
-                <h1>JSS1 SUBJECTS</h1>
+                <h1>CLASSES</h1>
             </div>
         </div>
     </Section>
-    <section class="container-fluid container__search">
+    {{-- <section class="container-fluid container__search">
         <div class="row p-0 m-0">
             <div class="col-12 col-md-6 search__form">
                 <form action="">
@@ -18,20 +18,19 @@
                 </form>
             </div>
         </div>
-    </section>
+    </section> --}}
 
-
-    <section class="container-fluid container__subjects">
+    <section class="container-fluid container__subjects mt-5">
         <div class="row">
             <div class="col-12 col-md-4 mb-3">
                 <div class="image-wrapper">
                     <img src="{{ asset('assets/images/student-writing.png') }}" alt="">
                 </div>
                 <div class="note_info p-2">
-                    <h5>Computer Science</h5>
+                    <h5>JSS 1 Class Notes</h5>
                     <p>Start studying with our wide collection of all SSS 1 Class Notes all Terms on all Secondary
                         School Subjects</p>
-                    <button class="note_btn">VIEW NOTE</button>
+                    <a href="{{ url('subject') }}" class="note_btn">VIEW ALL SUBJECTS</a>
                 </div>
             </div>
             <div class="col-12 col-md-4 mb-3">
@@ -39,10 +38,10 @@
                     <img src="{{ asset('assets/images/student-writing.png') }}" alt="">
                 </div>
                 <div class="note_info p-2">
-                    <h5>Mathematics</h5>
+                    <h5>JSS 2 Class Notes</h5>
                     <p>Start studying with our wide collection of all SSS 1 Class Notes all Terms on all Secondary
                         School Subjects</p>
-                    <button class="note_btn">VIEW NOTE</button>
+                    <a href="#" class="note_btn">VIEW ALL SUBJECTS</a>
                 </div>
             </div>
             <div class="col-12 col-md-4 mb-3">
@@ -50,10 +49,10 @@
                     <img src="{{ asset('assets/images/student-writing.png') }}" alt="">
                 </div>
                 <div class="note_info p-2">
-                    <h5>English Language</h5>
+                    <h5>JSS 3 Class Notes</h5>
                     <p>Start studying with our wide collection of all SSS 1 Class Notes all Terms on all Secondary
                         School Subjects</p>
-                    <button class="note_btn">VIEW NOTE</button>
+                    <a href="#" class="note_btn">VIEW ALL SUBJECTS</a>
                 </div>
             </div>
             <div class="col-12 col-md-4 mb-3">
@@ -61,10 +60,10 @@
                     <img src="{{ asset('assets/images/student-writing.png') }}" alt="">
                 </div>
                 <div class="note_info p-2">
-                    <h5>National Value</h5>
+                    <h5>SSS 1 Class Notes</h5>
                     <p>Start studying with our wide collection of all SSS 1 Class Notes all Terms on all Secondary
                         School Subjects</p>
-                    <button class="note_btn">VIEW NOTE</button>
+                    <a href="#" class="note_btn">VIEW ALL SUBJECTS</a>
                 </div>
             </div>
             <div class="col-12 col-md-4 mb-3">
@@ -72,10 +71,10 @@
                     <img src="{{ asset('assets/images/student-writing.png') }}" alt="">
                 </div>
                 <div class="note_info p-2">
-                    <h5>Basic Science</h5>
+                    <h5>SSS 2 Class Notes</h5>
                     <p>Start studying with our wide collection of all SSS 1 Class Notes all Terms on all Secondary
                         School Subjects</p>
-                    <button class="note_btn">VIEW NOTE</button>
+                    <a href="#" class="note_btn">VIEW ALL SUBJECTS</a>
                 </div>
             </div>
             <div class="col-12 col-md-4 mb-3">
@@ -83,14 +82,16 @@
                     <img src="{{ asset('assets/images/student-writing.png') }}" alt="">
                 </div>
                 <div class="note_info p-2">
-                    <h5>Religious Studies</h5>
+                    <h5>SSS 3 Class Notes</h5>
                     <p>Start studying with our wide collection of all SSS 1 Class Notes all Terms on all Secondary
                         School Subjects</p>
-                    <button class="note_btn">VIEW NOTE</button>
+                    <a href="#" class="note_btn">VIEW ALL SUBJECTS</a>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script>

@@ -1,9 +1,11 @@
-
-
 /* RESPONSIVENESS  */
 @media (min-width: 375px) {
     .container__review .reviews .review {
         width: 80%;
+    }
+
+    .container__register .heading h6 {
+        font-size: 1.2rem;
     }
 }
 
@@ -30,6 +32,11 @@
     .container__footer ul li a {
         font-size: 0.8rem;
     }
+
+    .account-ask p a,
+.account-ask p{
+    font-size: 1rem;
+}
 
 }
 
@@ -205,6 +212,70 @@
     }
 
 
+
+
+
+
+    /* SUBJECT PAGE  */
+    .container__subjects h6 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .container__subjects .image-wrapper img {
+        width: 100%;
+    }
+
+    .container__subjects .note_info h5 {
+        font-size: 1.4rem;
+
+    }
+
+    .container__subjects .note_info p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+
+    }
+
+
+
+/* =========================
+     FORM PAGE  
+============================*/
+
+
+    .container__register .side-bg {
+        background-image: url('/assets/images/form-bg.png');
+        background-size: contain;
+        color: var(--color-text-white);
+        padding: 1.5rem;
+        display: flex;
+        align-items: self-end;
+    }
+
+    .container__register .side-bg .content {
+        width: 90%;
+        margin-bottom: 12rem;
+    }
+
+    .container__register .side-bg .content h1{
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+    .container__register .side-bg .content p{
+        line-height: 2rem;
+    }
+
+    .container__register .form__section {
+        padding: 0 1.2rem;
+    }
+
+    .container__register .heading h6 {
+        font-size: 1.125rem;
+    }
+
+
 }
 
 
@@ -360,7 +431,6 @@
     /* STUDENT (STD) REVIEW CSS  */
     .container__std_review {
         padding: 5rem;
-        ;
     }
 
     .container__std_review .quote-down-image {
@@ -439,7 +509,6 @@
 
 
 
-
     /* CLASS NOTES  */
     .container__notes {
         padding: 5rem;
@@ -466,7 +535,6 @@
     }
 
     /* PARENT REVIEW  */
-
     .container__parent_review {
         padding: 5rem;
     }
@@ -511,15 +579,6 @@
     .container__subscribe-form form .sub-form .btn-submit {
         border-radius: 0.25rem;
     }
-
-
-
-
-
-
-
-
-
 
 
     /* FOOTER CSS  */
@@ -577,6 +636,82 @@
     .container__footer .copy__right ul li a i {
         font-size: 1.2rem;
     }
+
+
+
+
+
+
+    .container__subjects {
+        padding: 5rem;
+        padding-top: 0;
+    }
+
+    .container__subjects h6 {
+        font-size: 2.5rem;
+    }
+
+    .container__subjects .image-wrapper img {
+        width: 100%;
+    }
+
+    .container__subjects .note_info h5 {
+        font-size: 1.75rem;
+
+    }
+
+    .container__subjects .note_info p {
+        font-size: 1.125rem;
+        line-height: 1.725rem;
+        margin: 2rem 0;
+
+    }
+
+
+
+
+
+
+    /* =====================
+     FORM PAGE  
+=========================*/
+    .container__register .side-bg {
+        padding: 1.5rem 3rem;
+    }
+
+    .container__register .side-bg .content {
+        width: 85%;
+        margin-bottom: 12rem;
+    }
+
+    .container__register .side-bg .content h1{
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+
+    .container__register .side-bg .content p{
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+
+    .container__register .form__section {
+        padding: 0 3.5rem;
+    }
+
+    .container__register .heading h6 {
+        font-size: 1.325rem;
+        line-height: 1.725rem;
+    }
+    
+
+
+
+
+
+
+
+
 
 }
 
@@ -697,6 +832,32 @@
 
     .container__subscribe-form .form form .sub-form {
         padding: 0.5rem;
+    }
+
+    
+
+
+
+
+
+/* FORM PAGE CSS  */
+
+    .container__register .side-bg .content {
+        width: 80%;
+    }
+
+    .container__register .side-bg .content h1{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+
+    .container__register .heading h6 {
+        font-size: 1.5rem;
+        line-height: 1.725rem;
+    }
+    .container__register .form__section {
+        padding: 0 10rem;
     }
 
 }

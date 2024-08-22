@@ -27,13 +27,30 @@ Route::get('/subject', function(){
     return view('subject');
 });
 
-Route::get('/class', function(){
-    return view('about');
+Route::get('/subjects', function(){
+    return view('subjects');
+});
+
+Route::get('/notes', function(){
+    return view('classnotes');
 });
 
 Route::get('/edresources', function(){
-    return view('about');
+    return view('edresources');
 });
+
+Route::get('/subscriptions', function(){
+    return view('subscriptions');
+});
+
+Route::get('/register', function(){
+    return view('register');
+});
+
+Route::get('/login', function(){
+    return view('login');
+});
+
 
 //  To reduce longer url 
 // Route::get('/educational-resources', function(){

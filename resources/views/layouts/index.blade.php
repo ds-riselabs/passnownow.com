@@ -45,11 +45,12 @@
                         <li class="nav-item"><a class="nav-link active" aria-current="page"
                                 href="{{ url('/') }}">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url('about') }}">About us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url('subject') }}">Subject</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url('class') }}">Class</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('subjects') }}">Subject</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('notes') }}">Class</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url('edresources') }}">Educational
                                 Resources</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url('paymentplan') }}">Pricing plan</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('subscriptions') }}">Pricing plan</a>
+                        </li>
                         {{-- <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
                                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -65,8 +66,10 @@
                                         </ul>
                                     </li> --}}
                     </ul>
-                    <div class="nav-btn"><a href="#" class="btn btn-style btn-style-secondary">Login</a><a
-                            href="#" class="btn btn-outline-primary btn-style">Register</a></div>
+                    <div class="nav-btn">
+                        <a href="{{ url('login')}}" class="btn btn-style btn-style-secondary">Login</a>
+                        <a href="{{ url('register')}}" class="btn btn-outline-primary btn-style">Register</a>
+                    </div>
                 </div>
             </nav>
         </header>
