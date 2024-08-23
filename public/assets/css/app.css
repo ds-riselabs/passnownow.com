@@ -989,12 +989,19 @@ ul {
     font-size: 0.725rem;
 }
 
-.container__register form button {
+.container__register form  button {
+    background-color: transparent;
+    color: var(--color-primary-blue);
+    font-weight: 600;
+}
+
+.container__register form button.submit-btn {
     background-color: var(--color-primary);
     padding: 1rem 1.25rem;
     border-radius: 0.25rem;
+    color: var(--color-text-white);
 }
-.container__register form button:hover {
+.container__register form button.submit-btn:hover {
     background-color: var(--color-primary-dark);
     /* color: var(--color-primary-dark); */
 }

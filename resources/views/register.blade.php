@@ -89,7 +89,7 @@
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Agreed to out terms and conditions</label>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100">Register</button>
+                            <button type="submit" class="btn btn-primary w-100 submit-btn">Register</button>
                         </form>
                     </div>
                     <div class="col-12 mb-5 text-center account-ask">
