@@ -1,7 +1,7 @@
 @extends('layouts.index')
 
 @section('content')
-    <Section class="container-fluid container__banner">
+    <Section class="container-fluid container__banner class__banner">
         <div class="row">
             <div class="col-12 banner">
                 <h1>CLASSES</h1>

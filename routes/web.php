@@ -35,8 +35,20 @@ Route::get('/notes', function(){
     return view('classnotes');
 });
 
-Route::get('/edresources', function(){
-    return view('edresources');
+Route::get('/pastquestions', function(){
+    return view('pastquestions');
+});
+Route::get('/blog', function(){
+    return view('blog');
+});
+
+Route::get('/contact', function(){
+    return view('contact');
+});
+
+
+Route::get('/parentcouncelling', function(){
+    return view('parentcouncelling');
 });
 
 Route::get('/subscriptions', function(){
@@ -49,6 +61,19 @@ Route::get('/register', function(){
 
 Route::get('/login', function(){
     return view('login');
+});
+
+
+
+Route::get('/teacherresources', function(){
+    return view('teacherresources');
+});
+Route::get('/explicit', function(){
+    return view('explicit');
+});
+
+Route::get('/command', function(){
+    return view('command');
 });
 
 

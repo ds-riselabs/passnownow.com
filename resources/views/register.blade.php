@@ -49,7 +49,7 @@
                         <img src="{{ asset('assets/images/logo-2.png') }}" alt="Passnownow Logo" class="logo-alt">
                     </div>
                     <div class="col-12 heading p-0">
-                            <h6 class="p-0">Let’s register for your Passnownow account</h6>
+                            <h6>Let’s register for your Passnownow account</h6>
                     </div>
                     <div class="col-12 mb-3">
                         <form action="" method="POST">
@@ -69,7 +69,7 @@
                                 <label for="inputPassword5" class="form-label">Enter Password</label>
                                 <span class="pass_hidden">
                                     <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordBlock" placeholder="password">
-                                    <i class="fa-regular fa-eye-slash"></i>
+                                    {{-- <i class="fa-regular fa-eye-slash"></i> --}}
                                 </span>
                                 {{-- <i class="fa-regular fa-eye"></i> --}}
                                 <div id="passwordHelpBlock" class="form-text">
@@ -82,7 +82,7 @@
                                 <label for="cPassword" class="form-label">Confirm Password</label>
                                 <span class="pass_hidden">
                                     <input type="password" id="cPassword" class="form-control" aria-describedby="passwordBlock" placeholder="Repeat Password">
-                                    <i class="fa-regular fa-eye-slash"></i>
+                                    {{-- <i class="fa-regular fa-eye-slash"></i> --}}
                                 </span>
                             </div>
                             <div class="mb-3 form-check">

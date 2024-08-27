@@ -34,9 +34,14 @@
     }
 
     .account-ask p a,
-.account-ask p{
-    font-size: 1rem;
-}
+    .account-ask p {
+        font-size: 1rem;
+    }
+
+    .container__banner h1 span,
+    .container__banner h1 {
+        font-size: 2rem;
+    }
 
 }
 
@@ -238,8 +243,24 @@
     }
 
 
+    .container__banner .row .banner p {
+        width: 80%;
+        margin: 0 auto;
+    }
 
-/* =========================
+    .teacher__subjects h6 {
+        line-height: 3rem;
+    }
+
+    .teacher__subjects .header p {
+        width: 60%;
+        text-align: center;
+    }
+
+
+
+
+    /* =========================
      FORM PAGE  
 ============================*/
 
@@ -258,12 +279,13 @@
         margin-bottom: 12rem;
     }
 
-    .container__register .side-bg .content h1{
+    .container__register .side-bg .content h1 {
         font-weight: 700;
         font-size: 1.8rem;
         line-height: 2.5rem;
     }
-    .container__register .side-bg .content p{
+
+    .container__register .side-bg .content p {
         line-height: 2rem;
     }
 
@@ -274,6 +296,15 @@
     .container__register .heading h6 {
         font-size: 1.125rem;
     }
+
+    .teacher__subjects.explicit {
+        padding-bottom: 0rem;
+    }
+
+    .teacher__subjects.explicit .linechart {
+        display: flex;
+    }
+
 
 
 }
@@ -667,7 +698,17 @@
 
     }
 
+    .teacher__subjects.explicit .linechart img {
+        width: 70%;
+        margin: 0 auto;
+    }
 
+
+
+    .container__banner .row .banner p {
+        width: 50%;
+        margin: 0 auto;
+    }
 
 
 
@@ -684,13 +725,13 @@
         margin-bottom: 12rem;
     }
 
-    .container__register .side-bg .content h1{
+    .container__register .side-bg .content h1 {
         font-weight: 700;
         font-size: 2.2rem;
         line-height: 3rem;
     }
 
-    .container__register .side-bg .content p{
+    .container__register .side-bg .content p {
         font-size: 1.25rem;
         line-height: 2rem;
     }
@@ -699,11 +740,15 @@
         padding: 0 3.5rem;
     }
 
+    .container__login .row .side-bg {
+        height: 100vh;
+    }
+
     .container__register .heading h6 {
         font-size: 1.325rem;
         line-height: 1.725rem;
     }
-    
+
 
 
 
@@ -834,19 +879,32 @@
         padding: 0.5rem;
     }
 
+
+
+
+    .container__banner h1 span,
+    .container__banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .container__banner .banner p {
+        font-size: 1.2rem;
+    }
+
+
+    .teacher__subjects.explicit .header p {
+        font-size: 1.5rem;
+     }
     
 
 
-
-
-
-/* FORM PAGE CSS  */
+    /* FORM PAGE CSS  */
 
     .container__register .side-bg .content {
         width: 80%;
     }
 
-    .container__register .side-bg .content h1{
+    .container__register .side-bg .content h1 {
         font-size: 3rem;
         line-height: 4rem;
     }
@@ -856,6 +914,7 @@
         font-size: 1.5rem;
         line-height: 1.725rem;
     }
+
     .container__register .form__section {
         padding: 0 10rem;
     }

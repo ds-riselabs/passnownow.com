@@ -43,13 +43,30 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" aria-current="page"
-                                href="{{ url('/') }}">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url('about') }}">About us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url('subjects') }}">Subject</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url('notes') }}">Class</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url('edresources') }}">Educational
-                                Resources</a></li>
+                                href="{{ url('/') }}">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">About us</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="{{ url('about') }}">About Passnownow</a></li>
+                                <li><a class="dropdown-item" href="{{ url('contact') }}">Contact us</a>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('subjects') }}">Subjects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('notes') }}">Classes</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Educational
+                                Resources</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="{{ url('pastquestions') }}">Past Questions</a></li>
+                                <li><a class="dropdown-item" href="{{ url('teacherresources') }}">Teacher's Resources</a></li>
+                                <li><a class="dropdown-item" href="{{url('parentcouncelling')}}">Guidance and Counselling</a></li>
+                                <li><a class="dropdown-item" href="{{ url('blog') }}">Blog</a>
+                            </ul>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="{{ url('subscriptions') }}">Pricing plan</a>
+                        
                         </li>
                         {{-- <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
@@ -141,8 +158,7 @@
                     </div>
                 </div>
                 <div class="container d-flex flex-column flex-sm-row justify-content-between border-top copy__right">
-                    <p>Copyright &copy;
-                        2024 Passnownow </p>
+                    <p>Copyright &copy; 2024 Passnownow </p>
                     <p><a href="#">Terms and Conditions </a><a href="#">Privacy Policy</a></p>
                     <ul class="">
                         <li class="ms-3"><a class="" href="#"><i class="fa-brands fa-twitter"></i></a>

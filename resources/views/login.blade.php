@@ -25,16 +25,16 @@
 </head>
 
 <body class="">
-    <main class="container-fluid wrapper container__register">
+    <main class="container-fluid wrapper container__register container__login">
         <div class="row  m-0 p-0">
             <div class="col-12 col-md-6 side-bg">
                 <div class="content">
-                        <h1>Take control of your
-                            Education Anytime, Anywhere
-                        </h1>
-                        <p>
-                            Super simple self studying, peer to peer collaborative learning both for teachers and students
-                        </p>
+                    <h1>Take control of your
+                        Education Anytime, Anywhere
+                    </h1>
+                    <p>
+                        Super simple self studying, peer to peer collaborative learning both for teachers and students
+                    </p>
                 </div>
             </div>
             <div class="col-12 col-md-6 form__section">
@@ -46,30 +46,32 @@
                         <img src="{{ asset('assets/images/logo-2.png') }}" alt="Passnownow Logo" class="logo-alt">
                     </div>
                     <div class="col-12 heading p-0">
-                            <h6 class="p-0">Let’s login to your Passnownow account</h6>
+                        <h6>Let’s login to your Passnownow account</h6>
                     </div>
                     <div class="col-12 mb-2">
                         <form action="" method="POST">
                             <div class="mb-3">
                                 <label for="email" class="form-label">Enter Email/Username</label>
-                                <input type="email" id="email" class="form-control" aria-describedby="emailBlock" placeholder="example@email.com" required>
+                                <input type="email" id="email" class="form-control" aria-describedby="emailBlock"
+                                    placeholder="example@email.com" required>
                             </div>
                             <div class="mb-3">
                                 <label for="inputPassword5" class="form-label">Enter Password</label>
                                 <span class="pass_hidden">
-                                    <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordBlock" placeholder="password">
+                                    <input type="password" id="inputPassword5" class="form-control"
+                                        aria-describedby="passwordBlock" placeholder="password">
                                     <i class="fa-regular fa-eye-slash"></i>
                                 </span>
-                            
                             </div>
-                            <div class="row">
+                            <div class="row check">
                                 <div class="col mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                     <label class="form-check-label" for="exampleCheck1">Remember me</label>
                                 </div>
-                                <div class="col mb-3 form-check text-end fw-bold account-ask">
+                                <div class="col mb-3 form-check text-end fw-bold account-ask p-0">
                                     <!-- Button trigger modal -->
-                                    <button type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Forget Password</button>
+                                    <button type="button" class="" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">Forget Password</button>
                                     {{-- <p><a href="{{ url('/register')}}">Forget Password</a></p> --}}
                                 </div>
                             </div>
@@ -77,7 +79,8 @@
                         </form>
                     </div>
                     <div class="col-12 mb-5 text-center account-ask">
-                        <p>Don’t have an account? &nbsp;<span><a href="{{ url('/register')}}" class="fw-bold">Register Here</a></span></p>
+                        <p>Don’t have an account? &nbsp;<span><a href="{{ url('/register') }}" class="fw-bold">Register
+                                    Here</a></span></p>
                     </div>
                     <div class="col-12 mt-2 text-center">
                         <p>&copy; Copyright 2023 All Rights Reserved.</p>
@@ -86,27 +89,165 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    </main>
+    </div>
+
+    {{-- Enter Email for Reset password Modal  --}}
+    <div class="modal fade" id="staticBackdro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content p-2 p-md-5">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <img src="{{ asset('assets/images/logo-2.png') }}" alt="Passnownow Logo" class="logo-alt">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
+                    <div class="col-12 heading p-0">
+                        <h6>Reset your Password</h6>
+                        <p>Enter the email address associated with your account and we’ll send you a link to reset
+                            your password.</p>
+                    </div>
+                    <div class="col-12 mb-2">
+                        <form action="" method="POST">
+                            <div class="mb-3">
+                                <label for="email2" class="form-label">Enter Email</label>
+                                <input type="email" id="email2" class="form-control"
+                                    aria-describedby="emailBlock" placeholder="example@email.com" required>
+                            </div>
+                            <div class="row check">
+                                <div class="col mb-3 form-check fw-bold account-ask p-0">
+                                    <span><a href="{{ url('/register') }}" class="fw-bold">Return to
+                                            login</a></span>
+
+                                    {{-- <p><a href="{{ url('/register')}}">Forget Password</a></p> --}}
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 submit-btn">Continue</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-            {{-- {{ $slot}} --}}
-    
-    </main>
+
+    {{-- Resend Code  --}}
+    <div class="modal fade" id="staticBackdro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content p-2 p-md-5">
+                <div class="modal-header">
+                    <img src="{{ asset('assets/images/logo-2.png') }}" alt="Passnownow Logo" class="logo-alt">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-12 heading p-0">
+                        <h6>Reset your Password</h6>
+                        <p>An email has been sent to Winnereffiong@gmail.com. You’ll receive instructions on how to
+                            set a new password.</p>
+                    </div>
+                    <div class="col-12 mb-2">
+                        <form action="" method="POST">
+                            <div class="mb-3">
+                                {{-- <label for="email" class="form-label">Enter Email</label> --}}
+                                <input type="hidden" name="email" id="email3" class="form-control"
+                                    aria-describedby="emailBlock" placeholder="example@email.com" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 submit-btn">Resend Code</button>
+                            <div class="row check mt-2">
+                                <div class="col mb-3 form-check fw-bold account-ask p-0">
+                                    <span><a href="{{ url('/register') }}" class="fw-bold">Return to
+                                            login</a></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    {{-- Reset Password Modal  --}}
+    <div class="modal fade" id="staticBackdro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content p-2 p-md-5">
+                <div class="modal-header">
+                    <img src="{{ asset('assets/images/logo-2.png') }}" alt="Passnownow Logo" class="logo-alt">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-12 heading p-0">
+                        <h6>Reset your Password</h6>
+                        <p>Enter the email address associated with your account and we’ll send you a link to reset
+                            your password.</p>
+                    </div>
+                    <div class="col-12 mb-2">
+                        <form action="" method="POST">
+                            <div class="mb-3">
+                                <label for="inputPassword6" class="form-label">Enter Password</label>
+                                <span class="pass_hidden">
+                                    <input type="password" id="inputPassword6" class="form-control"
+                                        aria-describedby="passwordBlock" placeholder="password">
+                                    <i class="fa-regular fa-eye-slash"></i>
+                                </span>
+                                {{-- <i class="fa-regular fa-eye"></i> --}}
+                                <div id="passwordHelpBlock" class="form-text">
+                                    <p>
+                                        Your password must be 8-20 characters long, contain letters, numbers and
+                                        special characters.
+                                </div>
+                                </p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="cPassword" class="form-label">Confirm Password</label>
+                                <span class="pass_hidden">
+                                    <input type="password" id="cPassword" class="form-control"
+                                        aria-describedby="passwordBlock" placeholder="Repeat Password">
+                                    <i class="fa-regular fa-eye-slash"></i>
+                                </span>
+                            </div>
+                            <div class="row check">
+                                <div class="col mb-3 form-check fw-bold account-ask p-0">
+                                    <span><a href="{{ url('/register') }}" class="fw-bold">Return to
+                                            login</a></span>
+
+                                    {{-- <p><a href="{{ url('/register')}}">Forget Password</a></p> --}}
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 submit-btn">Continue</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {{-- Back to Login Success Modal  --}}
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content p-2 p-md-5">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="{{ asset('assets/images/success.png') }}" alt="Passnownow Logo"
+                        class="complete-image">
+                    <div class="col-12 heading p-0">
+                        <h6>You have successfully changed your password</h6>
+                        <p>Please enter a new password. Your new password must be different from previous password.</p>
+                    </div>
+                    <div class="col-12 mb-2">
+                        <form action="" method="POST">
+                            <a href="{{ url('/login') }}" class="btn btn-primary w-100 submit-btn">Back to login</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

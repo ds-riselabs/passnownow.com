@@ -4,7 +4,7 @@
     <Section class="container-fluid container__banner">
         <div class="row">
             <div class="col-12 banner">
-                <h1>PAST QUESTIONS</h1>
+                <h1>Subscripton Page</h1>
             </div>
         </div>
     </Section>

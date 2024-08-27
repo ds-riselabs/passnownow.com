@@ -1,10 +1,10 @@
 @extends('layouts.index')
 
 @section('content')
-    <Section class="container-fluid container__banner">
+    <Section class="container-fluid container__banner subject__banner">
         <div class="row">
             <div class="col-12 banner">
-                <h1>JSS1 SUBJECTS</h1>
+                <h1>JSS1 <span class="red_header">SUBJECTS</span></h1>
             </div>
         </div>
     </Section>
