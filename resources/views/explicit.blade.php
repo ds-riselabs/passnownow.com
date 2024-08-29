@@ -37,12 +37,12 @@
             </div>
         </div>
         <div class="row m-0 p-0 mb-3">
-            <div class="col-12 col-md-6 mb-3 p-0">
+            <div class="col-12 col-md-7 mb-3 p-0">
                 <div class="image-wrapped">
                     <img src="{{ asset('assets/images/smiling.png') }}" alt=""/>
                 </div>
             </div>
-            <div class="col-12 col-md-6 mb-3 p-0">
+            <div class="col-12 col-md-5 mb-3 p-0">
                 <div class="image-wrapped">
                     <img src="{{ asset('assets/images/tutor.png') }}"  alt="" />
                 </div>

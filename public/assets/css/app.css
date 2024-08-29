@@ -925,11 +925,14 @@ ul {
 }
 
 
+.teacher__subjects.command .header  h6,
 .teacher__subjects.explicit .header  h6 {
     margin: 0;
     margin-bottom: 1rem;
+    color: var(--color-primary-blue);
 }
 
+.teacher__subjects.command .header,
 .teacher__subjects.explicit .header  {
     margin: 0;
 }
@@ -942,6 +945,20 @@ ul {
     margin: 0;
     text-align: left;
     width: 100%;
+    text-align: justify;
+ }
+
+.teacher__subjects.command .header p {
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    font-size: 0.925rem;
+    text-align: justify;
+ }
+
+ .teacher__subjects.command ul {
+    list-style: disc;
+    text-align: justify;
  }
 
 
@@ -1001,6 +1018,19 @@ ul {
 .container__subjects .image-wrapped img {
     width: 100%;
 }
+
+.container__parentresources .peoplelaugh_img {
+    text-align: center;
+}
+.container__parentresources .peoplelaugh_img img {
+    width: 100%;
+}
+
+.container__parentresources .notepink img{
+    width: 100%;
+}
+
+
 
 
 /* ===========================

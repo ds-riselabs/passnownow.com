@@ -68,6 +68,11 @@ Route::get('/login', function(){
 Route::get('/teacherresources', function(){
     return view('teacherresources');
 });
+
+Route::get('/parentresources', function(){
+    return view('parentresources');
+});
+
 Route::get('/explicit', function(){
     return view('explicit');
 });
@@ -75,6 +80,27 @@ Route::get('/explicit', function(){
 Route::get('/command', function(){
     return view('command');
 });
+
+Route::get('/task', function(){
+    return view('task');
+});
+
+Route::get('/discovery', function(){
+    return view('discovery');
+});
+
+Route::get('/problemsolving', function(){
+    return view('problemsolving');
+});
+
+Route::get('/progression', function(){
+    return view('progression');
+});
+
+Route::get('/motivate', function(){
+    return view('motivate');
+});
+
 
 
 //  To reduce longer url 

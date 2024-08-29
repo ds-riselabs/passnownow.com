@@ -14,8 +14,8 @@
         </div>
     </Section>
 
-    <section class="container-fluid container__subjects mt-5 teacher__subjects explicit">
-        <div class="row">
+    <section class="container-fluid container__subjects mt-5 teacher__subjects command">
+        <div class="row mb-5">
             <div class="col-12 col-md-6 text-center header">
                 <h6>Command Style Teaching</h6>
                 <p class="text-dark">
@@ -42,14 +42,14 @@
                 </div>
             </div>
         </div>
-        <div class="row m-0 p-0 mb-3">
+        <div class="row m-0 p-0 mb-3 command__info">
             <div class="col-12 col-md-6 mb-3 p-0">
                 <div class="image-wrapped">
                     <img src="{{ asset('assets/images/smiling.png') }}" alt="" />
                 </div>
             </div>
             <div class="col-12 col-md-6 mb-3 p-0">
-                <h6>Advantages</h6>
+                <h6 class="m-0">Advantages</h6>
                 <ul class="text-dark">
                     <li>Greater possibility of tasks being completed on time.</li>
                     <li>The teacher has ultimate control over the class.</li>
@@ -61,9 +61,9 @@
                 </ul>
             </div>
         </div>
-        <div class="row m-0 p-0 mb-3">
+        <div class="row m-0 p-0 mb-3 command__info">
             <div class="col-12 col-md-6 mb-3 p-0">
-                <h6>Disadvantages</h6>
+                <h6 class="m-0">Disadvantages</h6>
                 <ul class="text-dark">
                     <li>No student input into lesson and therefore may fail to foster ‘deep learning’.</li>
                     <li>It does not allow for creativity thinking by students</li>
