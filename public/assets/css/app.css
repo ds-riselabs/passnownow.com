@@ -37,9 +37,20 @@
     font-size: 1rem;
 }
 
+
+
+/* BACKGROUNDS  */
+
+.bg-tertiary-accent {
+    background-color: var(--color-tertiary-accent);
+}
+
+
+
 a {
     text-decoration: none;
 }
+
 
 ul {
     list-style: none;
@@ -69,6 +80,9 @@ ul {
 .container__header {
     box-shadow: var(--box-shadow);
 }
+
+
+
 
 
 /* Navbar CSS  */
@@ -113,6 +127,13 @@ ul {
     gap: 1rem;
 }
 
+.btn-submit {
+    padding: 0.8rem 0.4rem;
+    background-color: var(--color-primary);
+    border-radius: 0.25rem;
+    color: var(--color-text-white);
+    font-size: 0.8rem;
+}
 
 .btn-style {
     width: 8rem;
@@ -594,7 +615,8 @@ ul {
     font-family: var(--font-family-body);
     font-size: 1.1rem;
     font-weight: 400;
-    line-height: 30px;
+    /* line-height: 30px; */
+    margin: 0;
 
 }
 
@@ -974,6 +996,7 @@ ul {
     font-size: 1.5rem;
     font-weight: 700;
     margin: 1rem 0;
+    margin-bottom: 2rem;
     color: var(--color-primary);
 
 }
@@ -982,12 +1005,11 @@ ul {
     font-family: var(--font-family-body);
     font-size: 1.1rem;
     font-weight: 400;
-    line-height: 30px;
     color: var(--color-text-dark);
 }
 
 
-.container__subjects .note_btn {
+.container__subjects a.note_btn {
     padding: 1rem 1.25rem;
     background: transparent;
     border: 2px solid var(--color-primary);
@@ -1005,8 +1027,6 @@ ul {
     border-top: 1px solid var(--color-text-dark);
     padding-top: 2rem;
 }
-
-
 
 
 /* EXPLICIT  */
@@ -1029,6 +1049,96 @@ ul {
 .container__parentresources .notepink img{
     width: 100%;
 }
+
+
+/* LEADERSHIP  */
+
+.leadership .bg-tertiary-accent {
+    padding: 1rem;
+}
+
+.leadership .bg-tertiary-accent p{
+    font-size: 0.8rem;
+}
+
+.leadership .image-wrapped {
+    background-color: var(--color-tertiary-accent);
+}
+
+
+/* PROGRAMS  */
+.container__programs .guides {
+    padding: 0.5rem;
+}
+
+.container__programs .guides .guide {
+    box-shadow: 0.01rem 0.01rem 0.4rem 0.1px var(--color-ash);
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    padding: 0.8rem;
+    line-height: 1.5rem;
+}
+
+.container__programs .guides .guide h3{
+   font-size: 1rem;
+}
+.container__programs .guides .guide p{
+    font-size: 0.9rem;
+}
+
+
+.container__programs .guides .guide .note_btn {
+    border: none;
+    padding: 0;
+}
+.container__programs .guides .guide .note_btn:hover {
+    background: none;
+    color: var(--color-primary);
+    font-weight: 700
+}
+
+.container__programs .program  h5{
+   font-size: 1rem;
+}
+.container__programs .program  p{
+   font-size: 0.8rem;
+   text-align: left;
+}
+
+
+.container__programs .red_header {
+    color: #FF3B30;
+}
+
+/* .card-group .card {
+
+} */
+
+
+.team .lists {
+    color: var(--color-text-dark);
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

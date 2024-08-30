@@ -47,6 +47,8 @@
         width: 100%;
     }
 
+    
+
 }
 
 
@@ -272,9 +274,6 @@
     }
 
 
-
-
-
     .container__banner .row .banner p {
         width: 80%;
         margin: 0 auto;
@@ -289,6 +288,28 @@
         text-align: center;
     }
 
+    /* LEADERSHIP  */
+    .leadership .bg-tertiary-accent p {
+        font-size: 1rem;
+    }
+
+    .container__programs .guides .guide {
+        margin: 0.3rem;
+        width: 32%;
+    }
+
+    .container__programs .program  .image-wrapper{
+        border-radius: 0;
+     }
+
+     .container__programs .program  h5{
+        font-size: 1.2rem;
+        margin: 0;
+        margin-bottom: 0.5rem;
+     }
+     .container__programs .program  p{
+        font-size: 0.8rem;
+     }
 
 
 
@@ -338,6 +359,10 @@
 
     .container__subjects.motivate h6 {
         line-height: 1.8rem;
+    }
+
+    .container__programs .red_header {
+        font-size: 1.4rem;
     }
 
 }
@@ -723,7 +748,7 @@
     .container__subjects .note_info p {
         font-size: 1.125rem;
         line-height: 1.725rem;
-        margin: 2rem 0;
+        margin: 1rem 0;
 
     }
 
@@ -759,6 +784,22 @@
         line-height: 2rem;
     } */
 
+
+
+    /* LEADERSHIP  */
+    .leadership .bg-tertiary-accent p b,
+    .leadership .bg-tertiary-accent p {
+        font-size: 1.2rem;
+    }
+
+ .container__programs .program  h5{
+        font-size: 1.2rem;
+        margin: 0;
+        margin-bottom: 0.5rem;
+     }
+     .container__programs .program  p{
+        font-size: 0.8rem;
+     }
 
 
     /* =====================
@@ -797,7 +838,9 @@
         line-height: 1.725rem;
     }
 
-
+    .container__programs .red_header {
+        font-size: 1.5rem;
+    }
 
 }
 
@@ -962,7 +1005,7 @@
     }
 
 
-    .container__parentresources .notepink img{
+    .container__parentresources .notepink img {
         width: 80%;
     }
 
@@ -979,7 +1022,11 @@
     }
 
     .container__parentresources ol li {
-       font-size: 1.2rem;
+        font-size: 1.2rem;
+    }
+
+    .container__banner {
+        height: 15rem;
     }
 
 
@@ -1019,5 +1066,31 @@
         margin: 0;
         line-height: 2rem;
     }
+
+    /* OUR LEADERS  */
+    .leadership .bg-tertiary-accent p b,
+    .leadership .bg-tertiary-accent p {
+        font-size: 1.5rem;
+    }
+
+    .container__programs .guides .guide{
+        padding: 2rem;
+     }
+    .container__programs .guides .guide h3{
+        font-size: 1.5rem;
+     }
+     .container__programs .guides .guide p{
+         font-size: 1.2rem;
+         line-height: 1.6rem;
+     }
+
+    .container__programs .program  h5{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+     }
+     .container__programs .program  p{
+        font-size: 1.1rem;
+     }
+     
 
 }

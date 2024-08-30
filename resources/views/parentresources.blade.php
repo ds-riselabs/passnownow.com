@@ -3,10 +3,13 @@
 @section('content')
     <main class="container-fluid container__parentresources">
 
-        <Section class="container-fluid container__banner teacher__banner">
+        <Section class="container-fluid container__banner teacher__banner mb-5">
             <div class="row">
                 <div class="col-12 banner">
-                    {{-- <h1>Teacher <span class="red_header">Resources</span></h1> --}}
+                    <h1>A Guide For <span class="red_header">Parents</span></h1>
+                    <p class="text-center header_content">
+                        Passnownow Offers Career Counseling for your Teenage/Secondary School Child or Ward.
+                    </p>
                 </div>
             </div>
         </Section>

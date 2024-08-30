@@ -73,6 +73,19 @@ Route::get('/parentresources', function(){
     return view('parentresources');
 });
 
+
+Route::get('/our-leadership', function(){
+    return view('leadership');
+});
+
+Route::get('/our-programs', function(){
+    return view('programs');
+});
+
+Route::get('/our-team', function(){
+    return view('team');
+});
+
 Route::get('/explicit', function(){
     return view('explicit');
 });

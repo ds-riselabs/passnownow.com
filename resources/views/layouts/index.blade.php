@@ -132,7 +132,7 @@
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Our Blog</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">For Parent</a></li>
+                            <li class="nav-item mb-2"><a href="{{url('parentresources')}}" class="nav-link p-0">For Parent</a></li>
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">For Teachers</a></li>
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
                         </ul>

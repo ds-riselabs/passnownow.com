@@ -30,6 +30,7 @@
                 </div>
             </div>
         </section>
+        
         <Section class="container-fluid container__hero">
             <div class="row">
                 <div class="col-12 col-md-6 hero__content">
@@ -48,6 +49,7 @@
                 </div>
             </div>
         </Section>
+
         <section class="container-fluid container__review">
             <div class="row">
                 <div class="col-12 col-md-8 col-lg-6 heading">
@@ -77,6 +79,7 @@
                 </div>
             </div>
         </section>
+
         <section class="container-fluid container__guide">
             <div class="row ">
                 <div class="col-12 col-md-3 text-center">
@@ -126,6 +129,7 @@
                 </div>
             </div>
         </section>
+
         <Section class="container-fluid container__hero-down mb-3">
             <div class="row">
                 <div class="col-12 col-md-6 hero-down__content">
@@ -247,6 +251,7 @@
                 </div>
             </div>
         </section>
+
         <Section class="container-fluid container__performance">
             <div class="bg-image">
                 <div class="row">
@@ -384,6 +389,7 @@
                 </div>
             </div>
         </Section>
+
         <section class="container-fluid container__notes">
             <div class="row">
                 <div class="col-12 text-center mb-5">
@@ -491,6 +497,7 @@
                 </div>
             </div>
         </section>
+
         <section class="container-fluid container__parent_review">
             <div class="row my-4">
                 <div class="col-12 col-md-2 text-end">

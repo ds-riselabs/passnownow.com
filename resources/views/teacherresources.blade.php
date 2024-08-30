@@ -25,7 +25,7 @@
         </div>
     </section> --}}
 
-    <section class="container-fluid container__subjects mt-5 teacher__subjects">
+    <section class="container-fluid container__subjects mt-lg-5 teacher__subjects">
         <div class="row">
             <div class="col-12 text-center mb-5 header">
                 <h6>Teachers Methodology <br /> (Category One)</h6>
@@ -45,8 +45,8 @@
                     <img src="{{ asset('assets/images/education-removelaptop.png') }}" alt="">
                 </div>
                 <div class="note_info p-2 text-center">
-                    <p>Lesson One</p>
-                    <h5 class="mb-5">Explicit Teaching</h5>
+                    <p class="m-0">Lesson One</p>
+                    <h5 class="">Explicit Teaching</h5>
                     <a href="{{ url('explicit') }}" class="note_btn">READ NOW &nbsp; <i
                             class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
@@ -56,8 +56,8 @@
                     <img src="{{ asset('assets/images/charts.png') }}" alt="">
                 </div>
                 <div class="note_info p-2 text-center">
-                    <p>Lesson Two</p>
-                    <h5 class="mb-5">Command Style</h5>
+                    <p class="m-0">Lesson Two</p>
+                    <h5 class="">Command Style</h5>
                     <a href="{{ url('command') }}" class="note_btn">READ NOW &nbsp; <i
                             class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
@@ -67,8 +67,8 @@
                     <img src="{{ asset('assets/images/dark_chart.png') }}" alt="">
                 </div>
                 <div class="note_info p-2 text-center">
-                    <p>Lesson Three</p>
-                    <h5 class="mb-5">Teaching By Task</h5>
+                    <p class="m-0">Lesson Three</p>
+                    <h5 class="">Teaching By Task</h5>
                     <a href="{{ url('task') }}" class="note_btn">READ NOW &nbsp; <i
                             class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
@@ -78,8 +78,8 @@
                     <img src="{{ asset('assets/images/half_laptop.png') }}" alt="">
                 </div>
                 <div class="note_info p-2 text-center">
-                    <p>Lesson Four</p>
-                    <h5 class="mb-5">Individual Progression</h5>
+                    <p class="m-0">Lesson Four</p>
+                    <h5 class="">Individual Progression</h5>
                     <a href="{{ url('progression') }}" class="note_btn">READ NOW &nbsp; <i
                             class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
@@ -89,8 +89,8 @@
                     <img src="{{ asset('assets/images/coffee_laptop.png') }}" alt="">
                 </div>
                 <div class="note_info p-2 text-center">
-                    <p>Lesson Five</p>
-                    <h5 class="mb-5">Guided Discovery</h5>
+                    <p class="m-0">Lesson Five</p>
+                    <h5 class="">Guided Discovery</h5>
                     <a href="{{ url('discovery') }}" class="note_btn">READ NOW &nbsp; <i
                             class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
@@ -100,8 +100,8 @@
                     <img src="{{ asset('assets/images/palmtop.png') }}" alt="">
                 </div>
                 <div class="note_info p-2 text-center">
-                    <p>Lesson Six</p>
-                    <h5 class="mb-5">Problem Solving</h5>
+                    <p class="m-0">Lesson Six</p>
+                    <h5 class="">Problem Solving</h5>
                     <a href="{{ url('problemsolving') }}" class="note_btn">READ NOW &nbsp; <i
                             class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
@@ -127,7 +127,7 @@
                     <img src="{{ asset('assets/images/education-removelaptop.png') }}" alt="">
                 </div>
                 <div class="note_info p-2 text-center">
-                    <p>Lesson One</p>
+                    <p class="m-0">Lesson One</p>
                     <h5>Useful Skills For Teachers</h5>
                     <a href="{{ url('#') }}" class="note_btn">READ NOW &nbsp; <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
@@ -137,9 +137,9 @@
                     <img src="{{ asset('assets/images/dark_chart.png') }}" alt="">
                 </div>
                 <div class="note_info p-2 text-center">
-                    <p>Lesson Two</p>
+                    <p class="m-0">Lesson Two</p>
                     <h5>Qualities of a Good Teacher</h5>
-                    <a href="{{ url('#') }}" class="note_btn">READ NOW &nbsp; <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a href="{{ url('our-leadership') }}" class="note_btn">READ NOW &nbsp; <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
             <div class="col-12 col-md-4 mb-3">
@@ -147,7 +147,7 @@
                     <img src="{{ asset('assets/images/charts.png') }}" alt="">
                 </div>
                 <div class="note_info p-2 text-center">
-                    <p>Lesson Three</p>
+                    <p class="m-0">Lesson Three</p>
                     <h5>Teaching By Task</h5>
                     <a href="{{ url('#') }}" class="note_btn">READ NOW &nbsp; <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
@@ -155,31 +155,4 @@
         </div>
     </section>
 
-
-
-    <script src="./assets/js/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper(".swiper", {
-            // Optional parameters
-            direction: "horizontal",
-            // effect: "fade",
-            loop: true,
-            autoplay: {
-                dely: '2000'
-            },
-
-            // If we need pagination
-            pagination: {
-                el: ".swiper-pagination",
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-                size: '1rem'
-            },
-
-        });
-    </script>
 @endsection
