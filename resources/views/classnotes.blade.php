@@ -21,7 +21,7 @@
     </section> --}}
 
     <section class="container-fluid container__subjects mt-5">
-        <div class="row">
+        <div class="row only_subjects">
             <div class="col-12 col-md-4 mb-3">
                 <div class="image-wrapper">
                     <img src="{{ asset('assets/images/student-writing.png') }}" alt="">
@@ -91,31 +91,4 @@
         </div>
     </section>
 
-
-
-    <script src="./assets/js/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper(".swiper", {
-            // Optional parameters
-            direction: "horizontal",
-            // effect: "fade",
-            loop: true,
-            autoplay: {
-                dely: '2000'
-            },
-
-            // If we need pagination
-            pagination: {
-                el: ".swiper-pagination",
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-                size: '1rem'
-            },
-
-        });
-    </script>
 @endsection

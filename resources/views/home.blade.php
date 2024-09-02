@@ -138,8 +138,7 @@
                     <p class="hero-down__info">Make Passnownow your partner in lifelomg learning, providing you with the
                         resources and support you need to succeed at every stage of your journey.</p>
                     <div class="hero-btn">
-                        <a href="#" class="btn btn-outline-primary btn-style">Register &nbsp; <i
-                                class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-outline-primary btn-style">Register &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6  hero-down-image">

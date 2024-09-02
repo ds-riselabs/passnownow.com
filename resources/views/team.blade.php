@@ -29,11 +29,11 @@
         <div class="row">
             <div class="col-12 text-center mb-5 header">
                 <h6 class="red_header">Our Team</h6>
-                <h5 class="red_header">Meet Our Professional Team</h5>
+                <h5 class="primary_header">Meet Our Professional Team</h5>
 
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4 team_profiles">
             <div class="col">
                 <div class="card">
                     <img src="{{ asset('assets/images/team.png') }}" class="card-img-top" alt="...">
@@ -90,10 +90,10 @@
             </div>
         </div>
 
-        <div class="row program my-5 team">
-            <div class="col-12 col-md-6 mb-3">
-                <h6 class="">Join us!</h6>
-                <h5 class="red_header">Join our team!</h5>
+        <div class="row program my-5 team shadow">
+            <div class="col-12 col-md-6 mb-5 mb-md-3 address_info">
+                <h6 class="red_header text-start">Join us!</h6>
+                <h5 class="primary_header">Join our team!</h5>
                 <p class="text-dark">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua Utenimad minim veniam, quis nostrud exercitation dolore magna
@@ -147,7 +147,7 @@
                         <input type="file" class="form-control" id="inputAddress2" placeholder="Upload your cv">
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-submit w-50">Submit</button>
+                        <button type="submit" class="btn submit-btn w-50">Submit</button>
                     </div>
                 </form>
             </div>

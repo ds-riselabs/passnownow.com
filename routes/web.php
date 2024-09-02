@@ -69,6 +69,23 @@ Route::get('/teacherresources', function(){
     return view('teacherresources');
 });
 
+
+Route::get('/useful-skills', function(){
+    return view('usefulskills');
+});
+
+Route::get('/good-teacher', function(){
+    return view('goodteacher');
+});
+
+Route::get('/students-motivation', function(){
+    return view('studentsmotivation');
+});
+
+Route::get('/note-tips', function(){
+    return view('note-tips');
+});
+
 Route::get('/parentresources', function(){
     return view('parentresources');
 });

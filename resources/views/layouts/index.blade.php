@@ -61,7 +61,7 @@
                             <ul class="dropdown-menu" aria-labelledby="dropdown01">
                                 <li><a class="dropdown-item" href="{{ url('pastquestions') }}">Past Questions</a></li>
                                 <li><a class="dropdown-item" href="{{ url('teacherresources') }}">Teacher's Resources</a></li>
-                                <li><a class="dropdown-item" href="{{url('parentcouncelling')}}">Guidance and Counselling</a></li>
+                                <li><a class="dropdown-item" href="{{url('parentresources')}}">Guidance and Counselling</a></li>
                                 <li><a class="dropdown-item" href="{{ url('blog') }}">Blog</a>
                             </ul>
                         </li>

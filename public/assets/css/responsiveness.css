@@ -47,7 +47,7 @@
         width: 100%;
     }
 
-    
+
 
 }
 
@@ -247,6 +247,11 @@
 
     }
 
+
+    .container__subjects .only_subjects a.note_btn {
+        width: 100%;
+    }
+
     .container__subjects.contact {
         padding-bottom: 0;
     }
@@ -298,18 +303,24 @@
         width: 32%;
     }
 
-    .container__programs .program  .image-wrapper{
+    .container__programs .program .image-wrapper {
         border-radius: 0;
-     }
+    }
 
-     .container__programs .program  h5{
+    .container__programs .program h5 {
         font-size: 1.2rem;
         margin: 0;
         margin-bottom: 0.5rem;
-     }
-     .container__programs .program  p{
+    }
+
+    .container__programs .program p {
         font-size: 0.8rem;
-     }
+    }
+
+
+    .subscription .bg-plan .header{
+       padding: 0 5rem;
+    }
 
 
 
@@ -365,7 +376,17 @@
         font-size: 1.4rem;
     }
 
-}
+    .bg-time {
+        padding: 1.4rem;
+        line-height: 1.19rem;
+    }
+    .bg-time div b,
+    .bg-time div{
+       font-size: 0.9rem;
+    }
+  
+  
+ }
 
 
 
@@ -741,7 +762,7 @@
     }
 
     .container__subjects .note_info h5 {
-        font-size: 1.75rem;
+        /* font-size: 1.75rem; */
 
     }
 
@@ -750,6 +771,10 @@
         line-height: 1.725rem;
         margin: 1rem 0;
 
+    }
+
+    .container__subjects .only_subjects a.note_btn {
+        width: 60%;
     }
 
     .teacher__subjects.explicit .linechart img {
@@ -785,6 +810,14 @@
     } */
 
 
+    .subscription .bg-plan {
+        padding: 2rem;
+    }
+
+    .subscription .bg-plan .header{
+        padding: 0 15rem;
+     }
+ 
 
     /* LEADERSHIP  */
     .leadership .bg-tertiary-accent p b,
@@ -792,14 +825,27 @@
         font-size: 1.2rem;
     }
 
- .container__programs .program  h5{
+    .container__programs .program h5 {
         font-size: 1.2rem;
         margin: 0;
         margin-bottom: 0.5rem;
-     }
-     .container__programs .program  p{
+    }
+
+    .container__programs .program p {
         font-size: 0.8rem;
-     }
+    }
+
+    .team_profiles {
+        /* width: 50%; */
+        margin: 0 auto;
+    }
+
+    .team {
+        padding: 2.5rem;
+    }
+    .team .address_info {
+        padding-right: 3rem;
+    }
 
 
     /* =====================
@@ -842,7 +888,13 @@
         font-size: 1.5rem;
     }
 
-}
+    .bg-time {
+        padding: 2.5rem 1rem;
+    }
+ 
+ 
+  
+ }
 
 
 
@@ -929,7 +981,10 @@
         padding: 5rem;
     }
 
+    .container__subjects .note_info h5 {
+        font-size: 1.75rem;
 
+    }
 
     /* PERFORMANCE CSS  */
     .container__performance .performance__content h1 {
@@ -977,6 +1032,10 @@
 
     .container__subjects .image-wrapped img {
         width: 80%;
+    }
+
+    .container__subjects .image-wrapped.skills_hero img {
+        width: 100%;
     }
 
 
@@ -1073,24 +1132,39 @@
         font-size: 1.5rem;
     }
 
-    .container__programs .guides .guide{
+    .container__programs .guides .guide {
         padding: 2rem;
-     }
-    .container__programs .guides .guide h3{
-        font-size: 1.5rem;
-     }
-     .container__programs .guides .guide p{
-         font-size: 1.2rem;
-         line-height: 1.6rem;
-     }
+    }
 
-    .container__programs .program  h5{
+    .container__programs .guides .guide h3 {
+        font-size: 1.5rem;
+    }
+
+    .container__programs .guides .guide p {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    .container__programs .program h5 {
         font-size: 2rem;
         margin-bottom: 1rem;
-     }
-     .container__programs .program  p{
-        font-size: 1.1rem;
-     }
-     
+    }
 
-}
+    .container__programs .program p {
+        font-size: 1.1rem;
+    }
+
+    .subscription_profiles {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .bg-time {
+        padding: 2.7rem 2rem;
+        line-height: 2.5rem;
+    }
+    .bg-time div {
+       font-size: 1.5rem;
+    }
+  
+ }

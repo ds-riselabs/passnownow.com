@@ -19,6 +19,7 @@
     --color-bg-ash: #5E7494;
     --color-ash: #AEBACA;
     --color-text-dark: #000000;
+    --color-text-red: #ff0000;
     /* 
     #AEBACA */
 
@@ -133,6 +134,19 @@ ul {
     border-radius: 0.25rem;
     color: var(--color-text-white);
     font-size: 0.8rem;
+}
+
+a.submit-btn,
+button.submit-btn {
+    background-color: var(--color-primary);
+    padding: 1rem 1.25rem;
+    border-radius: 0.25rem;
+    color: var(--color-text-white);
+}
+
+button.submit-btn:hover {
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-white);
 }
 
 .btn-style {
@@ -873,7 +887,14 @@ ul {
 }
 
 .red_header {
-    color: #ff0000;
+    color: var(--color-text-red);
+}
+
+.primary_header {
+    color: var(--color-primary-blue);
+    font-size: 2rem;
+    font-family: var(--font-family-heading);
+    font-weight: 700;
 }
 
 .container__banner h1 span,
@@ -947,19 +968,32 @@ ul {
 }
 
 
-.teacher__subjects.command .header  h6,
-.teacher__subjects.explicit .header  h6 {
+.teacher__subjects .note_btn {
+    border: none;
+    padding: 0;
+    color: var(--color-primary);
+}
+
+.teacher__subjects .note_btn:hover {
+    background: none;
+    color: var(--color-primary);
+    font-weight: 800;
+}
+
+
+.teacher__subjects.command .header h6,
+.teacher__subjects.explicit .header h6 {
     margin: 0;
     margin-bottom: 1rem;
     color: var(--color-primary-blue);
 }
 
 .teacher__subjects.command .header,
-.teacher__subjects.explicit .header  {
+.teacher__subjects.explicit .header {
     margin: 0;
 }
 
-.teacher__subjects.explicit .linechart  {
+.teacher__subjects.explicit .linechart {
     display: none;
 }
 
@@ -968,7 +1002,7 @@ ul {
     text-align: left;
     width: 100%;
     text-align: justify;
- }
+}
 
 .teacher__subjects.command .header p {
     margin: 0;
@@ -976,12 +1010,12 @@ ul {
     width: 100%;
     font-size: 0.925rem;
     text-align: justify;
- }
+}
 
- .teacher__subjects.command ul {
+.teacher__subjects.command ul {
     list-style: disc;
     text-align: justify;
- }
+}
 
 
 .container__subjects .image-wrapper {
@@ -989,6 +1023,7 @@ ul {
     background-color: var(--color-text-white);
     overflow: hidden;
     box-shadow: 0.02rem 0.02rem 1rem var(--color-ash);
+    text-align: center;
 }
 
 .container__subjects .note_info h5 {
@@ -1009,15 +1044,18 @@ ul {
 }
 
 
-.container__subjects a.note_btn {
+.container__subjects .only_subjects a.note_btn {
+    display: block;
     padding: 1rem 1.25rem;
     background: transparent;
     border: 2px solid var(--color-primary);
     border-radius: 0.25rem;
     color: var(--color-primary);
+    text-align: center;
+    width: 50%;
 }
 
-.container__subjects .note_btn:hover {
+.container__subjects .only_subjects .note_btn:hover {
     background-color: var(--color-primary);
     color: var(--color-text-white);
 }
@@ -1035,6 +1073,7 @@ ul {
     background-color: var(--color-text-white);
     overflow: hidden;
 }
+
 .container__subjects .image-wrapped img {
     width: 100%;
 }
@@ -1042,11 +1081,12 @@ ul {
 .container__parentresources .peoplelaugh_img {
     text-align: center;
 }
+
 .container__parentresources .peoplelaugh_img img {
     width: 100%;
 }
 
-.container__parentresources .notepink img{
+.container__parentresources .notepink img {
     width: 100%;
 }
 
@@ -1057,7 +1097,7 @@ ul {
     padding: 1rem;
 }
 
-.leadership .bg-tertiary-accent p{
+.leadership .bg-tertiary-accent p {
     font-size: 0.8rem;
 }
 
@@ -1079,10 +1119,11 @@ ul {
     line-height: 1.5rem;
 }
 
-.container__programs .guides .guide h3{
-   font-size: 1rem;
+.container__programs .guides .guide h3 {
+    font-size: 1rem;
 }
-.container__programs .guides .guide p{
+
+.container__programs .guides .guide p {
     font-size: 0.9rem;
 }
 
@@ -1091,18 +1132,20 @@ ul {
     border: none;
     padding: 0;
 }
+
 .container__programs .guides .guide .note_btn:hover {
     background: none;
     color: var(--color-primary);
     font-weight: 700
 }
 
-.container__programs .program  h5{
-   font-size: 1rem;
+.container__programs .program h5 {
+    font-size: 1rem;
 }
-.container__programs .program  p{
-   font-size: 0.8rem;
-   text-align: left;
+
+.container__programs .program p {
+    font-size: 0.8rem;
+    text-align: left;
 }
 
 
@@ -1114,6 +1157,19 @@ ul {
 
 } */
 
+.team_profiles {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.team {
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.team .address_info {
+    padding: 0 1rem;
+}
 
 .team .lists {
     color: var(--color-text-dark);
@@ -1123,13 +1179,143 @@ ul {
 
 
 
+.lists {
+    display: flex;
+    gap: 1rem;
+    /* align-items: center; */
+    padding-top: 0.2rem;
+}
+
+.lists i {
+    color: var(--color-text-dark);
+    font-size: 1.3rem;
+    padding-top: 0.3rem;
+}
+
+.lists p {
+    font-size: 0.8rem;
+    padding-top: 0.1rem;
+
+}
+
+/* SUBSCRIPTION CSS  */
+
+.subscription {
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.subscription .plan h5 {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.subscription .plan p {
+    color: var(--color-bg-ash);
+}
+
+.subscription .plan hr {
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 90%;
+}
+
+.subscription .plan a {
+    text-decoration: underline;
+    color: var(--color-primary-dark);
+}
+
+.subscription .special {
+    background-color: var(--color-primary-blue);
+    color: var(--color-text-white);
+}
+
+.subscription .special p,
+.subscription .special hr,
+.subscription .special h2,
+.subscription .special i,
+.subscription .special a,
+.subscription .special h5 {
+    color: var(--color-text-white);
+}
+
+.subscription .bg-plan h6 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.subscription .bg-plan h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.subscription .bg-plan {
+    background-image: url('../images/bg-subscription.png');
+    background-position: center;
+    background-size: 100%;
+    /* padding: 2rem; */
+}
 
 
+.subscription .bg-plan img {
+    width: 100%;
+    text-align: center;
+}
+
+.subscription .bg-plan ul {
+    color: var(--color-text-dark);
+    list-style: disc;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.subscription .bg-plan ul li {
+    font-size: 1rem;
+    line-height: 2rem;
+}
 
 
+/* SKILLS CSS */
 
+.icon-slant {
+    width: 5rem;
+}
 
+.skill_list {
+    margin: 4rem auto
+}
 
+.skills .skill_list h5 {
+    font-size: 1.5rem;
+}
+
+.skills .skill_list p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.list_top {
+    background-color: var(--color-primary-accent);
+    color: var(--color-text-white);
+}
+
+.list_top .skill_list p{
+    color: var(--color-text-white);
+}
+
+hr {
+    color: #000000;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.bg-time {
+    background-color: var(--color-primary-blue);
+    padding: 2rem 1rem;
+    line-height: 1.5rem;
+}
 
 
 
@@ -1156,6 +1342,7 @@ ul {
     font-size: 1.5rem;
     color: var(--color-primary-blue);
 }
+
 .container__register .form__section {
     margin: auto;
 }
@@ -1188,10 +1375,11 @@ ul {
     border-radius: 0.725rem;
     border: 1px solid var(--color-ash);
 }
+
 .container__register form input[type="password"]:focus,
 .container__register form input[type="email"]:focus,
 .container__register form input[type="text"]:focus {
-  outline: none;
+    outline: none;
 }
 
 .container__register form span.pass_hidden {
@@ -1209,7 +1397,7 @@ ul {
     font-size: 0.725rem;
 }
 
-.container__register form  button {
+.container__register form button {
     background-color: transparent;
     color: var(--color-primary-blue);
     font-weight: 600;
@@ -1222,6 +1410,7 @@ ul {
     border-radius: 0.25rem;
     color: var(--color-text-white);
 }
+
 .container__register form button.submit-btn:hover {
     background-color: var(--color-primary-dark);
     /* color: var(--color-primary-dark); */

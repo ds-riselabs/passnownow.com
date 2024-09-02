@@ -39,7 +39,7 @@
                 </p>
             </div>
         </div>
-        <div class="row mb-3">
+        <div class="row mb-3 ">
             <div class="col-12 col-md-4 mb-5">
                 <div class="image-wrapper">
                     <img src="{{ asset('assets/images/education-removelaptop.png') }}" alt="">
@@ -129,7 +129,7 @@
                 <div class="note_info p-2 text-center">
                     <p class="m-0">Lesson One</p>
                     <h5>Useful Skills For Teachers</h5>
-                    <a href="{{ url('#') }}" class="note_btn">READ NOW &nbsp; <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a href="{{ url('useful-skills') }}" class="note_btn">READ NOW &nbsp; <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
             <div class="col-12 col-md-4 mb-3">
@@ -139,7 +139,7 @@
                 <div class="note_info p-2 text-center">
                     <p class="m-0">Lesson Two</p>
                     <h5>Qualities of a Good Teacher</h5>
-                    <a href="{{ url('our-leadership') }}" class="note_btn">READ NOW &nbsp; <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a href="{{ url('good-teacher') }}" class="note_btn">READ NOW &nbsp; <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
             <div class="col-12 col-md-4 mb-3">
@@ -149,7 +149,7 @@
                 <div class="note_info p-2 text-center">
                     <p class="m-0">Lesson Three</p>
                     <h5>Teaching By Task</h5>
-                    <a href="{{ url('#') }}" class="note_btn">READ NOW &nbsp; <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a href="{{ url('task') }}" class="note_btn">READ NOW &nbsp; <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
         </div>
