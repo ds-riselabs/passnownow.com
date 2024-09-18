@@ -34,9 +34,10 @@
             <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
             &nbsp; <span>Rated 4.8/5 by parents & students</span>
         </section>
-        <header class="container-fluid  container__header grid grid-cols-2 items-center  py-10">
-            <nav class="container navbar navbar-expand-lg"><a class="navbar-brand" href="#"><img
-                        src="{{ asset('assets/images/logo.png') }}" alt=""></a><button class="navbar-toggler"
+        <header class="container-fluid  container__header grid grid-cols-2 items-center  shadow py-10">
+            <nav class="container navbar navbar-expand-lg">
+                <a class="navbar-brand" href="{{url('dashboard')}}"><img src="{{ asset('assets/images/logo.png') }}" alt=""></a>
+                    <button class="navbar-toggler"
                     type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
                         class="navbar-toggler-icon"></span></button>
@@ -46,27 +47,31 @@
                                 href="{{ url('/') }}">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">About us</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                                aria-expanded="false">About us</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown01">
                                 <li><a class="dropdown-item" href="{{ url('about') }}">About Passnownow</a></li>
                                 <li><a class="dropdown-item" href="{{ url('contact') }}">Contact us</a>
-                                
+
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="{{ url('subjects') }}">Subjects</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url('notes') }}">Classes</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Educational
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                                aria-expanded="false">Educational
                                 Resources</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown01">
                                 <li><a class="dropdown-item" href="{{ url('pastquestions') }}">Past Questions</a></li>
-                                <li><a class="dropdown-item" href="{{ url('teacherresources') }}">Teacher's Resources</a></li>
-                                <li><a class="dropdown-item" href="{{url('parentresources')}}">Guidance and Counselling</a></li>
+                                <li><a class="dropdown-item" href="{{ url('teacherresources') }}">Teacher's
+                                        Resources</a></li>
+                                <li><a class="dropdown-item" href="{{ url('parentresources') }}">Guidance and
+                                        Counselling</a></li>
                                 <li><a class="dropdown-item" href="{{ url('blog') }}">Blog</a>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="{{ url('subscriptions') }}">Pricing plan</a>
-                        
+
                         </li>
                         {{-- <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
@@ -84,8 +89,8 @@
                                     </li> --}}
                     </ul>
                     <div class="nav-btn">
-                        <a href="{{ url('login')}}" class="btn btn-style btn-style-secondary">Login</a>
-                        <a href="{{ url('register')}}" class="btn btn-outline-primary btn-style">Register</a>
+                        <a href="{{ url('login') }}" class="btn btn-style btn-style-secondary">Login</a>
+                        <a href="{{ url('register') }}" class="btn btn-outline-primary btn-style">Register</a>
                     </div>
                 </div>
             </nav>
@@ -105,7 +110,7 @@
                             </p>
                             <div class="sub-form">
                                 <input type="text" name="" id="" placeholder="Enter your email">
-                                <input type="button" class="btn-submit" value="Subcribe now">
+                                <input type="button" class="btn-submit" value="Subscribe now">
                             </div>
                         </form>
                     </div>
@@ -132,7 +137,8 @@
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Our Blog</a></li>
-                            <li class="nav-item mb-2"><a href="{{url('parentresources')}}" class="nav-link p-0">For Parent</a></li>
+                            <li class="nav-item mb-2"><a href="{{ url('parentresources') }}"
+                                    class="nav-link p-0">For Parent</a></li>
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">For Teachers</a></li>
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
                         </ul>

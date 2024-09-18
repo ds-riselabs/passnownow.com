@@ -43,7 +43,11 @@
 /* BACKGROUNDS  */
 
 .bg-tertiary-accent {
-    background-color: var(--color-tertiary-accent);
+    background-color: var(--color-tertiary-accent) !important;
+}
+
+.bg-secondary-accent {
+    background-color: var(--color-secondary-accent) !important;
 }
 
 
@@ -1301,7 +1305,7 @@ button.submit-btn:hover {
     color: var(--color-text-white);
 }
 
-.list_top .skill_list p{
+.list_top .skill_list p {
     color: var(--color-text-white);
 }
 
@@ -1428,4 +1432,146 @@ hr {
 
 .check {
     padding: 0 0.8rem;
+}
+
+
+/* ABOUT PAGE CSS  */
+.about ul {
+    list-style: disc;
+}
+
+.about ul li {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.about_bottom {
+    background-image: url('../images/bg-effect.png');
+}
+
+.about_bottom h6 {
+    font-size: 1.6rem !important;
+}
+
+.about_bottom .subscription_profiles {
+    justify-content: center;
+}
+
+.about_bottom .subscription_profiles img {
+    width: 40%;
+}
+
+.about_bottom .subscription_profiles p {
+    font-size: 0.9rem;
+}
+
+.about_bottom .subscription_profiles h5 {
+    font-weight: 700;
+}
+
+.career_gallery {
+    width: 100%;
+}
+
+.career_bottom h6 {
+    line-height: 1.5rem;
+}
+
+.career_bottom p {
+    font-size: 0.9rem;
+    /* line-height: 1.5rem; */
+}
+
+.career_support p {
+    font-size: 0.8rem;
+}
+
+.career_support a {
+    color: var(--color-text-white);
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+/* FAQ  */
+
+.accordion_temp h2 button{
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    padding: 1.5rem;
+}
+
+.accordion {
+    --bs-accordion-btn-bg:  transparent;     
+    --bs-accordion-btn-color:  #ffffff;     
+    --bs-accordion-bg:  transparent;
+    --bs-accordion-color: #ffffff;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath fill='%23ffffff' d='M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z'/%3E%3C/svg%3E");
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z'/%3E%3C/svg%3E"); */
+    /* width: 0.8rem;  */
+}
+
+.accordion-button:not(.collapsed):after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath fill='%23ffffff' d='M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z'/%3E%3C/svg%3E");
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z'/%3E%3C/svg%3E"); */
+}
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-secondary-dark);
+    color: var(--color-text-white);
+}
+
+.checkout h5 {
+    color: var(--color-primary-blue);
+    font-weight: 700;
+    font-family: var(--font-family-heading);
+    margin-bottom: 2rem;
+}
+
+.checkout input[type="submit"]{
+    background-color: var(--color-primary-blue);
+    padding: 0.8rem 1rem;
+}
+.checkout select,
+.checkout input{
+    padding: 0.8rem 1rem;
+}
+
+.checkout table {
+    width: 100%;
+    border: none;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+}
+.checkout table td:nth-child(2) {
+   text-align: right;
+   font-weight: 700;
+}
+
+.checkout .sub-form input[type="text"]{
+    padding: 0.6rem;
+    border: 1px solid var(--color-ash);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+.checkout .sub-form input[type="submit"]{
+    padding: 0.8rem 0.8rem;
+    background-color: var(--color-primary-blue);
+}
+.checkout .sub-form input[type="text"]:focus{
+    outline: none;
+    gap: 0;
+}
+.checkout .sub-form {
+    padding: 0;
+    justify-content: center;
+}
+
+.payment-logos {
+    border: 1px solid var(--color-ash);
+    padding: 1rem;
+    width: 80%;
 }

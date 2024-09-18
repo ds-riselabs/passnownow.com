@@ -148,8 +148,8 @@
                 </div>
                 <div class="note_info p-2 text-center">
                     <p class="m-0">Lesson Three</p>
-                    <h5>Teaching By Task</h5>
-                    <a href="{{ url('task') }}" class="note_btn">READ NOW &nbsp; <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <h5>Students Motivation</h5>
+                    <a href="{{ url('students-motivation') }}" class="note_btn">READ NOW &nbsp; <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
         </div>

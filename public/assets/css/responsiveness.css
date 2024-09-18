@@ -385,7 +385,23 @@
        font-size: 0.9rem;
     }
   
-  
+    .career_bottom  h6{
+        line-height: 2rem;
+        font-size: 1.5rem !important;
+    }
+
+    .accordion_temp h2 button{
+        font-size: 1rem;
+    }
+
+    .checkout h5 {
+        font-size: 1.3rem;
+    }
+
+    .payment-logos {
+        width: 100%;
+    }
+ 
  }
 
 
@@ -893,8 +909,12 @@
     }
  
  
-  
- }
+    .payment-logos {
+        width: 80%;
+    }  
+
+ 
+}
 
 
 
@@ -1165,6 +1185,12 @@
     }
     .bg-time div {
        font-size: 1.5rem;
+    }
+
+
+    .about ul li {
+        font-size: 1rem;
+        line-height: 2rem;
     }
   
  }

@@ -18,7 +18,6 @@ Route::get('/', function () {
 // });
 
 
-
 Route::get('/about', function(){
     return view('about');
 });
@@ -46,7 +45,6 @@ Route::get('/contact', function(){
     return view('contact');
 });
 
-
 Route::get('/parentcouncelling', function(){
     return view('parentcouncelling');
 });
@@ -63,12 +61,9 @@ Route::get('/login', function(){
     return view('login');
 });
 
-
-
 Route::get('/teacherresources', function(){
     return view('teacherresources');
 });
-
 
 Route::get('/useful-skills', function(){
     return view('usefulskills');
@@ -80,6 +75,10 @@ Route::get('/good-teacher', function(){
 
 Route::get('/students-motivation', function(){
     return view('studentsmotivation');
+});
+
+Route::get('/career-councelling', function(){
+    return view('careercouncelling');
 });
 
 Route::get('/note-tips', function(){
@@ -131,7 +130,19 @@ Route::get('/motivate', function(){
     return view('motivate');
 });
 
+Route::get('/faq', function(){
+    return view('faq');
+});
 
+Route::get('/checkout', function(){
+    return view('checkout');
+});
+
+
+// DASHBOARD ROUTING 
+Route::get('/dashboard', function(){
+    return view('admin.dashboard');
+});
 
 //  To reduce longer url 
 // Route::get('/educational-resources', function(){
@@ -139,7 +150,6 @@ Route::get('/motivate', function(){
 // })->name('edresources');
 
 // {{ route('edresources')}} to references the route in the view page
-
 
 // Access a nested view page with uri parameter 
 Route::get('/dashboard/{name}/{lname}', function ($name, $lname) {

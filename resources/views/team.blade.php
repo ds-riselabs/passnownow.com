@@ -13,17 +13,6 @@
             </div>
         </div>
     </Section>
-    {{-- <section class="container-fluid container__search">
-        <div class="row p-0 m-0">
-            <div class="col-12 col-md-6 search__form">
-                <form action="">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" value="" placeholder="Search Subject">
-                    <input type="button" value="Search">
-                </form>
-            </div>
-        </div>
-    </section> --}}
 
     <section class="container-fluid container__subjects mt-lg-5 teacher__subjects container__programs">
         <div class="row">
