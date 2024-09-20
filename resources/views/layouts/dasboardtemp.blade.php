@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="{{ asset('assets/fonts/css/regular.css') }} ">
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
+    <!-- Datatables  -->
+    <link rel="stylesheet" href="{{ asset('assets/css/table/dataTables.bootstrap5.min.css') }} ">
 
     <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
 
@@ -58,11 +60,11 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle profile" href="#" id="dropdown01" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        <img src="{{ asset('assets/images/logo.png') }}" alt="">
+                        <img src="{{ asset('assets/images/profile.png') }}" alt="">
                     </a>
                     <ul class="dropdown-menu w-50" aria-labelledby="dropdown01">
                         <li><a class="dropdown-item" href="{{ url('about') }}">Signout</a></li>
-                        <li><a class="dropdown-item" href="{{ url('contact') }}">Profile</a>
+                        <li><a class="dropdown-item" href="{{ url('profile') }}">Profile</a>
                     </ul>
                 </li>
             </div>
@@ -81,7 +83,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{url('admins')}}">
                                 <i class="fa-solid fa-user-tie"></i>
                                 Admin
                             </a>
@@ -105,9 +107,9 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{url('subscriptiondetails')}}">
                                 <i class="fa-solid fa-hand-holding-dollar"></i>
-                                Pricing
+                                Subscription
                             </a>
                         </li>
                         <li class="nav-item">
@@ -129,7 +131,17 @@
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 
                 @yield('admincontent')
-               
+                <section class="container-fluid footer__container">
+                    <div class="row">
+                        <div class="col-12 col-md-5 col-lg-6 mb-2">&copy; Copyright Passnownow 2024, All Right Reserverd</div>
+                        {{-- <div class="col-12 col-md-2 col-lg-4"></div> --}}
+                        <div class="col-12 col-md-5 col-lg-6 text-lg-end">
+                            <a href="3">Terms and conditions</a> &nbsp;
+                            <a href="3">Privacy policy</a> &nbsp;
+                            <a href="#">Support</a>
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
     </div>

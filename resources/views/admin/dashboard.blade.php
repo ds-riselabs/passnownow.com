@@ -25,8 +25,12 @@
             </div>
         </div>
     </section>
-    <section class="container-fluid top-courses__containter  shadow my-4">
+    <section class="container-fluid top-courses__containter  shadow py-2 my-4">
         <div class="row">
+            <div class="col-12 top">
+                <h5>Top Subjects Pick for You</h5>
+                <a href="#">See All</a>
+            </div>
             <div class="col-12 col-md-6 col-lg-4 mb-2">
                 <div class="card courses">
                     <div class="image_wrapper">
@@ -35,8 +39,7 @@
                     <div class="card-body">
                         <div class="courses-tag">Passnownow</div>
                         <h5 class="card-title">English Language</h5>
-                        {{-- <p class="card-text">UI/UX</p> --}}
-                        <button type="button" class="btn">View Details</button>
+                        <button type="button" class="buton">View Details</button>
                     </div>
                 </div>
             </div>
@@ -48,8 +51,7 @@
                     <div class="card-body">
                         <div class="courses-tag">Passnownow</div>
                         <h5 class="card-title">Mathematics</h5>
-                        {{-- <p class="card-text">UI/UX</p> --}}
-                        <button type="button" class="btn">View Details</button>
+                        <button type="button" class="buton">View Details</button>
                     </div>
                 </div>
             </div>
@@ -61,8 +63,7 @@
                     <div class="card-body">
                         <div class="courses-tag">Passnownow</div>
                         <h5 class="card-title">Home Economics</h5>
-                        {{-- <p class="card-text">UI/UX</p> --}}
-                        <button type="button" class="btn">View Details</button>
+                        <button type="button" class="buton">View Details</button>
                     </div>
                 </div>
             </div>
@@ -70,7 +71,7 @@
     </section>
     <section class="container-fluid history__container">
         <div class="row">
-            <div class="col-12 col-md-7 mb-3 subscription_history">
+            <div class="col-12 col-lg-7 mb-3 mb-md-0 shadow subscription_history">
                 <div class="top">
                     <h5>Subscription History</h5>
                     <a href="#">See All</a>
@@ -90,174 +91,95 @@
                                 <h6>Yearly Plan</h6>
                                 <p>#00001 | 12-08-24</p>
                             </td>
-                            <td>N10,000.00</td>
-                            <td class="status">Current</td>
+                            <td><h6>N10,000.00</h6></td>
+                            <td><span class="status"><i class="fa-solid fa-circle"></i> <span>Current</span></span></td>
                         </tr>
                         <tr>
                             <td>
                                 <h6>Yearly Plan</h6>
                                 <p>#00001 | 12-08-24</p>
                             </td>
-                            <td>N10,000.00</td>
-                            <td class="status">Expired</td>
+                            <td><h6>N10,000.00</h6></td>
+                            <td><span class="status exp"><i class="fa-solid fa-circle"></i> <span>Expired</span></span></td>
                         </tr>
                         <tr>
                             <td>
                                 <h6>Yearly Plan</h6>
                                 <p>#00001 | 12-08-24</p>
                             </td>
-                            <td>N10,000.00</td>
-                            <td class="status">Expired</td>
+                            <td><h6>N10,000.00</h6></td>
+                            <td ><span class="status exp"><i class="fa-solid fa-circle"></i> <span>Expired</span></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h6>Yearly Plan</h6>
+                                <p>#00001 | 12-08-24</p>
+                            </td>
+                            <td><h6>N10,000.00</h6></td>
+                            <td><span class="status"><i class="fa-solid fa-circle"></i> <span>Current</span></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h6>Yearly Plan</h6>
+                                <p>#00001 | 12-08-24</p>
+                            </td>
+                            <td><h6>N10,000.00</h6></td>
+                            <td><span class="status exp"><i class="fa-solid fa-circle"></i> <span>Expired</span></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h6>Yearly Plan</h6>
+                                <p>#00001 | 12-08-24</p>
+                            </td>
+                            <td><h6>N10,000.00</h6></td>
+                            <td ><span class="status exp"><i class="fa-solid fa-circle"></i> <span>Expired</span></span></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="col-12 col-md-5 subjects_history">
+            <div class="col-12 col-lg-5 shadow subjects_history">
                 <div class="top">
                     <h5>Completed Subjects</h5>
                     <a href="#">See All</a>
                 </div>
-
-                <div>
-                    <h6>English Language</h6>
-                    <p>Completed</p>
+                <div class="subject">
+                    <span><i class="fa-solid fa-graduation-cap"></i></span>
+                    <span>
+                        <h6>English Language</h6>
+                        <p class="mb-0">Completed</p>
+                    </span>
                 </div>
-                <div>
-                    <h6>Mathematics</h6>
-                    <p>In Progress</p>
+                <div class="subject">
+                     <span><i class="fa-solid fa-graduation-cap"></i></span>
+                    <span>
+                        <h6>Mathematics</h6>
+                        <p class="mb-0">In Progress</p>
+                    </span>
+                </div>
+                <div class="subject">
+                     <span><i class="fa-solid fa-graduation-cap"></i></span>
+                    <span>
+                        <h6>Computer Science</h6>
+                        <p class="mb-0">In Progress</p>
+                    </span>
+                </div>
+                <div class="subject">
+                     <span><i class="fa-solid fa-graduation-cap"></i></span>
+                    <span>
+                        <h6>Chemistry</h6>
+                        <p class="mb-0">In Progress</p>
+                    </span>
+                </div>
+                <div class="subject">
+                     <span><i class="fa-solid fa-graduation-cap"></i></span>
+                    <span>
+                        <h6>Physics</h6>
+                        <p class="mb-0">In Progress</p>
+                    </span>
                 </div>
             </div>
-        
         </div>
 
-    </section>
 
-    {{-- <h2>Section title</h2>
-    <div class="table-responsive">
-        <table class="table table-striped table-sm">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Header</th>
-                    <th scope="col">Header</th>
-                    <th scope="col">Header</th>
-                    <th scope="col">Header</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1,001</td>
-                    <td>random</td>
-                    <td>data</td>
-                    <td>placeholder</td>
-                    <td>text</td>
-                </tr>
-                <tr>
-                    <td>1,002</td>
-                    <td>placeholder</td>
-                    <td>irrelevant</td>
-                    <td>visual</td>
-                    <td>layout</td>
-                </tr>
-                <tr>
-                    <td>1,003</td>
-                    <td>data</td>
-                    <td>rich</td>
-                    <td>dashboard</td>
-                    <td>tabular</td>
-                </tr>
-                <tr>
-                    <td>1,003</td>
-                    <td>information</td>
-                    <td>placeholder</td>
-                    <td>illustrative</td>
-                    <td>data</td>
-                </tr>
-                <tr>
-                    <td>1,004</td>
-                    <td>text</td>
-                    <td>random</td>
-                    <td>layout</td>
-                    <td>dashboard</td>
-                </tr>
-                <tr>
-                    <td>1,005</td>
-                    <td>dashboard</td>
-                    <td>irrelevant</td>
-                    <td>text</td>
-                    <td>placeholder</td>
-                </tr>
-                <tr>
-                    <td>1,006</td>
-                    <td>dashboard</td>
-                    <td>illustrative</td>
-                    <td>rich</td>
-                    <td>data</td>
-                </tr>
-                <tr>
-                    <td>1,007</td>
-                    <td>placeholder</td>
-                    <td>tabular</td>
-                    <td>information</td>
-                    <td>irrelevant</td>
-                </tr>
-                <tr>
-                    <td>1,008</td>
-                    <td>random</td>
-                    <td>data</td>
-                    <td>placeholder</td>
-                    <td>text</td>
-                </tr>
-                <tr>
-                    <td>1,009</td>
-                    <td>placeholder</td>
-                    <td>irrelevant</td>
-                    <td>visual</td>
-                    <td>layout</td>
-                </tr>
-                <tr>
-                    <td>1,010</td>
-                    <td>data</td>
-                    <td>rich</td>
-                    <td>dashboard</td>
-                    <td>tabular</td>
-                </tr>
-                <tr>
-                    <td>1,011</td>
-                    <td>information</td>
-                    <td>placeholder</td>
-                    <td>illustrative</td>
-                    <td>data</td>
-                </tr>
-                <tr>
-                    <td>1,012</td>
-                    <td>text</td>
-                    <td>placeholder</td>
-                    <td>layout</td>
-                    <td>dashboard</td>
-                </tr>
-                <tr>
-                    <td>1,013</td>
-                    <td>dashboard</td>
-                    <td>irrelevant</td>
-                    <td>text</td>
-                    <td>visual</td>
-                </tr>
-                <tr>
-                    <td>1,014</td>
-                    <td>dashboard</td>
-                    <td>illustrative</td>
-                    <td>rich</td>
-                    <td>data</td>
-                </tr>
-                <tr>
-                    <td>1,015</td>
-                    <td>random</td>
-                    <td>tabular</td>
-                    <td>information</td>
-                    <td>text</td>
-                </tr>
-            </tbody>
-        </table>
-    </div> --}}
+    </section>
 @endsection

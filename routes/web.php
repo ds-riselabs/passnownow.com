@@ -144,6 +144,38 @@ Route::get('/dashboard', function(){
     return view('admin.dashboard');
 });
 
+Route::get('/profile', function(){
+    return view('admin.profile');
+});
+
+Route::get('/subscriptiondetails', function(){
+    return view('admin.subscriptiondetails');
+});
+
+Route::get('/checkoutdetails', function(){
+    return view('admin.checkoutdetails');
+});
+
+Route::get('/checkoutsummary', function(){
+    return view('admin.checkoutsummary');
+});
+
+Route::get('/subscription', function(){
+    return view('admin.subscription');
+});
+
+Route::get('/admins', function(){
+    return view('admin.admins');
+});
+
+Route::get('/users', function(){
+    return view('admin.users');
+});
+
+Route::get('/instructors', function(){
+    return view('admin.instructors');
+});
+
 //  To reduce longer url 
 // Route::get('/educational-resources', function(){
 //     return view('about');

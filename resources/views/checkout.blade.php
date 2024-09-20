@@ -26,7 +26,7 @@
                     <div class="col-md-6">
                         {{-- <label for="inputText4" class="form-label">Enter Full Name</label> --}}
                         <input type="text" class="form-control" id="inputText5" placeholder="Last Name">
-                    </div>      
+                    </div>
                     <div class="col-md-12">
                         <input type="text" class="form-control" id="inputText6" placeholder="Address 1">
                     </div>
@@ -60,7 +60,7 @@
                         <input type="password" class="form-control" id="inputAddress" placeholder="Password">
                     </div>
                     <div class="col-12">
-                        <input type="submit" class="btn btn-submit w-60" value="Pay now with ATM card or Bank Transfer"> 
+                        <input type="submit" class="btn btn-submit w-60" value="Pay now with ATM card or Bank Transfer">
                     </div>
                 </form>
             </div>
@@ -100,16 +100,16 @@
                 <p class="text-center">Secured by Paystack</p>
                 <div class="row text-center g-0 mx-auto payment-logos">
                     <div class="col-3">
-                        <img src="{{asset('assets/images/logo-paypal.png')}}"  alt="" />
+                        <img src="{{ asset('assets/images/logo-paypal.png') }}" alt="" />
                     </div>
                     <div class="col-3">
-                        <img src="{{asset('assets/images/logo-visa.png')}}"  alt="" />
+                        <img src="{{ asset('assets/images/logo-visa.png') }}" alt="" />
                     </div>
                     <div class="col-3">
-                        <img src="{{asset('assets/images/logo-mastercard.png')}}"  alt="" />
+                        <img src="{{ asset('assets/images/logo-mastercard.png') }}" alt="" />
                     </div>
                     <div class="col-3">
-                        <img src="{{asset('assets/images/logo-verve.png')}}"  alt="" />
+                        <img src="{{ asset('assets/images/logo-verve.png') }}" alt="" />
                     </div>
                 </div>
             </div>

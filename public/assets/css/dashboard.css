@@ -28,6 +28,31 @@
 
 }
 
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 0.3rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-blue);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark);
+}
+
 .navbar .navbar-brand img {
   width: 4rem;
 }
@@ -158,7 +183,8 @@ body {
   border-radius: 50%;
 }
 
-.profile {
+
+.navbar .profile {
   /* width: 1rem; */
   /* overflow: none; */
   border: 1px solid var(--color-primary-dark);
@@ -167,7 +193,7 @@ body {
   border-radius: 4rem;
 }
 
-.profile img {
+.navbar .profile img {
   width: 2rem;
   overflow: none;
   border: 1px solid var(--color-primary-dark);
@@ -257,6 +283,11 @@ body {
 
 
 /* TOP COURSES SECTION  */
+.top-courses__containter .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
 
 .courses {
   padding: 1rem;
@@ -281,43 +312,336 @@ body {
   border-radius: 1rem;
   padding: 0.1rem 0.6rem;
   color: var(--color-text-white);
+  text-align: center;
   font-size: 0.6rem;
-  width: 40%;
+  display: inline;
 }
 
 .courses .card-body {
+  padding-right: 0;
   padding-left: 0;
   padding-bottom: 0;
   width: 100%;
 }
 
-.courses .btn {
+.courses .buton {
   margin: 0.4rem auto;
+  /* width: 70%; */
   text-align: center;
   border: 1px solid var(--color-primary-blue);
   padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+}
+
+
+.history__container .row {
+  /* gap: 1rem */
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .subjects_history,
 .subscription_history {
-  padding: 0;
+  padding: 0.5rem;
+  border-radius: 0.1rem;
+  height: 25rem;
+  overflow-y: scroll;
 }
 
 .subjects_history .top,
 .subscription_history .top {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.subjects_history .top a,
+.subscription_history .top a {
+  text-decoration: none;
 }
 
 .subscription_history table {
   width: 100%;
-  background-color: #34C759;
   padding: 0.5rem;
-  border-radius: 1rem;
+  font-size: 0.8rem;
+}
+
+.subscription_history table h6 {
+  font-size: 0.8rem;
+}
+
+.subscription_history table tr th {
+  background-color: var(--color-dash);
+  padding: 0.5rem;
+}
+
+.subscription_history table .status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background-color: #DCFCE7;
+  color: #16A34A;
+  padding: 0.05rem 0.1rem;
+  border-radius: 0.8rem;
+  width: 65%;
+}
+
+
+.subscription_history table .status.exp {
+  background-color: #fccbc8;
+  color: #FD645B;
+
+}
+
+.subscription_history table .status i {
+  font-size: 0.4rem;
+}
+
+.subjects_history .subject {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--color-ash);
+  border-radius: 0.4rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem 0.5rem;
+}
+
+.subjects_history .subject i {
+  background-color: var(--color-dash);
+  padding: 0.75rem 0.6rem;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  color: var(--color-primary-blue);
+}
+
+
+.footer__container {
+  border-top: 1px solid var(--color-ash);
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.footer__container .row {
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
+  justify-content: space-between;
+}
+
+.footer__container a {
+  text-decoration: none;
+  color: var(--color-bg-ash);
+}
+
+.footer__container a:hover {
+  text-decoration: none;
+  color: var(--color-primary-blue);
 }
 
 /* @media (max-width: 767.98px) {
 } */
+
+
+
+
+
+
+
+.profile__container {
+  margin-top: 3rem;
+  /* padding:; */
+}
+
+.profile__container .row {
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.profile__container .profile_data {
+  padding: 0.5rem;
+  border-radius: 0.1rem;
+}
+
+.profile__container .profile_data .top {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-ash);
+  margin-bottom: 1.2rem;
+}
+
+.profile__container form input {
+  padding: 0.6rem 1rem;
+}
+
+.profile__container form button {
+  padding: 0.6rem 1rem;
+  width: 100%;
+  background-color: var(--color-primary-blue);
+}
+
+
+.profile__container .profile {
+  /* padding: 2rem; */
+  padding-top: 0;
+  text-align: center;
+
+}
+
+.profile__container .profile .image_wrapper {
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 16rem;
+  height: 14rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  border: 1px solid var(--color-ash);
+}
+
+.profile__container .profile .image_wrapper .profile_image {
+  width: 100%;
+  height: 100%;
+}
+
+.profile__container .profile button {
+  margin: 0.6rem auto;
+  padding: 0.8rem 1rem;
+  background-color: var(--color-ash);
+  border-radius: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.profile__container .profile a {
+  text-decoration: none;
+  color: var(--color-text-red);
+  font-weight: 600;
+}
+
+
+
+
+
+/* Subscription Details page  */
+.sub_detail__container {
+  margin-top: 4rem;
+}
+
+.sub_detail__container .row {
+  margin-bottom: 10rem;
+  background-color: var(--color-primary-blue);
+  padding: 1rem;
+  padding-top: 2rem;
+  border-radius: 1rem;
+  color: var(--color-text-white);
+}
+
+.sub_detail__container .subscription_details {
+  padding: 0.5rem;
+  border-radius: 0.1rem;
+}
+
+.subscription_details table {
+  width: 100%;
+}
+
+.subscription_details table tr td {
+  padding-bottom: 2rem;
+}
+
+.subscription_details table a {
+  color: var(--color-text-white);
+  text-decoration: none;
+  font-size: 700;
+}
+
+.checkoutsummary__container {
+  margin-top: 2rem;
+}
+
+.checkoutsummary__container .checkout__summary table {
+  width: 100%;
+}
+.checkoutsummary__container .checkout__summary table tr td{
+  line-height: 2.5rem;
+}
+
+.checkoutsummary__container .checkout__summary table tr td:last-child {
+  text-align: end;
+}
+
+
+.checkoutsummary__container .checkout__summary .payment-logos {
+  width: 30%;
+  border: 1px solid var(--color-ash);
+  padding: 0.6rem 0;
+  padding-right: 0.6rem;
+  text-align: center;
+}
+
+.checkout__summary input[type="text"] {
+  padding: 0.8rem;
+  color: var(--color-primary-blue) !important;
+}
+
+.checkout__summary input[type="text"]:focus {
+  outline: none !important;
+}
+
+.checkout__summary .btn-submit {
+  background-color: var(--color-primary-blue);
+  padding: 0.8rem;
+  color: var(--color-text-white);
+}
+
+.checkout__summary .btn-submit:hover {
+  background-color: var(--color-secondary-dark);
+  padding: 0.8rem;
+  color: var(--color-text-white);
+}
+
+
+
+/* ADMIN CSS  */
+
+
+
+.table-responsive {
+  position: relative;
+  z-index: 99;
+  /* height: 95vh; */
+}
+
+
+.action .more-options {
+  list-style: none;
+  background: var(--color-ash);
+  width: 100px;
+  border-radius: 0.8rem;
+  padding: 0.5rem;
+  display: none;
+  position: absolute;
+  /* left:rem; */
+  z-index: 99999999;
+}
+.more-options > li > button, .more-options > li > a {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  background: none;
+}
+
+.action:hover .more-options {
+  display: block;
+}
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 768px) {
@@ -325,7 +649,7 @@ body {
   .sidebar {
     top: 5rem;
     padding: 1rem;
-  
+
   }
 
   .form-control-dark {
@@ -335,29 +659,58 @@ body {
   .greeting__containter .row .greetings {
     padding: 1rem;
     padding-bottom: 0rem;
-  
+
   }
 
   .greeting__containter .row .greeting-text {
     margin-bottom: 1rem;
   }
 
-  .greeting__containter .row .greeting-img img{
+  .greeting__containter .row .greeting-img img {
     width: 14rem;
   }
+
+  .subjects_history,
+  .subscription_history {
+    padding: 1.5rem;
+    border-radius: 0.1rem;
+  }
+
+  .footer__container {
+    text-align: left;
+  }
+
+  .footer__container .row {
+    padding: 1rem;
+  }
+
+
+
+
 }
 
 @media screen and (min-width: 1024px) {
-  
+
   /* .greeting__containter .row .greeting-text {
     margin-bottom: 2rem;
   } */
   .greeting__containter .row .greetings {
     padding: 2.5rem;
-  
+
   }
 
-  .greeting__containter .row .greeting-img img{
+  .greeting__containter .row .greeting-img img {
     width: 21rem;
   }
+
+  .subjects_history,
+  .subscription_history {
+    padding: 2rem;
+    border-radius: 0.1rem;
+  }
+
+  .profile__container .row {
+    flex-direction: row;
+  }
+
 }
