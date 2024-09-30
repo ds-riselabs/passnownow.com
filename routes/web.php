@@ -172,6 +172,32 @@ Route::get('/users', function(){
     return view('admin.users');
 });
 
+Route::get('/classes', function(){
+    return view('admin.classes');
+});
+
+Route::get('/adsubjects', function(){
+    return view('admin.adsubjects');
+});
+
+
+Route::get('/adpastquestions', function(){
+    return view('admin.adpastquestions');
+});
+
+Route::get('/adexams', function(){
+    return view('admin.adexams');
+});
+
+Route::get('/viewtopics', function(){
+    return view('admin.viewtopics');
+});
+
+Route::get('/viewdata', function(){
+    return view('admin.viewdata');
+});
+
+
 Route::get('/instructors', function(){
     return view('admin.instructors');
 });

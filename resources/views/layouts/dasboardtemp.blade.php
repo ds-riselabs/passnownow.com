@@ -89,23 +89,35 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{url('users')}}">
                                 <i class="fa-regular fa-user"></i>
-                                Students
+                                Users
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fa-solid fa-briefcase"></i>
+                            <a class="nav-link" href="{{url('classes')}}">
+                                <i class="fa-solid fa-layer-group"></i>
                                 Classes
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{url('adsubjects')}}">
+                                <i class="fa-solid fa-swatchbook"></i>
+                                Subjects
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('adexams')}}">
+                                <i class="fa-solid fa-list"></i>
+                                Exams
+                            </a>
+                        </li>
+                        {{-- <li class="nav-item">
+                            <a class="nav-link" href="{{url('adpastquestions')}}">
                                 <i class="fa-solid fa-list"></i>
                                 Pass Questions
                             </a>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('subscriptiondetails')}}">
                                 <i class="fa-solid fa-hand-holding-dollar"></i>

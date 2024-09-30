@@ -2,11 +2,11 @@
 
 @section('admincontent')
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Administrators</h1>
+        <h1 class="h2">Subjects</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group me-2">
                 <button type="button" class="btn btn-md btn-outline-primary" data-bs-toggle="modal"
-                    data-bs-target="#addModal">Add admin</button>
+                    data-bs-target="#addModal">Add Subject</button>
             </div>
         </div>
     </div>
@@ -16,11 +16,11 @@
             <thead class="bg-info">
                 <tr>
                     <th scope="col">S/N</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Username</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Role</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Class</th>
                     <th scope="col">Date</th>
+                    <th scope="col">Status</th>
                     <th scope="col">Actions</th>
 
                 </tr>
@@ -29,11 +29,16 @@
                 {{-- <php foreach  ($output as $admin) { ?> --}}
                 <tr>
                     <th>1</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Super Admin</td>
+                    <td>English Language</td>
+                    <td>This constist of Alphabets to Concord</td>
+                    <td>JSS 1</td>
                     <td>20-9-2024</td>
+                    <td>
+                        <div class="form-check form-switch">
+                            {{-- <input class="form-check-input enable-btn" value="<=$video['status'];?>" type="checkbox" data-value ="<=$video['id'];?>" <?php if($video['status'] == 1 ){echo 'checked';}?> > --}}
+                            <input class="form-check-input enable-btn" value="" type="checkbox" data-value ="" checked >
+                        </div>
+                    </td>
                     <td>
                         <div class="action">
                             <i class="fa-solid fa-ellipsis-vertical align-text-bottom text-dark more-button"></i>
@@ -41,7 +46,7 @@
                             <ul class="more-options">
                                 <li><button id="" class="btn btn-warning user-edit-btn p-1" data-bs-toggle="modal"
                                         data-bs-target="#editModal">edit</button></li>
-                                <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
+                                <li><a href="{{ url('viewtopics') }}" class="btn btn-primary p-1">Topics</a></li>
                                 <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
                                         class="btn btn-danger p-1">delete</a></li>
                             </ul>
@@ -50,11 +55,16 @@
                 </tr>
                 <tr>
                     <th>2</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
+                    <td>English Language</td>
+                    <td>This constist of topics from Concord to Syllable</td>
+                    <td>JSS 2</td>
                     <td>20-9-2024</td>
+                    <td>
+                        <div class="form-check form-switch">
+                            {{-- <input class="form-check-input enable-btn" value="<=$video['status'];?>" type="checkbox" data-value ="<=$video['id'];?>" <?php if($video['status'] == 1 ){echo 'checked';}?> > --}}
+                            <input class="form-check-input enable-btn" value="" type="checkbox" data-value ="" checked >
+                        </div>
+                    </td>
                     <td>
                         <div class="action">
                             <i class="fa-solid fa-ellipsis-vertical align-text-bottom text-dark more-button"></i>
@@ -62,7 +72,7 @@
                             <ul class="more-options">
                                 <li><button id="" class="btn btn-warning user-edit-btn p-1" data-bs-toggle="modal"
                                         data-bs-target="#editModal">edit</button></li>
-                                <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
+                                <li><a href="{{ url('viewtopics') }}" class="btn btn-primary p-1">Topics</a></li>
                                 <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
                                         class="btn btn-danger p-1">delete</a></li>
                             </ul>
@@ -71,11 +81,16 @@
                 </tr>
                 <tr>
                     <th>3</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
+                    <td>English Language</td>
+                    <td>This constist of Alphabets to Concord</td>
+                    <td>JSS 3</td>
                     <td>20-9-2024</td>
+                    <td>
+                        <div class="form-check form-switch">
+                            {{-- <input class="form-check-input enable-btn" value="<=$video['status'];?>" type="checkbox" data-value ="<=$video['id'];?>" <?php if($video['status'] == 1 ){echo 'checked';}?> > --}}
+                            <input class="form-check-input enable-btn" value="" type="checkbox" data-value ="" checked >
+                        </div>
+                    </td>
                     <td>
                         <div class="action">
                             <i class="fa-solid fa-ellipsis-vertical align-text-bottom text-dark more-button"></i>
@@ -83,7 +98,7 @@
                             <ul class="more-options">
                                 <li><button id="" class="btn btn-warning user-edit-btn p-1" data-bs-toggle="modal"
                                         data-bs-target="#editModal">edit</button></li>
-                                <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
+                                <li><a href="{{ url('viewtopics') }}" class="btn btn-primary p-1">Topics</a></li>
                                 <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
                                         class="btn btn-danger p-1">delete</a></li>
                             </ul>
@@ -92,11 +107,16 @@
                 </tr>
                 <tr>
                     <th>4</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
+                    <td>Mathematics</td>
+                    <td>This constist of Numbers to Algebra</td>
+                    <td>JSS 1</td>
                     <td>20-9-2024</td>
+                    <td>
+                        <div class="form-check form-switch">
+                            {{-- <input class="form-check-input enable-btn" value="<=$video['status'];?>" type="checkbox" data-value ="<=$video['id'];?>" <?php if($video['status'] == 1 ){echo 'checked';}?> > --}}
+                            <input class="form-check-input enable-btn" value="" type="checkbox" data-value ="" checked >
+                        </div>
+                    </td>
                     <td>
                         <div class="action">
                             <i class="fa-solid fa-ellipsis-vertical align-text-bottom text-dark more-button"></i>
@@ -104,7 +124,7 @@
                             <ul class="more-options">
                                 <li><button id="" class="btn btn-warning user-edit-btn p-1" data-bs-toggle="modal"
                                         data-bs-target="#editModal">edit</button></li>
-                                <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
+                                <li><a href="{{ url('viewtopics') }}" class="btn btn-primary p-1">Topics</a></li>
                                 <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
                                         class="btn btn-danger p-1">delete</a></li>
                             </ul>
@@ -113,11 +133,16 @@
                 </tr>
                 <tr>
                     <th>5</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
+                    <td>Mathematics</td>
+                    <td>This constist of Numbers to Algebra</td>
+                    <td>JSS 2</td>
                     <td>20-9-2024</td>
+                    <td>
+                        <div class="form-check form-switch">
+                            {{-- <input class="form-check-input enable-btn" value="<=$video['status'];?>" type="checkbox" data-value ="<=$video['id'];?>" <?php if($video['status'] == 1 ){echo 'checked';}?> > --}}
+                            <input class="form-check-input enable-btn" value="" type="checkbox" data-value ="" checked >
+                        </div>
+                    </td>
                     <td>
                         <div class="action">
                             <i class="fa-solid fa-ellipsis-vertical align-text-bottom text-dark more-button"></i>
@@ -125,7 +150,7 @@
                             <ul class="more-options">
                                 <li><button id="" class="btn btn-warning user-edit-btn p-1" data-bs-toggle="modal"
                                         data-bs-target="#editModal">edit</button></li>
-                                <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
+                                <li><a href="{{ url('viewtopics') }}" class="btn btn-primary p-1">Topics</a></li>
                                 <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
                                         class="btn btn-danger p-1">delete</a></li>
                             </ul>
@@ -134,11 +159,16 @@
                 </tr>
                 <tr>
                     <th>6</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
+                    <td>Mathematics</td>
+                    <td>This constist of Numbers to Algebra</td>
+                    <td>JSS 3</td>
                     <td>20-9-2024</td>
+                    <td>
+                        <div class="form-check form-switch">
+                            {{-- <input class="form-check-input enable-btn" value="<=$video['status'];?>" type="checkbox" data-value ="<=$video['id'];?>" <?php if($video['status'] == 1 ){echo 'checked';}?> > --}}
+                            <input class="form-check-input enable-btn" value="" type="checkbox" data-value ="" checked >
+                        </div>
+                    </td>
                     <td>
                         <div class="action">
                             <i class="fa-solid fa-ellipsis-vertical align-text-bottom text-dark more-button"></i>
@@ -146,7 +176,7 @@
                             <ul class="more-options">
                                 <li><button id="" class="btn btn-warning user-edit-btn p-1" data-bs-toggle="modal"
                                         data-bs-target="#editModal">edit</button></li>
-                                <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
+                                <li><a href="{{ url('viewtopics') }}" class="btn btn-primary p-1">Topics</a></li>
                                 <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
                                         class="btn btn-danger p-1">delete</a></li>
                             </ul>
@@ -155,11 +185,16 @@
                 </tr>
                 <tr>
                     <th>7</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
+                    <td>Biology</td>
+                    <td>This constist of Hitory of Biology to Respiration</td>
+                    <td>SSS 1</td>
                     <td>20-9-2024</td>
+                    <td>
+                        <div class="form-check form-switch">
+                            {{-- <input class="form-check-input enable-btn" value="<=$video['status'];?>" type="checkbox" data-value ="<=$video['id'];?>" <?php if($video['status'] == 1 ){echo 'checked';}?> > --}}
+                            <input class="form-check-input enable-btn" value="" type="checkbox" data-value ="" checked >
+                        </div>
+                    </td>
                     <td>
                         <div class="action">
                             <i class="fa-solid fa-ellipsis-vertical align-text-bottom text-dark more-button"></i>
@@ -167,107 +202,24 @@
                             <ul class="more-options">
                                 <li><button id="" class="btn btn-warning user-edit-btn p-1" data-bs-toggle="modal"
                                         data-bs-target="#editModal">edit</button></li>
-                                <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
+                                <li><a href="{{ url('viewtopics') }}" class="btn btn-primary p-1">Topics</a></li>
                                 <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
                                         class="btn btn-danger p-1">delete</a></li>
                             </ul>
                         </div>
                     </td>
                 </tr>
-                <tr>
-                    <th>8</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
-                    <td>20-9-2024</td>
-                    <td>
-                        <div class="action">
-                            <i class="fa-solid fa-ellipsis-vertical align-text-bottom text-dark more-button"></i>
-                            {{-- <span class="align-text-bottom text-dark more-button"></span> --}}
-                            <ul class="more-options">
-                                <li><button id="" class="btn btn-warning user-edit-btn p-1"
-                                        data-bs-toggle="modal" data-bs-target="#editModal">edit</button></li>
-                                <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
-                                <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
-                                        class="btn btn-danger p-1">delete</a></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th>9</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
-                    <td>20-9-2024</td>
-                    <td>
-                        <div class="action">
-                            <i class="fa-solid fa-ellipsis-vertical align-text-bottom text-dark more-button"></i>
-                            {{-- <span class="align-text-bottom text-dark more-button"></span> --}}
-                            <ul class="more-options">
-                                <li><button id="" class="btn btn-warning user-edit-btn p-1"
-                                        data-bs-toggle="modal" data-bs-target="#editModal">edit</button></li>
-                                <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
-                                <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
-                                        class="btn btn-danger p-1">delete</a></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th>10</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
-                    <td>20-9-2024</td>
-                    <td>
-                        <div class="action">
-                            <i class="fa-solid fa-ellipsis-vertical align-text-bottom text-dark more-button"></i>
-                            {{-- <span class="align-text-bottom text-dark more-button"></span> --}}
-                            <ul class="more-options">
-                                <li><button id="" class="btn btn-warning user-edit-btn p-1"
-                                        data-bs-toggle="modal" data-bs-target="#editModal">edit</button></li>
-                                <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
-                                <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
-                                        class="btn btn-danger p-1">delete</a></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th>11</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
-                    <td>20-9-2024</td>
-                    <td>
-                        <div class="action">
-                            <i class="fa-solid fa-ellipsis-vertical align-text-bottom text-dark more-button"></i>
-                            {{-- <span class="align-text-bottom text-dark more-button"></span> --}}
-                            <ul class="more-options">
-                                <li><button id="" class="btn btn-warning user-edit-btn p-1"
-                                        data-bs-toggle="modal" data-bs-target="#editModal">edit</button></li>
-                                <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
-                                <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
-                                        class="btn btn-danger p-1">delete</a></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
+
+
                 {{-- <php }}?>		 --}}
             </tbody>
         </table>
     </div>
 
-{{-- <section>
-    <iframe src="https://app.Lumi.education/api/v1/run/CSLOMd/embed" width="1088" height="720" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe>
-    <script src="https://app.Lumi.education/api/v1/h5p/core/js/h5p-resizer.js" charset="UTF-8"></script>
-</section> --}}
-
+    {{-- <section>
+        <iframe src="https://app.Lumi.education/api/v1/run/gWQ6dY/embed" width="1088" height="720" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe>
+        <script src="https://app.Lumi.education/api/v1/h5p/core/js/h5p-resizer.js" charset="UTF-8"></script>
+    </section> --}}
 
 
 
@@ -280,7 +232,7 @@
                     <span class="error hidden"></span>
                 </div>
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="addModalLabel">Add Admin</h1>
+                    <h1 class="modal-title fs-5" id="addModalLabel">Add New Subject</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form action="" method="POST" enctype="multipart/form-data">
@@ -288,33 +240,24 @@
                         <input type="hidden" name="page" value="<= $page ?>" class="form-control py-2"
                             id="addInputPage" required>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-12">
                                 <div class="mb-3">
-                                    <label for="addInputFirstname" class="form-label">First Name</label>
+                                    <label for="addInputFirstname" class="form-label">Title</label>
                                     <input type="text" name="fname" class="form-control py-2"
                                         id="addInputFirstname" required>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12">
                                 <div class="mb-3">
-                                    <label for="addInputLastname" class="form-label">Last Name</label>
+                                    <label for="addInputLastname" class="form-label">Description</label>
                                     <input type="text" name="lname" class="form-control py-2" id="addInputLastname"
                                         required>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
+                            <div class="col-12">
                                 <div class="mb-3">
-                                    <label for="addInputusername" class="form-label">Username</label>
-                                    <input type="text" name="uname" class="form-control py-2" id="addInputusername"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="mb-3">
-                                    <label for="addInputemail" class="form-label">Email</label>
-                                    <input type="email" name="email" class="form-control py-2" id="addInputemail"
+                                    <label for="addavatar" class="form-label">Subject Image</label>
+                                    <input type="file" name="avatar" class="form-control py-2" id="addavatar"
                                         required>
                                 </div>
                             </div>
@@ -329,12 +272,13 @@
                             </div> --}}
                             <div class="col-12">
                                 <div class="mb-3">
-                                    <label for="addInputuserole" class="form-label">User Role</label>
+                                    <label for="addInputuserole" class="form-label">Class</label>
                                     <select name="userrole" id="addInputuserole" class="form-control py-2">
-                                        <option value ="undefined">Select Role</option>
+                                        <option value ="undefined">Select Class</option>
                                         {{-- <php if ($page === "admin") {?> --}}
-                                        <option value="sadmin">Super Admin</option>
-                                        <option value="admin">Admin</option>
+                                        <option value="jss1">JSS 1</option>
+                                        <option value="jss2">Jss 2</option>
+                                        <option value="jss3">Jss 3</option>
                                         {{-- <php } else {?> --}}
                                         {{-- <option value="member">Member</option>
                                         <option value="author">Author</option> --}}
@@ -342,16 +286,6 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="addInputPassword1" class="form-label">Password</label>
-                            <input type="password" name="psword" class="form-control py-2" id="addInputPassword1"
-                                autocomplete="fasle" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="addInputPassword2" class="form-label">Confirm Password</label>
-                            <input type="password" name="cpsword" class="form-control py-2" id="addInputPassword2"
-                                autocomplete="fasle" required>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -366,14 +300,15 @@
 
 
     <!-- Edit User Modal -->
-    <div class="modal fade" id="editModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal fade" id="editModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="editModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content" id="form">
                 <div class="form-response text-center mb-3">
                     <span class="error hidden"></span>
                 </div>
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="editModalLabel">Edit Admin</h1>
+                    <h1 class="modal-title fs-5" id="editModalLabel">Edit Subject</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form action="" method="POST" enctype="multipart/form-data">
@@ -381,37 +316,23 @@
                         <input type="hidden" name="page" value="<= page ?>" class="form-control py-2"
                             id="editInputPage" required>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-12">
                                 <div class="mb-3">
                                     <input type="hidden" name="user_id" class="form-control py-2" id="editInputId">
-                                    <label for="editInputFirstname" class="form-label">First Name</label>
+                                    <label for="editInputFirstname" class="form-label">Title</label>
                                     <input type="text" name="fname" class="form-control py-2"
                                         id="editInputFirstname">
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12">
                                 <div class="mb-3">
-                                    <label for="editInputLastname" class="form-label">Last Name</label>
+                                    <label for="editInputLastname" class="form-label">Description</label>
                                     <input type="text" name="lname" class="form-control py-2"
                                         id="editInputLastname">
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="mb-3">
-                                    <label for="editInputusername" class="form-label">Username</label>
-                                    <input type="text" name="uname" class="form-control py-2"
-                                        id="editInputusername">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="mb-3">
-                                    <label for="editInputemail" class="form-label">Email</label>
-                                    <input type="email" name="email" class="form-control py-2" id="editInputemail">
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="row">
                             {{-- <div class="col-6">
                                 <div class="mb-3">
@@ -421,29 +342,19 @@
                             </div> --}}
                             <div class="col-12">
                                 <div class="mb-3">
-                                    <label for="editInputuserole" class="form-label">User Role</label>
+                                    <label for="editInputuserole" class="form-label">Class</label>
                                     <select name="userrole" id="editInputuserole" class="form-control py-2">
-                                        <option value ="undefined">Select Role</option>
+                                        <option value ="undefined">Select Class</option>
                                         {{-- <php if ($page === "admin") {?> --}}
-                                        <option value="sadmin">Super Admin</option>
-                                        <option value="admin">Admin</option>
+                                        <option value="jss1">JSS 1</option>
+                                        <option value="jss2">Jss 2</option>
+                                        <option value="jss3">Jss 3</option>
                                         {{-- <php } else {?> --}}
                                         {{-- <option value="member">Member</option> --}}
                                         {{-- <php }?> --}}
                                     </select>
                                 </div>
                             </div>
-                        </div>
-                        <div class="mb-3">
-                            <input type="hidden" name="prev_psword" class="form-control py-2" id="prev_password">
-                            <label for="editInputPassword1" class="form-label">Password</label>
-                            <input type="password" name="psword" class="form-control py-2" id="editInputPassword1"
-                                autocomplete="false">
-                        </div>
-                        <div class="mb-3">
-                            <label for="editInputPassword2" class="form-label">Confirm Password</label>
-                            <input type="password" name="cpsword" class="form-control py-2" id="editInputPassword2"
-                                autocomplete="false">
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -468,7 +379,6 @@
     <script src="{{ 'assets/js/table/jquery-3.3.1.min.js' }}"></script>
     <script src="{{ 'assets/js/table/jquery.dataTables.min.js' }}"></script>
     <script src="{{ 'assets/js/table/dataTables.bootstrap.min.js' }}"></script>
-
 
 
     <script>

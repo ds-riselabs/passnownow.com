@@ -2,11 +2,11 @@
 
 @section('admincontent')
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Administrators</h1>
+        <h1 class="h2">Users</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group me-2">
                 <button type="button" class="btn btn-md btn-outline-primary" data-bs-toggle="modal"
-                    data-bs-target="#addModal">Add admin</button>
+                    data-bs-target="#addModal">Add User</button>
             </div>
         </div>
     </div>
@@ -19,7 +19,6 @@
                     <th scope="col">Name</th>
                     <th scope="col">Username</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Role</th>
                     <th scope="col">Date</th>
                     <th scope="col">Actions</th>
 
@@ -29,10 +28,9 @@
                 {{-- <php foreach  ($output as $admin) { ?> --}}
                 <tr>
                     <th>1</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Super Admin</td>
+                    <td>Amina John</td>
+                    <td>Amina</td>
+                    <td>amina@example.com</td>
                     <td>20-9-2024</td>
                     <td>
                         <div class="action">
@@ -41,7 +39,7 @@
                             <ul class="more-options">
                                 <li><button id="" class="btn btn-warning user-edit-btn p-1" data-bs-toggle="modal"
                                         data-bs-target="#editModal">edit</button></li>
-                                <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
+                                <li><a href="{{url('viewdata')}}" class="btn btn-primary p-1">view</a></li>
                                 <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
                                         class="btn btn-danger p-1">delete</a></li>
                             </ul>
@@ -50,10 +48,9 @@
                 </tr>
                 <tr>
                     <th>2</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
+                    <td>Amina John</td>
+                    <td>Amina</td>
+                    <td>amina@example.com</td>
                     <td>20-9-2024</td>
                     <td>
                         <div class="action">
@@ -71,10 +68,9 @@
                 </tr>
                 <tr>
                     <th>3</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
+                    <td>Amina John</td>
+                    <td>Amina</td>
+                    <td>amina@example.com</td>
                     <td>20-9-2024</td>
                     <td>
                         <div class="action">
@@ -92,10 +88,9 @@
                 </tr>
                 <tr>
                     <th>4</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
+                    <td>Amina John</td>
+                    <td>Amina</td>
+                    <td>amina@example.com</td>
                     <td>20-9-2024</td>
                     <td>
                         <div class="action">
@@ -113,10 +108,9 @@
                 </tr>
                 <tr>
                     <th>5</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
+                    <td>Amina John</td>
+                    <td>Amina</td>
+                    <td>amina@example.com</td>
                     <td>20-9-2024</td>
                     <td>
                         <div class="action">
@@ -125,132 +119,6 @@
                             <ul class="more-options">
                                 <li><button id="" class="btn btn-warning user-edit-btn p-1" data-bs-toggle="modal"
                                         data-bs-target="#editModal">edit</button></li>
-                                <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
-                                <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
-                                        class="btn btn-danger p-1">delete</a></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th>6</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
-                    <td>20-9-2024</td>
-                    <td>
-                        <div class="action">
-                            <i class="fa-solid fa-ellipsis-vertical align-text-bottom text-dark more-button"></i>
-                            {{-- <span class="align-text-bottom text-dark more-button"></span> --}}
-                            <ul class="more-options">
-                                <li><button id="" class="btn btn-warning user-edit-btn p-1" data-bs-toggle="modal"
-                                        data-bs-target="#editModal">edit</button></li>
-                                <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
-                                <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
-                                        class="btn btn-danger p-1">delete</a></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th>7</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
-                    <td>20-9-2024</td>
-                    <td>
-                        <div class="action">
-                            <i class="fa-solid fa-ellipsis-vertical align-text-bottom text-dark more-button"></i>
-                            {{-- <span class="align-text-bottom text-dark more-button"></span> --}}
-                            <ul class="more-options">
-                                <li><button id="" class="btn btn-warning user-edit-btn p-1" data-bs-toggle="modal"
-                                        data-bs-target="#editModal">edit</button></li>
-                                <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
-                                <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
-                                        class="btn btn-danger p-1">delete</a></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th>8</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
-                    <td>20-9-2024</td>
-                    <td>
-                        <div class="action">
-                            <i class="fa-solid fa-ellipsis-vertical align-text-bottom text-dark more-button"></i>
-                            {{-- <span class="align-text-bottom text-dark more-button"></span> --}}
-                            <ul class="more-options">
-                                <li><button id="" class="btn btn-warning user-edit-btn p-1"
-                                        data-bs-toggle="modal" data-bs-target="#editModal">edit</button></li>
-                                <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
-                                <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
-                                        class="btn btn-danger p-1">delete</a></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th>9</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
-                    <td>20-9-2024</td>
-                    <td>
-                        <div class="action">
-                            <i class="fa-solid fa-ellipsis-vertical align-text-bottom text-dark more-button"></i>
-                            {{-- <span class="align-text-bottom text-dark more-button"></span> --}}
-                            <ul class="more-options">
-                                <li><button id="" class="btn btn-warning user-edit-btn p-1"
-                                        data-bs-toggle="modal" data-bs-target="#editModal">edit</button></li>
-                                <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
-                                <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
-                                        class="btn btn-danger p-1">delete</a></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th>10</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
-                    <td>20-9-2024</td>
-                    <td>
-                        <div class="action">
-                            <i class="fa-solid fa-ellipsis-vertical align-text-bottom text-dark more-button"></i>
-                            {{-- <span class="align-text-bottom text-dark more-button"></span> --}}
-                            <ul class="more-options">
-                                <li><button id="" class="btn btn-warning user-edit-btn p-1"
-                                        data-bs-toggle="modal" data-bs-target="#editModal">edit</button></li>
-                                <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
-                                <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
-                                        class="btn btn-danger p-1">delete</a></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th>11</th>
-                    <td>Winner Effiong</td>
-                    <td>winner</td>
-                    <td>winner@example.com</td>
-                    <td>Admin</td>
-                    <td>20-9-2024</td>
-                    <td>
-                        <div class="action">
-                            <i class="fa-solid fa-ellipsis-vertical align-text-bottom text-dark more-button"></i>
-                            {{-- <span class="align-text-bottom text-dark more-button"></span> --}}
-                            <ul class="more-options">
-                                <li><button id="" class="btn btn-warning user-edit-btn p-1"
-                                        data-bs-toggle="modal" data-bs-target="#editModal">edit</button></li>
                                 <li><a href="./viewdata.php?id=&page=" class="btn btn-primary p-1">view</a></li>
                                 <li><a onclick="validate(this)" href="assets/php/includes/deletedata.inc.php?id=&page="
                                         class="btn btn-danger p-1">delete</a></li>
@@ -263,10 +131,7 @@
         </table>
     </div>
 
-{{-- <section>
-    <iframe src="https://app.Lumi.education/api/v1/run/CSLOMd/embed" width="1088" height="720" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe>
-    <script src="https://app.Lumi.education/api/v1/h5p/core/js/h5p-resizer.js" charset="UTF-8"></script>
-</section> --}}
+
 
 
 
@@ -280,7 +145,7 @@
                     <span class="error hidden"></span>
                 </div>
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="addModalLabel">Add Admin</h1>
+                    <h1 class="modal-title fs-5" id="addModalLabel">Add Users</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form action="" method="POST" enctype="multipart/form-data">
@@ -319,30 +184,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            {{-- <div class="col-6">
-                                <div class="mb-3">
-                                    <label for="addInputphone" class="form-label">Phone number</label>
-                                    <input type="text" name="phone" class="form-control py-2" id="addInputphone"
-                                        required>
-                                </div>
-                            </div> --}}
-                            <div class="col-12">
-                                <div class="mb-3">
-                                    <label for="addInputuserole" class="form-label">User Role</label>
-                                    <select name="userrole" id="addInputuserole" class="form-control py-2">
-                                        <option value ="undefined">Select Role</option>
-                                        {{-- <php if ($page === "admin") {?> --}}
-                                        <option value="sadmin">Super Admin</option>
-                                        <option value="admin">Admin</option>
-                                        {{-- <php } else {?> --}}
-                                        {{-- <option value="member">Member</option>
-                                        <option value="author">Author</option> --}}
-                                        {{-- <php }?> --}}
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
                         <div class="mb-3">
                             <label for="addInputPassword1" class="form-label">Password</label>
                             <input type="password" name="psword" class="form-control py-2" id="addInputPassword1"
@@ -373,7 +214,7 @@
                     <span class="error hidden"></span>
                 </div>
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="editModalLabel">Edit Admin</h1>
+                    <h1 class="modal-title fs-5" id="editModalLabel">Edit Users</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form action="" method="POST" enctype="multipart/form-data">
@@ -409,28 +250,6 @@
                                 <div class="mb-3">
                                     <label for="editInputemail" class="form-label">Email</label>
                                     <input type="email" name="email" class="form-control py-2" id="editInputemail">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            {{-- <div class="col-6">
-                                <div class="mb-3">
-                                    <label for="editInputphone" class="form-label">Phone number</label>
-                                    <input type="number" name="phone" class="form-control py-2" id="editInputphone">
-                                </div>
-                            </div> --}}
-                            <div class="col-12">
-                                <div class="mb-3">
-                                    <label for="editInputuserole" class="form-label">User Role</label>
-                                    <select name="userrole" id="editInputuserole" class="form-control py-2">
-                                        <option value ="undefined">Select Role</option>
-                                        {{-- <php if ($page === "admin") {?> --}}
-                                        <option value="sadmin">Super Admin</option>
-                                        <option value="admin">Admin</option>
-                                        {{-- <php } else {?> --}}
-                                        {{-- <option value="member">Member</option> --}}
-                                        {{-- <php }?> --}}
-                                    </select>
                                 </div>
                             </div>
                         </div>
