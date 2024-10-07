@@ -4,11 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Register Here</title>
-
-
-
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -52,44 +50,52 @@
                             <h6>Let’s register for your Passnownow account</h6>
                     </div>
                     <div class="col-12 mb-3">
-                        <form action="" method="POST">
+                        <form method="POST" action="{{ route('register') }}">
+                            @csrf
+
                             <div class="mb-3">
-                                <label for="fname" class="form-label">Enter First Name</label>
-                                <input type="text" id="fname" class="form-control" aria-describedby="textBlock" placeholder="First Name" required>
+                                <x-input-label for="fname" :value="__('Enter First Name')" />
+                                <x-text-input type="text" id="fname" class="form-control" name="fname" :value="old('fname')" aria-describedby="textBlock" placeholder="First Name" required />
+                                <x-input-error :messages="$errors->get('fname')" class="mt-2" />
                             </div>
                             <div class="mb-3">
-                                <label for="lname" class="form-label">Enter Last Name</label>
-                                <input type="text" id="lname" class="form-control" aria-describedby="textBlock" placeholder="Last Name" required>
+                                <x-input-label for="fname" :value="__('Enter Last Name')" />
+                                <x-text-input type="text" id="lname" class="form-control" name="lname" :value="old('lname')" aria-describedby="textBlock" placeholder="Last Name" required />
+                                <x-input-error :messages="$errors->get('lname')" class="mt-2" />
                             </div>
                             <div class="mb-3">
-                                <label for="email" class="form-label">Enter Email Address</label>
-                                <input type="email" id="email" class="form-control" aria-describedby="emailBlock" placeholder="example@email.com" required>
+                                <x-input-label for="email" :value="__('Enter Email Address')" />
+                                <x-text-input id="email" class="form-control" type="email" name="email" :value="old('email')" aria-describedby="emailBlock" placeholder="example@email.com" required />
+                                <x-input-error :messages="$errors->get('email')" class="mt-2" />
                             </div>
                             <div class="mb-3">
-                                <label for="inputPassword5" class="form-label">Enter Password</label>
+                                <x-input-label for="inputPassword" :value="__('Enter Password')" />
                                 <span class="pass_hidden">
-                                    <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordBlock" placeholder="password">
-                                    {{-- <i class="fa-regular fa-eye-slash"></i> --}}
-                                </span>
+                                    <x-text-input type="password" id="inputPassword" class="form-control" name="password" aria-describedby="passwordBlock" placeholder="password" />
+                                 {{-- <i class="fa-regular fa-eye-slash"></i> --}}
                                 {{-- <i class="fa-regular fa-eye"></i> --}}
-                                <div id="passwordHelpBlock" class="form-text">
-                                    <p>
-                                        Your password must be 8-20 characters long, contain letters, numbers and special characters.
+                                </span>
+                                <x-input-error :messages="$errors->get('password')" class="mt-2" />
+                                    <div id="passwordHelpBlock" class="form-text">
+                                        <p>
+                                            Your password must be 8-20 characters long, contain letters, numbers and special characters.
+                                        </p>
                                     </div>
-                                </p>
                             </div>
                             <div class="mb-3">
-                                <label for="cPassword" class="form-label">Confirm Password</label>
+                                <x-input-label for="cPassword" :value="__('Confirm Password')" />
                                 <span class="pass_hidden">
-                                    <input type="password" id="cPassword" class="form-control" aria-describedby="passwordBlock" placeholder="Repeat Password">
-                                    {{-- <i class="fa-regular fa-eye-slash"></i> --}}
+                                    <x-text-input type="password" id="cPassword" class="form-control" name="cpassword" aria-describedby="passwordBlock" placeholder="Repeat Password" />
+                                 {{-- <i class="fa-regular fa-eye-slash"></i> --}}
+                                {{-- <i class="fa-regular fa-eye"></i> --}}
                                 </span>
+                                <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />         
                             </div>
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Agreed to out terms and conditions</label>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100 submit-btn">Register</button>
+                            <x-primary-button type="submit" class="btn btn-primary w-100 submit-btn"> {{ __('Register') }}</x-primary-button>
                         </form>
                     </div>
                     <div class="col-12 mb-5 text-center account-ask">

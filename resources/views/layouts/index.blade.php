@@ -43,35 +43,31 @@
                         class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page"
-                                href="{{ url('/') }}">Home</a>
-                        </li>
+                        <li class="nav-item"><x-nav-link  href="/" active="{{ request()->is('/') }}">Home</x-nav-link></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
                                 aria-expanded="false">About us</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                <li><a class="dropdown-item" href="{{ url('about') }}">About Passnownow</a></li>
-                                <li><a class="dropdown-item" href="{{ url('contact') }}">Contact us</a>
+                                <li><x-nav-link class="dropdown-item" type="dropdown" href="/about" active="{{ request()->is('about') }}">About Passnownow</x-nav-link></li>
+                                <li><x-nav-link class="dropdown-item" type="dropdown" href="/contact" active="{{ request()->is('contact') }}">Contact us</x-nav-link></li>
 
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url('subjects') }}">Subjects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url('notes') }}">Classes</a></li>
+                        <li class="nav-item"><x-nav-link  href="/subjects" active="{{ request()->is('subjects') }}">Subjects</x-nav-link></li>
+                        <li class="nav-item"><x-nav-link  href="/notes" active="{{ request()->is('notes') }}">Classes</x-nav-link></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
                                 aria-expanded="false">Educational
                                 Resources</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                <li><a class="dropdown-item" href="{{ url('pastquestions') }}">Past Questions</a></li>
-                                <li><a class="dropdown-item" href="{{ url('teacherresources') }}">Teacher's
-                                        Resources</a></li>
-                                <li><a class="dropdown-item" href="{{ url('parentresources') }}">Guidance and
-                                        Counselling</a></li>
-                                <li><a class="dropdown-item" href="{{ url('blog') }}">Blog</a>
+                                {{-- <li><a class="dropdown-item" href="{{ url('pastquestions') }}">Past Questions</a></li> --}}
+                                <li><x-nav-link class="dropdown-item" type="dropdown" href="/pastquestions" active="{{ request()->is('pastquestions') }}">Past Questions</x-nav-link></li>
+                                <li><x-nav-link class="dropdown-item" type="dropdown" href="/teacherresources" active="{{ request()->is('teacherresources') }}">Teacher's Resources</x-nav-link></li>
+                                <li><x-nav-link class="dropdown-item" type="dropdown" href="/parentresources" active="{{ request()->is('parentresources') }}">Guidance and Counselling</x-nav-link></li>
+                                <li><x-nav-link class="dropdown-item" type="dropdown" href="/blog" active="{{ request()->is('blog') }}">Blog</x-nav-link></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url('subscriptions') }}">Pricing plan</a>
-
+                        <li class="nav-item"><x-nav-link  href="/subscriptions" active="{{ request()->is('subscriptions') }}">Pricing plan</x-nav-link></li>
                         </li>
                         {{-- <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"

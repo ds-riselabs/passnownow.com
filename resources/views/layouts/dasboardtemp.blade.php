@@ -77,40 +77,40 @@
                 <div class="position-sticky">
                     <ul class="nav flex-column ">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <x-sidebar-link active="{{ request()->is('dashboard') }}" href="/dashboard">
                                 <i class="fa-solid fa-table-list"></i>
                                 Dashboard
-                            </a>
+                            </x-sidebar-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('admins')}}">
+                            <x-sidebar-link active="{{ request()->is('admins') }}" href="/admins">
                                 <i class="fa-solid fa-user-tie"></i>
                                 Admin
-                            </a>
+                            </x-sidebar-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('users')}}">
+                            <x-sidebar-link active="{{ request()->is('users') }}" href="/users">
                                 <i class="fa-regular fa-user"></i>
                                 Users
-                            </a>
+                            </x-sidebar-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('classes')}}">
+                            <x-sidebar-link active="{{ request()->is('classes') }}" href="/classes">
                                 <i class="fa-solid fa-layer-group"></i>
                                 Classes
-                            </a>
+                            </x-sidebar-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('adsubjects')}}">
+                            <x-sidebar-link active="{{ request()->is('adsubjects') }}" href="/adsubjects">
                                 <i class="fa-solid fa-swatchbook"></i>
                                 Subjects
-                            </a>
+                            </x-sidebar-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('adexams')}}">
+                            <x-sidebar-link active="{{ request()->is('adexams') }}" href="/adexams">
                                 <i class="fa-solid fa-list"></i>
                                 Exams
-                            </a>
+                            </x-sidebar-link>
                         </li>
                         {{-- <li class="nav-item">
                             <a class="nav-link" href="{{url('adpastquestions')}}">
@@ -119,17 +119,17 @@
                             </a>
                         </li> --}}
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('subscriptiondetails')}}">
+                            <x-sidebar-link active="{{ request()->is('subscriptiondetails') }}" href="/subscriptiondetails">
                                 <i class="fa-solid fa-hand-holding-dollar"></i>
                                 Subscription
-                            </a>
+                            </x-sidebar-link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
+                        {{-- <li class="nav-item">
+                            <x-sidebar-link active="{{ request()->is('#') }}" href="#">
                                 <i class="fa-solid fa-clock-rotate-left"></i>
                                 History
-                            </a>
-                        </li>
+                            </x-sidebar-link>
+                        </li> --}}
                         {{-- <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <i class="fa-solid fa-arrow-right-from-bracket"></i>

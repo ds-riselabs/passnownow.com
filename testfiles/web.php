@@ -11,12 +11,6 @@ Route::get('/', function () {
     // return ['Laravel' => app()->version()];
 });
 
-require __DIR__.'/auth.php';
-
-
-
-
-
 
 Route::get('/about', function(){
     return view('about');
@@ -53,6 +47,13 @@ Route::get('/subscriptions', function(){
     return view('subscriptions');
 });
 
+Route::get('/register', function(){
+    return view('register');
+});
+
+Route::get('/login', function(){
+    return view('login');
+});
 
 Route::get('/teacherresources', function(){
     return view('teacherresources');
@@ -132,18 +133,24 @@ Route::get('/checkout', function(){
 });
 
 
+
+
+
+
+
 // DASHBOARD ROUTING 
 Route::get('/dashboard', function(){
     return view('admin.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+
+
+
 Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('profile', [ProfileCOntroller::class, 'edit'])->name('profile.edit');
+    Route::patch('profile', [ProfileCOntroller::class, 'update'])->name('profile.update');
+    Route::delete('profile', [ProfileCOntroller::class, 'destroy'])->name('profile.destroy');
 });
-
-
 
 
 Route::get('/profile', function(){
@@ -221,3 +228,9 @@ Route::get('username/{name}', [UserController::class, 'getUsername']);
 
 // How to get access view from controller 
 // Route::get('home', [UserController::class, 'getHome']);
+
+
+
+
+
+require __DIR__.'/auth.php';

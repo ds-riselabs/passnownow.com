@@ -108,7 +108,7 @@ body {
   color: var(--color-text-white);
   background-color: var(--color-primary-blue);
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 0.8rem 1rem;
 }
 
 .sidebar .nav-link:hover i,
