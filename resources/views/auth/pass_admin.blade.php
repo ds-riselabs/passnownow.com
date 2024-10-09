@@ -46,22 +46,22 @@
                     <div class="col-12 p-0 m-0 my-3 text-center">
                         <img src="{{ asset('assets/images/logo-2.png') }}" alt="Passnownow Logo" class="logo-alt">
                     </div>
-                    <div class="col-12 heading p-0">
-                            <h6>Let’s register for your Passnownow account</h6>
+                    <div class="col-12 heading p-0 text-center">
+                            <h6>Register as Admin on Passnownow</h6>
                     </div>
                     <div class="col-12 mb-3">
-                        <form method="POST" action="{{ route('register') }}">
+                        <form method="POST" action="{{ route('pass_admin') }}">
                             @csrf
 
                             <div class="mb-3">
-                                <x-text-input type="hidden" id="role" class="form-control" name="role" value="user" />
+                                <x-text-input type="hidden" id="role" class="form-control" name="role" value="admin" />
                                 <x-text-input type="hidden" id="unique_id" class="form-control" name="unique_id" value="{{ rand(time(), 10000000);}}" />
                                 <x-input-label for="fname" :value="__('Enter First Name')" />
                                 <x-text-input type="text" id="fname" class="form-control" name="fname" :value="old('fname')" aria-describedby="textBlock" placeholder="First Name" required />
                                 <x-input-error :messages="$errors->get('fname')" class="mt-2 text-danger" />
                             </div>
                             <div class="mb-3">
-                                <x-input-label for="lname" :value="__('Enter Last Name')" />
+                                <x-input-label for="fname" :value="__('Enter Last Name')" />
                                 <x-text-input type="text" id="lname" class="form-control" name="lname" :value="old('lname')" aria-describedby="textBlock" placeholder="Last Name" required />
                                 <x-input-error :messages="$errors->get('lname')" class="mt-2 text-danger" />
                             </div>
@@ -79,6 +79,8 @@
                                 <x-input-label for="inputPassword" :value="__('Enter Password')" />
                                 <span class="pass_hidden">
                                     <x-text-input type="password" id="inputPassword" class="form-control" :value="old('password')" name="password" aria-describedby="passwordBlock" placeholder="password"  required/>
+                                 {{-- <i class="fa-regular fa-eye-slash"></i> --}}
+                                {{-- <i class="fa-regular fa-eye"></i> --}}
                                 </span>
                                 <x-input-error :messages="$errors->get('password')" class="mt-2 text-danger" />
                                     <div id="passwordHelpBlock" class="form-text">
@@ -91,6 +93,8 @@
                                 <x-input-label for="cPassword" :value="__('Confirm Password')" />
                                 <span class="pass_hidden">
                                     <x-text-input type="password" id="cPassword" class="form-control" :value="old('password_confirmation ')" name="password_confirmation" aria-describedby="passwordBlock" placeholder="Repeat Password" />
+                                 {{-- <i class="fa-regular fa-eye-slash"></i> --}}
+                                {{-- <i class="fa-regular fa-eye"></i> --}}
                                 </span>
                                 <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />         
                             </div>

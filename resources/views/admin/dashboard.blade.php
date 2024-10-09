@@ -4,7 +4,7 @@
     <section class="container-fluid greeting__containter mt-3">
         <div class="row">
             <div class="col-12 col-md-6 greetings ">
-                <h2>Hello Winner!</h2>
+                <h2>Hello {{ ucfirst(Auth::user()->username);}} !</h2>
                 <p>Let's learn something today</p>
                 <br>
                 <p class="greeting-text">Goodluck with your studies</p>

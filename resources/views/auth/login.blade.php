@@ -25,7 +25,10 @@
 </head>
 
 <body class="">
+ <!-- Session Status -->
+ <x-auth-session-status class="mb-4" :status="session('status')" />
     <main class="container-fluid wrapper container__register container__login">
+
         <div class="row  m-0 p-0">
             <div class="col-12 col-md-6 side-bg">
                 <div class="content">
@@ -49,24 +52,27 @@
                         <h6>Let’s login to your Passnownow account</h6>
                     </div>
                     <div class="col-12 mb-2">
-                        <form action="" method="POST">
+                        <form method="POST" action="{{ route('login') }}">
+                            @csrf
                             <div class="mb-3">
-                                <label for="email" class="form-label">Enter Email/Username</label>
-                                <input type="email" id="email" class="form-control" aria-describedby="emailBlock"
-                                    placeholder="example@email.com" required>
+                                <x-input-label for="email_username" class="form-label" :value="__('Enter Email/Username')" />
+                                <x-text-input id="email_username" class="form-control" type="text" name="email_username" :value="old('email_username')" autofocus autocomplete="username" />
+                                <x-input-error :messages="$errors->get('email')" class="mt-2" />
+                                <x-input-error :messages="$errors->get('username')" class="mt-2" />
                             </div>
                             <div class="mb-3">
-                                <label for="inputPassword5" class="form-label">Enter Password</label>
+
+                                <x-input-label for="password" :value="__('Enter Password')" class="form-label" />
                                 <span class="pass_hidden">
-                                    <input type="password" id="inputPassword5" class="form-control"
-                                        aria-describedby="passwordBlock" placeholder="password">
+                                    <x-text-input id="password" class="form-control" aria-describedby="passwordBlock" type="password" name="password" placeholder="password" autocomplete="current-password" />
                                     <i class="fa-regular fa-eye-slash"></i>
                                 </span>
+                                <x-input-error :messages="$errors->get('password')" class="mt-2" />
                             </div>
                             <div class="row check">
                                 <div class="col mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                    <input type="checkbox" class="form-check-input" id="remember_me" name="remember">
+                                    <label class="form-check-label" for="remember_me">{{ __('Remember me') }}</label>
                                 </div>
                                 <div class="col mb-3 form-check text-end fw-bold account-ask p-0">
                                     <!-- Button trigger modal -->
@@ -75,7 +81,7 @@
                                     {{-- <p><a href="{{ url('/register')}}">Forget Password</a></p> --}}
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100 submit-btn">Login</button>
+                            <x-primary-button>{{ __('Log in') }}</x-primary-button>
                         </form>
                     </div>
                     <div class="col-12 mb-5 text-center account-ask">
@@ -91,6 +97,31 @@
         </div>
     </main>
     </div>
+
+
+<script>
+    const passwordField = document.querySelector("#password");
+const showhide = document.querySelector(".pass_hidden > .fa-regular");
+
+showhide.onclick = () => {
+    let typeValue = passwordField.getAttribute("type");
+    if (typeValue === "password") {
+        showhide.classList.remove("fa-eye-slash");
+        showhide.classList.add("fa-eye");
+        passwordField.setAttribute("type", "text");
+    }
+    else
+    {
+        showhide.classList.add("fa-eye-slash");
+        showhide.classList.remove("fa-eye");
+        passwordField.setAttribute("type", "password");
+
+    }
+
+}
+</script>
+
+    
 
     {{-- Enter Email for Reset password Modal  --}}
     <div class="modal fade" id="staticBackdro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -249,6 +280,11 @@
             </div>
         </div>
     </div>
+
+
+
+
+
 </body>
 
 </html>

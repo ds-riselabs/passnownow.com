@@ -11,11 +11,6 @@ Route::get('/', function () {
     // return ['Laravel' => app()->version()];
 });
 
-require __DIR__.'/auth.php';
-
-
-
-
 
 
 Route::get('/about', function(){
@@ -143,12 +138,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+require __DIR__.'/auth.php';
 
-
-
-Route::get('/profile', function(){
-    return view('admin.profile');
-});
 
 Route::get('/subscriptiondetails', function(){
     return view('admin.subscriptiondetails');
@@ -212,12 +203,12 @@ Route::get('/instructors', function(){
 // {{ route('edresources')}} to references the route in the view page
 
 // Access a nested view page with uri parameter 
-Route::get('/dashboard/{name}/{lname}', function ($name, $lname) {
-    return view('admin.dashboard',['name'=>$name, 'lname'=>$lname]);
-});
+// Route::get('/dashboard/{name}/{lname}', function ($name, $lname) {
+//     return view('admin.dashboard',['name'=>$name, 'lname'=>$lname]);
+// });
 
-Route::get('user', [UserController::class, 'getUser']);
-Route::get('username/{name}', [UserController::class, 'getUsername']);
+// Route::get('user', [UserController::class, 'getUser']);
+// Route::get('username/{name}', [UserController::class, 'getUsername']);
 
 // How to get access view from controller 
 // Route::get('home', [UserController::class, 'getHome']);

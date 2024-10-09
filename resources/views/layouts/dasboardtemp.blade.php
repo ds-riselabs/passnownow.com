@@ -63,8 +63,17 @@
                         <img src="{{ asset('assets/images/profile.png') }}" alt="">
                     </a>
                     <ul class="dropdown-menu w-50" aria-labelledby="dropdown01">
-                        <li><a class="dropdown-item" href="{{ url('about') }}">Signout</a></li>
                         <li><a class="dropdown-item" href="{{ url('profile') }}">Profile</a>
+                            <!-- Authentication -->
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+
+                            <li>
+                                <x-dropdown-link class="dropdown-item" :href="route('logout')" onclick="event.preventDefault();                                              this.closest('form').submit();">
+                                    {{ __('Signout') }}
+                                </x-dropdown-link>
+                            </li>
+                        </form>
                     </ul>
                 </li>
             </div>

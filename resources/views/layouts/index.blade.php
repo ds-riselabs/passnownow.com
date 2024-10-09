@@ -48,8 +48,8 @@
                             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
                                 aria-expanded="false">About us</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                <li><x-nav-link class="dropdown-item" type="dropdown" href="/about" active="{{ request()->is('about') }}">About Passnownow</x-nav-link></li>
-                                <li><x-nav-link class="dropdown-item" type="dropdown" href="/contact" active="{{ request()->is('contact') }}">Contact us</x-nav-link></li>
+                                <li><x-nav-link  type="drop" href="/about" active="{{ request()->is('about') }}">About Passnownow</x-nav-link></li>
+                                <li><x-nav-link  type="drop" href="/contact" active="{{ request()->is('contact') }}">Contact us</x-nav-link></li>
 
                             </ul>
                         </li>
@@ -61,10 +61,10 @@
                                 Resources</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown01">
                                 {{-- <li><a class="dropdown-item" href="{{ url('pastquestions') }}">Past Questions</a></li> --}}
-                                <li><x-nav-link class="dropdown-item" type="dropdown" href="/pastquestions" active="{{ request()->is('pastquestions') }}">Past Questions</x-nav-link></li>
-                                <li><x-nav-link class="dropdown-item" type="dropdown" href="/teacherresources" active="{{ request()->is('teacherresources') }}">Teacher's Resources</x-nav-link></li>
-                                <li><x-nav-link class="dropdown-item" type="dropdown" href="/parentresources" active="{{ request()->is('parentresources') }}">Guidance and Counselling</x-nav-link></li>
-                                <li><x-nav-link class="dropdown-item" type="dropdown" href="/blog" active="{{ request()->is('blog') }}">Blog</x-nav-link></li>
+                                <li><x-nav-link  type="drop" href="/pastquestions" active="{{ request()->is('pastquestions') }}">Past Questions</x-nav-link></li>
+                                <li><x-nav-link  type="drop" href="/teacherresources" active="{{ request()->is('teacherresources') }}">Teacher's Resources</x-nav-link></li>
+                                <li><x-nav-link  type="drop" href="/parentresources" active="{{ request()->is('parentresources') }}">Guidance and Counselling</x-nav-link></li>
+                                <li><x-nav-link  type="drop" href="/blog" active="{{ request()->is('blog') }}">Blog</x-nav-link></li>
                             </ul>
                         </li>
                         <li class="nav-item"><x-nav-link  href="/subscriptions" active="{{ request()->is('subscriptions') }}">Pricing plan</x-nav-link></li>

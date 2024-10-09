@@ -12,14 +12,14 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Illuminate\View\View;
 
-class RegisteredUserController extends Controller
+class RegisteredAdminController extends Controller
 {
     /**
      * Display the registration view.
      */
     public function create(): View
     {
-        return view('auth.register');
+        return view('auth.pass_admin');
     }
 
     /**
@@ -32,8 +32,7 @@ class RegisteredUserController extends Controller
 
         // dd($request);
         // Validate 
-    //    $data = $request->validate([
-      $request->validate([
+        $request->validate([
             'unique_id' => ['required', 'string', 'max:255', 'unique:'.User::class],
             'fname' => ['required', 'string', 'max:255'],
             'lname' => ['required', 'string', 'max:255'],
@@ -45,19 +44,16 @@ class RegisteredUserController extends Controller
         ]);
 
         // Register
-        // $user = User::create($data);
         $user = User::create([
             'unique_id' => $request->unique_id,
             'first_name' => $request->fname,
             'last_name' => $request->lname,
-            'username' => $request->username,
+            'username' => $request->lname,
             'email' => $request->email,
             'terms' => $request->terms,
             'role' => $request->role,
             'password' => Hash::make($request->password),
         ]);
-
-   
 
         event(new Registered($user));
 
